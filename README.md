@@ -6,6 +6,8 @@ El curso de ADA IT de Introduccion a Back End con Nodejs
 
 ---
 
-Temas:
+Clases :
+
+- [09/08 - Clase 1](): Variables, datos, operadores, condicionales
 
 ---
