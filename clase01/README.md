@@ -20,7 +20,7 @@
 
 ---
 
-## 📝 Contenidos#
+## 📝 Contenidos
 
 ### Variables
 
