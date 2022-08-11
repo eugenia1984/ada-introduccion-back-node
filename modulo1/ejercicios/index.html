@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS | Variables | Operadores</title>
+  <link rel="stylesheet" href="https://img.icon">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <h1>Empezando con JavaSCript</h1>
+    <h2>Variables - Datos - Operadores</h2>
+  </header>
+  <main>
+    <h3>Hacer clicks en los botones para poder ver los programas en accion</h3>
+    <section class="saludo">
+      <h3>Saludos</h3>
+      <p>Crear un programa que pida al usuario ingresar un nombre y apellido por separado, y luego muestre un mensaje que diga, "Hola {nombre} {apellido}, bienvenida a Ada".</p>
+      <button><img src="https://img.icons8.com/ios/34/000000/salute.png" alt="persona saludando" width="34" height="34"/></button>
+    </section>
+    <section class="heladeria">
+      <h3>Heladeria</h3>
+      <p>Crear un programa que pida al usuario ingresar, por separado, tres gustos de helado, y luego muestre un mensaje que diga, por ejemplo, "Aquí tiene su helado de chocolate, dulce de leche y menta granizada".</p>
+      <button><img src="https://img.icons8.com/cotton/34/000000/fruit-ice-cream-cone.png" alt="helado" width="34" height="34"/></button>
+    </section>
+    <section class="datos-personales">
+      <h3>Datos personales</h3>
+      <p>Crear un programa que pida al usuario ingresar, por separado, nombre, apellido, edad, nacionalidad, documento, y muestre luego un mensaje que diga: "Nuevo usuario agregado al sistema:" y liste todos los datos juntos.</p>
+      <button><img src="https://img.icons8.com/ios/50/000000/parse-from-clipboard.png" alt="hoja con datos" width="34" height="34"/></button>
+    </section>
+    <section class="lista-reproduccion">
+      <h3>Lista de reproduccion</h3>
+      <p>Crear un programa que pida al usuario ingresar, por separado, el nombre de una playlist y el título de tres canciones, y al finalizar se muestre un mensaje que diga, p. ej.: "Se ha creado la playlist 'Hits de los 80s' con las canciones 'Africa', 'Maniac', 'Final Countdown'".</p>
+      <button><img src="https://img.icons8.com/material-rounded/34/000000/play-button-circled--v1.png" alt="icono de reproduccion (play)" width="34" height="34"/></button>
+    </section>
+    <section class="direccion-completa">
+      <h3>Direccion completa</h3>
+      <p>Crear un programa que pida al usuario ingresar, por separado, la calle, el número, el departamento, el código postal, la ciudad y el país, y muestre un mensaje con toda la dirección completa, p.ej.: "La dirección que ha ingresado es: Calle Falsa 123 3C, 1414, CABA, Argentina".</p>
+      <button><img src="https://img.icons8.com/color/48/000000/address--v1.png" alt="icono de localizacion" width="34" height="34"/></button>
+    </section>
+    <section class="anios-perros">
+      <h3>Años perros</h3>
+      <p>Crear un programa que pida ingresar una edad y devuelva el equivalente de esas edad en años perro.</p>
+      <button><img src="https://img.icons8.com/cotton/64/000000/dog-heart--v3.png" alt="perro" width="34" height="34"/></button>
+    </section>
+    <section class="minutos-a-segundos">
+      <h3>Minutos a segundos</h3>
+      <p>Crear un programa que pida ingresar una cantidad en minutos mediante un y muestre un mensaje con el resultado de la conversión en segundos.</p>
+      <button><img src="https://img.icons8.com/dusk/34/000000/clock--v1.png" alt="reloj" width="34" height="34"/></button>
+    </section>
+    <section class="dias-a-segundos">
+      <h3>Días a segundos</h3>
+      <p>Crear un programa que pida ingresar una cantidad de días y muestre un mensaje con el resultado de la conversión en segundos.</p>
+      <button><img src="https://img.icons8.com/dusk/34/000000/clock--v1.png" alt="reloj" width="34" height="34"/></button>
+    </section>
+    <section class="kilometros-a-millas">
+      <h3>Kilometros a millas</h3>
+      <p>Crear un programa que pida ingresar una cantidad de kilómetros y muestre un mensaje con el resultado de la conversión en millas.</p>
+      <button><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAABmJLR0QA/wD/AP+gvaeTAAAEAklEQVRYhe2XS48bRRDHfzPjGUdkH961IU5WQgoJQbCEI4dVBOICXwHxHZA4kQuHPQKHSJzyCThwBkU8EilCROG2eKMg2MNG9kK8z4T12mN7vNPFodtjj+3p7Fo5pqSRy9WP+te/q7ur4YWkxbE13rhxc6nrSdk6Qy+7YbhJxW599fqnj08N5Mtvbn7s4HwLuCKijSJIv4NFB/T/tK4c5JMvPv/su0n+3GyEzocicmoQMhkEgCuO81GWv1xWg4gkbIVn5wgLJQCUKBA9tyjRuhJERNtEmV8QEeZbT3ip09AGlb0CmUCGI9x89wOOiudRSlBx/1Mj/803Yls43OHaX7d0EBZXFkaGdNfTESeRm+iV+YYYSPcRYkOCDE84LSN9YInzvtP+l1qayQCfJZnJCmoAYiRKUTLiqO94Qr8k1wUseOyMGCrKf1c4U7pgJgelFKJ0PujoBSUDXQTE5FCxsX0iRrKBqMGyFGsbFGsbWdsyU9fqkG5J10wgyRARgnyemZkZnTOiePrfIRLHzM7N4ed8AKJel8ZhA9d1WVhcoH9WHjWP6LQ7ei7LOZ7NiA4NAa5efYfFxYWk6c+HD9ne2WFlZSU15M7tO5TLZZbfXk5sBwcH/H7/vokue4msOdKn2fPSOe3lcnjueJ67roPneem+npfsPtvFln2OYE7QTIQnFxlTxsWyfQeMhK0wZQ3bIVEvIupFiTXqRfSOe7TCFkO3D61my+SWLVVPcKABVNYrVCp/GNPAye2ff0n1FWC7XufW9z9MvhSn2TUoheCACOfKZUqlkplUeLT5iDAMufLGFYIgDwhRN2JjY4OnoWLtX0ny8tWCcKmo51HT7BplogG4+NpFCvOFpC0MQ+r1Opcvv54aU6tV2ay1ePB4wMFeEy4tmmVWUzECmhDBkZFQxNElwIgM7hWV7muYtYl9+2YMlqz0F90molI2DQZrHWBZGsExYKq1Kq+0X9Z2EfZ2dum021SrVQI/AIRuFNFut43j4RrCGTv2TwUEBoz8s7XFVq02Zn+wvj6hVDRXcSLOUJ9pTtahMW8tL7O0tARoRiprazw52Ofae++Tz+cB6Ha7/Hr3LqheGsjzZKRQKOD7fmKfnZml0TjSF6ER3/fxgwBop4CIuAkIy1XzjCPeKlkJK+mrv18eiP22OVGpqEb2f6xilIrHuqs4Rt+Fg/6u4zy/wqiytsbs/HwCbnd3l+PjY+7d+40gCEAgirp0Oh3ePJdjJjhjlkEonvXMMAFnimTVZGgwzVaLZrOp7aYRYH9vf6wy8z24WMpNrNLEQo2teP5J+hzbX3DZejpfFOL8mOXN+ghfXf3qQux65/W/8df2mCXzQQ7Kc+tfr17PfIS/kFH5Hy9CGYmD48rwAAAAAElFTkSuQmCC" alt="calculadora" width="34" height="34"></button>
+    </section>
+    <section class="area-triangulo">
+      <h3>Área de un triángulo</h3>
+      <p>Crear un programa que pida al usuario ingresar el valor de la base y el valor de la altura de un triangulo, calcular su área y mostrarlo en un mensaje.</p>
+      <button><img src="https://img.icons8.com/emoji/34/000000/red-triangle-pointed-up-emoji.png" alt="triangulo" width="34" height="34"/></button>
+    </section>
+    <section class="perimetro-rectangulo">
+      <h3>Perímetro de un rectángulo</h3>
+      <p>Crear un programa que pida al usuario ingresar el valor de la altura y el valor del ancho de un rectángulo, calcular su perímetro y mostrarlo en un mensaje.</p>
+      <button><img src="https://img.icons8.com/stickers/34/000000/rectangle.png" alt="rectangulo" width="34" height="34"/></button>
+    </section>
+    <section class="porcentaje">
+      <h3>Porcentaje</h3>
+      <p>Crear un programa que pida al usuario ingresar un número, y luego el porcentaje que se desea obtener del mismo. Devolver un mensaje muestre el porcentaje de dicho número.</p>
+      <button><img src="https://img.icons8.com/external-anggara-blue-anggara-putra/34/000000/external-percentage-business-and-finance-anggara-blue-anggara-putra-2.png" alt="signo de porcentaje" width="34" height="34"/></button>
+    </section>
+    <section class="tiempo-viaje">
+      <h3>Tiempo de viaje</h3>
+      <p>Crear un programa que pida al usuario la distancia de su recorrido y mostrar en un mensaje cuánto tiempo tardaría en completar el recorrido en distintos medios de transporte, definiendo de antemano distintas velocidades para distintos medios de transporte (p. ej.: a pie: 5 km/hora, bici 10km/hora, etc.).</p>
+      <button><img src="https://img.icons8.com/clouds/34/000000/train.png" alt="tren" width="34" height="34"/></button>
+    </section>
+    <section class="duracion-vuelo">
+      <h3>Duración de vuelo</h3>
+      <p>Crear un programa que pida al usuario ingresar, por separado, 3 destinos de las escalas de un vuelo, y la duración de cada uno de ellos. Al final debe mostrar un mensaje que liste todas las escalas con su duración y la duración total del vuelo.</p>
+      <button><img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/34/000000/external-plane-farm-flaticons-lineal-color-flat-icons-2.png" alt="avion" width="34" height="34"/></button>
+    </section>
+    <section class="incremento">
+      <h3>Incremento</h3>
+      <p>Crear un programa que pida ingresar una número de partida y una cantidad a ir incrementando y mostrar cinco mensajes seguidos que muestren el número del mensaje y el total incrementado hasta el momento (p. ej.: empezando con 5 e incrementando 5, "Incremento 1) Total: 10", "Incremento 2) Total: 15", "Incremento 3) Total: 20", etc.).</p>
+      <button><img src="https://img.icons8.com/fluency/34/000000/add.png" alt="signo de suma" width="34" height="34"/></button>
+    </section>
+    <section class="celsius">
+      <h3>Celsius a Fahrenheit</h3>
+      <p>Crear un programa que pida ingresar una cantidad de grados Celsius y muestre un mensaje con el resultado de la conversión a grados Fahrenheit.</p>
+      <button><img src="https://img.icons8.com/color/48/000000/medical-thermometer.png" alt="termometro" width="34" height="34"/></button>
+    </section>
+    <section class="multiplos">
+      <h3>Multiplos</h3>
+      <p>Crear un programa que pida al usuario un número, luego otro y mostrar en un mensaje si el primer valor es múltiplo del segundo. INVESTIGAR EL OPERADOR MÓDULO O DE RESTO % PARA HACERLO</p>
+      <button><img src="https://img.icons8.com/plasticine/34/000000/multiply.png" alt="signo de multiplicar" width="34" height="34"/></button>
+    </section>
+
+  </main>
+  <footer>
+
+  </footer>
+  <script src="./app.js"></script>
+</body>
+</html>
