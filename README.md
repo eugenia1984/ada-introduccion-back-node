@@ -6,6 +6,12 @@ El curso de ADA IT de Introduccion a Back End con Nodejs
 
 ---
 
+## Practica
+
+[**Aca pueden ver las practicas de JavaScript**](https://eugenia1984.github.io/ada-introduccion-back-node)
+
+---
+
 ## Temas
 
 - Modulo I: Introduccion a JavaScript
