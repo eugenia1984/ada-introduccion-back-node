@@ -162,7 +162,7 @@ Según la encuesta anual de StackOverflow es uno de los más utilizados.
 ---
 ---
 
-- En [**app.js**](
+- En [**app.js**](htttps://
 - [09/08 - Clase 1](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/clase01/app.js) se puede ver la ejercitacion de la clase
 
 ---
