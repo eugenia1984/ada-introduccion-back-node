@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+
+:root {
+  --ubutu-font: 'Ubuntu Mono', monospace;
+  --bg-main: rgb(175, 206, 150);
+  --gray: rgb(128, 128, 128);
+  --black: rgb(0, 0, 0);
+}
+
+body {
+  font-family: var(--ubutu-font);
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+h1 {
+  padding: 1.75rem 1.50rem;
+}
+
+h2 {
+  padding: 1.50rem 1.0rem;
+}
+
+h3 {
+  padding: 0.50rem 0.25rem;
+}
+
+main {
+  min-height: 90vh;
+}
+
+/* Header - Footer */
+header,
+footer {
+  background-color: var(--bg-main);
+}
+
+/* Footer */
+footer {
+  padding: 2rem 1rem;
+}
+
+footer p {
+  text-align: center;
+  line-height: 2.5;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 800;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 200px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+  border: 1px solid var(--gray);
+}
+
+.card a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 800;
+  background-color: var(--bg-main);
+  padding: 0.25rem 0rem;
+}
