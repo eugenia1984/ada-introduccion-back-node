@@ -46,7 +46,7 @@ function getPersonalData() {
     nationality == null ||
     nationalDocument == null ) {
       alert("Recuerde completar todos los datos.");
-  } else  if ( age == NaN || nationalDocument == NaN ) {
+  }  else if ( age == NaN || nationalDocument == NaN ) {
     alert("Recuerde ingresar solo números para la edad y el número de documento.");
   } else {
     text = `
@@ -57,9 +57,8 @@ function getPersonalData() {
       <p>Nacionalidad: ${nationality}</p>
       <p>Número de documento: ${nationalDocument}</p>
     `;
+    d.getElementById("datos-personales").innerHTML = text;
   }
-  
-  d.getElementById("datos-personales").innerHTML = text;
 }
 
 function getPlayList() {
