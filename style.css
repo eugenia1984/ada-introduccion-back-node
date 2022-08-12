@@ -37,34 +37,34 @@ h3 {
   padding: 0.50rem 0.25rem;
 }
 
-main {
+#main {
   min-height: 90vh;
 }
 
 /* Header - Footer */
-header,
-footer {
+#header-main,
+#footer-main {
   background-color: var(--bg-main);
 }
 
 /* Footer */
-footer {
+#footer-main {
   padding: 2rem 1rem;
 }
 
-footer p {
+#footer-main p {
   text-align: center;
   line-height: 2.5;
 }
 
-footer a {
+#footer-main a {
   text-decoration: none;
   color: var(--black);
   font-weight: 800;
 }
 
 /* Cards */
-.cards {
+#main .cards {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -72,7 +72,7 @@ footer a {
   align-items: center;
 }
 
-.card {
+#main .card {
   width: 200px;
   height: 150px;
   display: flex;
@@ -84,7 +84,7 @@ footer a {
   border: 1px solid var(--gray);
 }
 
-.card a {
+#main .card a {
   display: block;
   text-decoration: none;
   text-align: center;

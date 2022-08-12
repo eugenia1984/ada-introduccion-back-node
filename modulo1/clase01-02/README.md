@@ -162,6 +162,34 @@ Según la encuesta anual de StackOverflow es uno de los más utilizados.
 ---
 ---
 
+# :star: CLASE 02 * 11/08 : VARIABLES, DATOS, OPERADORES, CONDICIONALES
+
+### alert, prompt
+
+Cuando en el prompt hacer click en **cancelar** el dato llega como **null**
+
+**null** -> está vacío, no existe
+
+**undefined** -> no esta definido
+
+**NaN** -> not a number, cuando quiero parsear un String a Number voy a tener NaN
+
+### Condicional : IF - IF / ELSE
+
+```JavaScript
+let firstName = prompt('Ingresa tu nombre: ');
+let lastName = prompt('Ingresa tu apellido: ');
+let text = ``;
+
+if ( firstName == null || lastName == null) {
+  alert('Por favor ingresa tu nombre y apellido');
+} else {
+  text =`Hola ${firstName} ${lastName}, bienvenida a Ada`;
+}
+```
+
+---
+---
 
 - En [**app.js**](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/clase01/app.js) se puede ver la ejercitacion de la clase
 

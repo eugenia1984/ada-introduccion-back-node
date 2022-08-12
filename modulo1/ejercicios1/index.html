@@ -6,34 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JS | Variables | Operadores</title>
   <link rel="shortcut icon" href="https://img.icons8.com/fluency/48/000000/javascript.png" type="image/x-icon">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./variables-operadores.css">
 </head>
 <body>
-  <header>
-    <h1>Empezando con JavaSCript</h1>
+  <header id="header-1">
+    <h1>Empezando con JavaScript</h1>
     <h2>Variables - Datos - Operadores</h2>
   </header>
-  <main>
+  <main id="main-1">
     <h3>Hacer clicks en los botones para poder ver los programas en accion</h3>
     <section class="saludo">
       <h3>Saludos</h3>
       <p>Crear un programa que pida al usuario ingresar un nombre y apellido por separado, y luego muestre un mensaje que diga, "Hola {nombre} {apellido}, bienvenida a Ada".</p>
-      <button><img src="https://img.icons8.com/ios/34/000000/salute.png" alt="persona saludando" width="34" height="34"/></button>
+      <button onclick="saludo()"><img src="https://img.icons8.com/ios/34/000000/salute.png" alt="persona saludando" width="34" height="34"/></button>
+      <p id="saludo"></p>
     </section>
     <section class="heladeria">
       <h3>Heladeria</h3>
       <p>Crear un programa que pida al usuario ingresar, por separado, tres gustos de helado, y luego muestre un mensaje que diga, por ejemplo, "Aquí tiene su helado de chocolate, dulce de leche y menta granizada".</p>
-      <button><img src="https://img.icons8.com/cotton/34/000000/fruit-ice-cream-cone.png" alt="helado" width="34" height="34"/></button>
+      <button onclick="getIceCream()"><img src="https://img.icons8.com/cotton/34/000000/fruit-ice-cream-cone.png" alt="helado" width="34" height="34"/></button>
+      <p id="heladeria"></p>
     </section>
     <section class="datos-personales">
       <h3>Datos personales</h3>
       <p>Crear un programa que pida al usuario ingresar, por separado, nombre, apellido, edad, nacionalidad, documento, y muestre luego un mensaje que diga: "Nuevo usuario agregado al sistema:" y liste todos los datos juntos.</p>
-      <button><img src="https://img.icons8.com/ios/50/000000/parse-from-clipboard.png" alt="hoja con datos" width="34" height="34"/></button>
+      <button onclick="getPersonalData()"><img src="https://img.icons8.com/ios/50/000000/parse-from-clipboard.png" alt="hoja con datos" width="34" height="34"/></button>
+      <div id="datos-personales"></div>
     </section>
     <section class="lista-reproduccion">
       <h3>Lista de reproduccion</h3>
       <p>Crear un programa que pida al usuario ingresar, por separado, el nombre de una playlist y el título de tres canciones, y al finalizar se muestre un mensaje que diga, p. ej.: "Se ha creado la playlist 'Hits de los 80s' con las canciones 'Africa', 'Maniac', 'Final Countdown'".</p>
-      <button><img src="https://img.icons8.com/material-rounded/34/000000/play-button-circled--v1.png" alt="icono de reproduccion (play)" width="34" height="34"/></button>
+      <button onclick="getPlayList()"><img src="https://img.icons8.com/material-rounded/34/000000/play-button-circled--v1.png" alt="icono de reproduccion (play)" width="34" height="34"/></button>
+      <p id="play-list"></p>
     </section>
     <section class="direccion-completa">
       <h3>Direccion completa</h3>
@@ -125,11 +129,11 @@
       <p>Crear un programa que tome la orden de compra de un local. Pedir al usuario que ingrese la cantidad que desea comprar de tres productos distintos, uno por uno, mostrar el valor total de la compra y preguntar en cuántas cuotas desea realizar el pago. Mostrar un mensaje final con el detalle y el valor total la compra, cantidad de cuotas y valor de cada una de las cuotas. Los precios de los productos deben estar definidos de antemano en variables.</p>
       <button><img src="https://img.icons8.com/bubbles/34/000000/list.png" alt="lista" width="34" height="34"/></button>
     </section>
-
   </main>
-  <footer>
-
+  <footer id="footer-1">
+    <p>Gracias por interesarse por mis practicas</p>
+    <p>Pueden ver más en mi <a href="https://www.linkedin.com/in/maríaeugeniacosta" target="_blank"><img src="https://img.icons8.com/fluency/48/000000/linkedin.png" alt="logo de linkedin" width="34" height="34"/> (maríaeugeniacosta)</a></p>
   </footer>
-  <script src="./app.js"></script>
+  <script src="./variables-operadores.js"></script>
 </body>
 </html>
