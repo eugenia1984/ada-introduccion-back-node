@@ -83,3 +83,25 @@ function getPlayList() {
 
   d.getElementById("play-list").innerHTML = text;
 }
+
+function getAddress() {
+  let street = prompt("Ingresa tu Calle: ");
+  let streetNumber = Number(prompt("Ingresa tu numero: "));
+  let depatmentNumber  = prompt("Ingresa el departamento (si corresponde): ");
+  let zipCode = prompt("ingresa el codigo postal: ");
+  let city = prompt("Ingresa la ciudad: ");
+  let country = prompt("Ingresa el pais: ");
+  let text = ``;
+
+  if (street == null || streetNumber == null ||
+    zipCode == null || city == null || 
+    country == null || streetNumber == NaN) {
+    alert("Debe completar los datos correctamente.");
+  } else {
+    text = `
+      <p>La dirección que ha ingresado es:</p>
+      <p>${street} ${streetNumber} ${depatmentNumber},</p>
+      <p>${zipCode}, ${city}, ${country}</p>`;
+    d.getElementById("direccion").innerHTML = text;
+  }
+}
