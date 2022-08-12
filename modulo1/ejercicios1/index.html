@@ -48,27 +48,32 @@
     <section class="anios-perros">
       <h3>Años perros</h3>
       <p>Crear un programa que pida ingresar una edad y devuelva el equivalente de esas edad en años perro.</p>
-      <button><img src="https://img.icons8.com/cotton/64/000000/dog-heart--v3.png" alt="perro" width="34" height="34"/></button>
+      <button onclick="getDogYears()"><img src="https://img.icons8.com/cotton/64/000000/dog-heart--v3.png" alt="perro" width="34" height="34"/></button>
+      <p id="anios-perrunos"></p>
     </section>
     <section class="minutos-a-segundos">
       <h3>Minutos a segundos</h3>
       <p>Crear un programa que pida ingresar una cantidad en minutos mediante un y muestre un mensaje con el resultado de la conversión en segundos.</p>
-      <button><img src="https://img.icons8.com/dusk/34/000000/clock--v1.png" alt="reloj" width="34" height="34"/></button>
+      <button onclick="getMinutesToSeconds()"><img src="https://img.icons8.com/dusk/34/000000/clock--v1.png" alt="reloj" width="34" height="34"/></button>
+      <p id="obtener-segundos"></p>
     </section>
     <section class="dias-a-segundos">
       <h3>Días a segundos</h3>
       <p>Crear un programa que pida ingresar una cantidad de días y muestre un mensaje con el resultado de la conversión en segundos.</p>
-      <button><img src="https://img.icons8.com/dusk/34/000000/clock--v1.png" alt="reloj" width="34" height="34"/></button>
+      <button onclick="getDaysToSeconds()"><img src="https://img.icons8.com/dusk/34/000000/clock--v1.png" alt="reloj" width="34" height="34"/></button>
+      <p id="dias-a-segundos"></p>
     </section>
     <section class="kilometros-a-millas">
       <h3>Kilometros a millas</h3>
       <p>Crear un programa que pida ingresar una cantidad de kilómetros y muestre un mensaje con el resultado de la conversión en millas.</p>
-      <button><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAABmJLR0QA/wD/AP+gvaeTAAAEAklEQVRYhe2XS48bRRDHfzPjGUdkH961IU5WQgoJQbCEI4dVBOICXwHxHZA4kQuHPQKHSJzyCThwBkU8EilCROG2eKMg2MNG9kK8z4T12mN7vNPFodtjj+3p7Fo5pqSRy9WP+te/q7ur4YWkxbE13rhxc6nrSdk6Qy+7YbhJxW599fqnj08N5Mtvbn7s4HwLuCKijSJIv4NFB/T/tK4c5JMvPv/su0n+3GyEzocicmoQMhkEgCuO81GWv1xWg4gkbIVn5wgLJQCUKBA9tyjRuhJERNtEmV8QEeZbT3ip09AGlb0CmUCGI9x89wOOiudRSlBx/1Mj/803Yls43OHaX7d0EBZXFkaGdNfTESeRm+iV+YYYSPcRYkOCDE84LSN9YInzvtP+l1qayQCfJZnJCmoAYiRKUTLiqO94Qr8k1wUseOyMGCrKf1c4U7pgJgelFKJ0PujoBSUDXQTE5FCxsX0iRrKBqMGyFGsbFGsbWdsyU9fqkG5J10wgyRARgnyemZkZnTOiePrfIRLHzM7N4ed8AKJel8ZhA9d1WVhcoH9WHjWP6LQ7ei7LOZ7NiA4NAa5efYfFxYWk6c+HD9ne2WFlZSU15M7tO5TLZZbfXk5sBwcH/H7/vokue4msOdKn2fPSOe3lcnjueJ67roPneem+npfsPtvFln2OYE7QTIQnFxlTxsWyfQeMhK0wZQ3bIVEvIupFiTXqRfSOe7TCFkO3D61my+SWLVVPcKABVNYrVCp/GNPAye2ff0n1FWC7XufW9z9MvhSn2TUoheCACOfKZUqlkplUeLT5iDAMufLGFYIgDwhRN2JjY4OnoWLtX0ny8tWCcKmo51HT7BplogG4+NpFCvOFpC0MQ+r1Opcvv54aU6tV2ay1ePB4wMFeEy4tmmVWUzECmhDBkZFQxNElwIgM7hWV7muYtYl9+2YMlqz0F90molI2DQZrHWBZGsExYKq1Kq+0X9Z2EfZ2dum021SrVQI/AIRuFNFut43j4RrCGTv2TwUEBoz8s7XFVq02Zn+wvj6hVDRXcSLOUJ9pTtahMW8tL7O0tARoRiprazw52Ofae++Tz+cB6Ha7/Hr3LqheGsjzZKRQKOD7fmKfnZml0TjSF6ER3/fxgwBop4CIuAkIy1XzjCPeKlkJK+mrv18eiP22OVGpqEb2f6xilIrHuqs4Rt+Fg/6u4zy/wqiytsbs/HwCbnd3l+PjY+7d+40gCEAgirp0Oh3ePJdjJjhjlkEonvXMMAFnimTVZGgwzVaLZrOp7aYRYH9vf6wy8z24WMpNrNLEQo2teP5J+hzbX3DZejpfFOL8mOXN+ghfXf3qQux65/W/8df2mCXzQQ7Kc+tfr17PfIS/kFH5Hy9CGYmD48rwAAAAAElFTkSuQmCC" alt="calculadora" width="34" height="34"></button>
+      <button onclick="getKilometersToMilles()"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAABmJLR0QA/wD/AP+gvaeTAAAEAklEQVRYhe2XS48bRRDHfzPjGUdkH961IU5WQgoJQbCEI4dVBOICXwHxHZA4kQuHPQKHSJzyCThwBkU8EilCROG2eKMg2MNG9kK8z4T12mN7vNPFodtjj+3p7Fo5pqSRy9WP+te/q7ur4YWkxbE13rhxc6nrSdk6Qy+7YbhJxW599fqnj08N5Mtvbn7s4HwLuCKijSJIv4NFB/T/tK4c5JMvPv/su0n+3GyEzocicmoQMhkEgCuO81GWv1xWg4gkbIVn5wgLJQCUKBA9tyjRuhJERNtEmV8QEeZbT3ip09AGlb0CmUCGI9x89wOOiudRSlBx/1Mj/803Yls43OHaX7d0EBZXFkaGdNfTESeRm+iV+YYYSPcRYkOCDE84LSN9YInzvtP+l1qayQCfJZnJCmoAYiRKUTLiqO94Qr8k1wUseOyMGCrKf1c4U7pgJgelFKJ0PujoBSUDXQTE5FCxsX0iRrKBqMGyFGsbFGsbWdsyU9fqkG5J10wgyRARgnyemZkZnTOiePrfIRLHzM7N4ed8AKJel8ZhA9d1WVhcoH9WHjWP6LQ7ei7LOZ7NiA4NAa5efYfFxYWk6c+HD9ne2WFlZSU15M7tO5TLZZbfXk5sBwcH/H7/vokue4msOdKn2fPSOe3lcnjueJ67roPneem+npfsPtvFln2OYE7QTIQnFxlTxsWyfQeMhK0wZQ3bIVEvIupFiTXqRfSOe7TCFkO3D61my+SWLVVPcKABVNYrVCp/GNPAye2ff0n1FWC7XufW9z9MvhSn2TUoheCACOfKZUqlkplUeLT5iDAMufLGFYIgDwhRN2JjY4OnoWLtX0ny8tWCcKmo51HT7BplogG4+NpFCvOFpC0MQ+r1Opcvv54aU6tV2ay1ePB4wMFeEy4tmmVWUzECmhDBkZFQxNElwIgM7hWV7muYtYl9+2YMlqz0F90molI2DQZrHWBZGsExYKq1Kq+0X9Z2EfZ2dum021SrVQI/AIRuFNFut43j4RrCGTv2TwUEBoz8s7XFVq02Zn+wvj6hVDRXcSLOUJ9pTtahMW8tL7O0tARoRiprazw52Ofae++Tz+cB6Ha7/Hr3LqheGsjzZKRQKOD7fmKfnZml0TjSF6ER3/fxgwBop4CIuAkIy1XzjCPeKlkJK+mrv18eiP22OVGpqEb2f6xilIrHuqs4Rt+Fg/6u4zy/wqiytsbs/HwCbnd3l+PjY+7d+40gCEAgirp0Oh3ePJdjJjhjlkEonvXMMAFnimTVZGgwzVaLZrOp7aYRYH9vf6wy8z24WMpNrNLEQo2teP5J+hzbX3DZejpfFOL8mOXN+ghfXf3qQux65/W/8df2mCXzQQ7Kc+tfr17PfIS/kFH5Hy9CGYmD48rwAAAAAElFTkSuQmCC" alt="calculadora" width="34" height="34"></button>
+      <p id="kilometros-a-millas"></p>
     </section>
     <section class="area-triangulo">
       <h3>Área de un triángulo</h3>
       <p>Crear un programa que pida al usuario ingresar el valor de la base y el valor de la altura de un triangulo, calcular su área y mostrarlo en un mensaje.</p>
-      <button><img src="https://img.icons8.com/emoji/34/000000/red-triangle-pointed-up-emoji.png" alt="triangulo" width="34" height="34"/></button>
+      <button onclick="getTriangleArea()"><img src="https://img.icons8.com/emoji/34/000000/red-triangle-pointed-up-emoji.png" alt="triangulo" width="34" height="34"/></button>
+      <p id="area-de-triangulo"></p>
     </section>
     <section class="perimetro-rectangulo">
       <h3>Perímetro de un rectángulo</h3>
