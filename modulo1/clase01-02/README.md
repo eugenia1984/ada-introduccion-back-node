@@ -102,13 +102,16 @@ console.log
 ---
 ---
 
-### CLASE MARTES 9 DE AGOSTO
+# :star: CLASE 01 * MARTES 9 DE AGOSTO
 
-#### Programación
+
+##  Programación
 
 La programación es el proceso de crear un conjunto de instrucciones que le dicen a una computadora como utilizar algún tipo de tarea.
 
-#### ¿Por qué deberías aprender a programar ?
+
+
+### ¿Por qué deberías aprender a programar ?
 
 **Hoy hay 9.000 búsquedas para programadores y desarrolladores que las empresas no pueden cubrir!**
 
@@ -132,12 +135,15 @@ La programación es el proceso de crear un conjunto de instrucciones que le dice
 
 - A programar se aprende programando, 20 % las clases y 80 % de nuestra practica.
 
-#### ¿ Por qué elegir JavaScript ?
+
+
+### ¿ Por qué elegir JavaScript ?
 
 Según la encuesta anual de StackOverflow es uno de los más utilizados.
 
 
-#### ¿ Qué podemos hacer con JavaScript ?
+
+### ¿ Qué podemos hacer con JavaScript ?
 
 - Video Juegos
 
@@ -164,6 +170,8 @@ Según la encuesta anual de StackOverflow es uno de los más utilizados.
 
 # :star: CLASE 02 * 11/08 : VARIABLES, DATOS, OPERADORES, CONDICIONALES
 
+
+
 ### alert, prompt
 
 Cuando en el prompt hacer click en **cancelar** el dato llega como **null**
@@ -173,6 +181,8 @@ Cuando en el prompt hacer click en **cancelar** el dato llega como **null**
 **undefined** -> no esta definido
 
 **NaN** -> not a number, cuando quiero parsear un String a Number voy a tener NaN
+
+
 
 ### Condicional : IF - IF / ELSE
 
