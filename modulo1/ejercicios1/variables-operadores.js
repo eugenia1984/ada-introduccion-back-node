@@ -128,7 +128,8 @@ function getDogYears() {
     /\D/.test(humanAge) || 
     humanAge == "" || 
     humanAge ==  0) {
-    humanAge = prompt("Debes ingresar un numero: ");
+    alert("Debes ingresar un numero.");
+    humanAge = prompt('Ingresa tus años: ');
   };
   
   dogAge = humanAge * 7;
@@ -144,7 +145,8 @@ function getMinutesToSeconds() {
     /\D/.test(minutes) || 
     minutes == "" || 
     minutes ==  0) {
-    minutes = prompt("Debes ingresar un numero: ");
+    alert("Debes ingresar un numero.");
+    minutes = prompt('Ingresa los minutos para pasarlos a segundos: ');
   };
 
   seconds = minutes * 60;
@@ -160,7 +162,8 @@ function getDaysToSeconds() {
     /\D/.test(days) || 
     days == "" || 
     days ==  0 ) {
-    days = prompt("Debes ingresar un numero: ");
+    alert("Debes ingresar un numero.");
+    days = prompt('Ingresa los días para pasarlos a segundos: ');
   };
 
   seconds = days * 24 * 60 * 60;
@@ -175,7 +178,8 @@ function getKilometersToMilles() {
     /\D/.test(kilometers) || 
     kilometers == "" || 
     kilometers ==  0 ) {
-    kilometers = prompt("Debes ingresar un numero: ");
+    alert("Debes ingresar un numero.");
+    kilometers = prompt('Ingresa los kilometros para pasarlos a millas: ');
   };
 
   miles =  getTwoDecimalsRound(kilometers * 0.62137);
@@ -192,7 +196,9 @@ function getTriangleArea() {
     /\D/.test(base) || /\D/.test(height) ||
     base == "" || height == "" ||
     base ==  0 || height ==  0 ) {
-    base = prompt("Debes ingresar un numero para la base y la altura : ");
+    alert("Debes ingresar un numero para la base y la altura.");
+    base = prompt('Ingresa la base del triangulo : ');
+    height = prompt('Ingresa la altura del triangulo : ');
   };
 
   area = getTwoDecimalsRound((base * height) / 2);
@@ -208,8 +214,10 @@ function getPerimeterRectangle() {
   while (base == null || height == null ||
     /\D/.test(base) || /\D/.test(height) ||
     base == "" || height == "" ||
-    base ==  0 ||height ==  "") {
-    base = prompt("Debes ingresar un numero para la base y la altura : ");
+    base ==  0 ||height ==  0) {
+    alert("Debes ingresar un numero para la base y la altura.");
+    base = prompt('Ingresa la base del rectangulo : ');
+    height = prompt('Ingresa la altura del rectangulo : ');
   };
 
   perimeter = base*2 +  height*2;
@@ -225,8 +233,10 @@ function getPercentage() {
   while (number == null || percentageToCalculate == null ||
     /\D/.test(number) || /\D/.test(percentageToCalculate) ||
     number == "" || percentageToCalculate == "" ||
-    number ==  0 ||percentageToCalculate ==  "") {
-    number = prompt("Debes ingresar un numero para la base y la altura : ");
+    number ==  0 ||percentageToCalculate ==  0) {
+    alert("Debes ingresar un numero para la base y la altura.");
+    number = prompt('Ingresa un número : ');
+    percentageToCalculate = prompt('Ingresa el porcentaje que deseas obtener del número antes ingresado: : ');
   };
 
   percentageRound = getTwoDecimalsRound( (percentageToCalculate * number )/100
@@ -236,6 +246,24 @@ function getPercentage() {
   d.getElementById("obtener-porcentaje").innerHTML = text;
 }
 
-function getTravelTime() {
 
+function getTravelTime() {
+  let distance = prompt("Ingrese la distancia a recorrer -en kilometros- :")
+  while (distance == null ||
+    /\D/.test(distance) || 
+    distance == "" || 
+    distance ==  0) {
+      alert("Debes ingresar un numero.")
+      distance = prompt("Ingrese la distancia a recorrer -en kilometros- : ");
+  };
+  // on foot 5km/h
+  distanceOnFoot = getTwoDecimalsRound((distance*1) /5);
+  // on bike 10km/h
+  distanceOnBike = getTwoDecimalsRound((distance*1) / 10);
+  text =`
+    <p>Los ${distance} kilometros ingresados le van a llevar...</p>
+    <p>... ${distanceOnFoot} hs. a pie (con velocidad de 5km/h)</p>
+    <p>... ${distanceOnBike} hs. en bicicleta (con velocidad de 10km/h)</p>
+    `;
+  d.getElementById("obtener-tiempo-viaje").innerHTML = text;
 }
