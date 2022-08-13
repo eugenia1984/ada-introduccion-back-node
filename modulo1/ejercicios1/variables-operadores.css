@@ -2,8 +2,11 @@
 
 :root {
   --roboto:  'Roboto', sans-serif;
+  --black: rgb(54, 52, 52);
+  --gray: rgb(128, 128, 128);
   --primary: rgb(218, 208, 72);
   --primary-light: rgba(218, 208, 72, 0.8);
+  --white: rgb(255, 255, 255);
 }
 
 *,
@@ -30,6 +33,16 @@ h1 {
   padding: 1rem;
 }
 
+#footer-1 a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 800;
+}
+
+#footer-1 a:hover {
+  color: var(--white);
+}
+
 /* Main */
 #main-1 {
   max-width: 1200px;
@@ -45,7 +58,7 @@ h1 {
 
 #main-1 h3 {
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem 1rem;
 }
 
 #main-1 button {
@@ -58,4 +71,5 @@ h1 {
   -moz-border-radius: 7px;
   -ms-border-radius: 7px;
   -o-border-radius: 7px;
+  box-shadow: -7px 7px var(--gray);
 }

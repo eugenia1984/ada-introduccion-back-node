@@ -1,6 +1,11 @@
 const d = document;
 const onlyNumbers = /[0-9]+/; // at least one or more numbers
 
+/* Function to round 2 decimals */
+function getTwoDecimalsRound(numToRound) {
+  return parseFloat(Math.round(numToRound * 100) / 100).toFixed(2);
+}
+
 function saludo() {
   let firstName = prompt("Ingresa tu nombre: ");
   let lastName = prompt("Ingresa tu apellido: ");
@@ -173,10 +178,9 @@ function getKilometersToMilles() {
     kilometers = prompt("Debes ingresar un numero: ");
   };
 
-  toMiles = kilometers * 0.621371;
-  miles = parseFloat(Math.round(toMiles * 100) / 100).toFixed(2);
-
+  miles =  getTwoDecimalsRound(kilometers * 0.62137);
   text = `El/Los ${kilometers} kilometro(s) ingresados equivalen a ${miles} millas.`;
+
   d.getElementById("kilometros-a-millas").innerHTML = text;
 }
 
@@ -187,13 +191,51 @@ function getTriangleArea() {
   while (base == null || height == null ||
     /\D/.test(base) || /\D/.test(height) ||
     base == "" || height == "" ||
+    base ==  0 || height ==  0 ) {
+    base = prompt("Debes ingresar un numero para la base y la altura : ");
+  };
+
+  area = getTwoDecimalsRound((base * height) / 2);
+  text = `El área de un triangulo con ${base} de base y ${height} de altura es: ${area}.`;
+
+  d.getElementById("area-de-triangulo").innerHTML = text;
+}
+
+function getPerimeterRectangle() {
+  let base = prompt('Ingresa la base del rectangulo : ');
+  let height = prompt('Ingresa la altura del rectangulo : ');
+
+  while (base == null || height == null ||
+    /\D/.test(base) || /\D/.test(height) ||
+    base == "" || height == "" ||
     base ==  0 ||height ==  "") {
     base = prompt("Debes ingresar un numero para la base y la altura : ");
   };
 
-  toArea = (base * height) / 2;
-  area = parseFloat(Math.round(toArea * 100) / 100).toFixed(2);
+  perimeter = base*2 +  height*2;
+  text = `El perímetro de un rectángulo con ${base} de base y ${height} de altura es: ${perimeter}.`;
+
+  d.getElementById("perimetro-de-rectangulo").innerHTML = text;
+}
+
+function getPercentage() {
+  let number = prompt('Ingresa un número : ');
+  let percentageToCalculate = prompt('Ingresa el porcentaje que deseas obtener del número antes ingresado: : ');
+
+  while (number == null || percentageToCalculate == null ||
+    /\D/.test(number) || /\D/.test(percentageToCalculate) ||
+    number == "" || percentageToCalculate == "" ||
+    number ==  0 ||percentageToCalculate ==  "") {
+    number = prompt("Debes ingresar un numero para la base y la altura : ");
+  };
+
+  percentageRound = getTwoDecimalsRound( (percentageToCalculate * number )/100
+  ); 
+  text = `El ${percentageToCalculate} % de ${number} es: ${percentageRound}.`;
   
-  text = `El área de un triangulo con ${base} de base y ${height} de altura es: ${area}.`;
-  d.getElementById("area-de-triangulo").innerHTML = text;
+  d.getElementById("obtener-porcentaje").innerHTML = text;
+}
+
+function getTravelTime() {
+
 }
