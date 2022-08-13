@@ -267,3 +267,4 @@ function getTravelTime() {
     `;
   d.getElementById("obtener-tiempo-viaje").innerHTML = text;
 }
+

@@ -27,7 +27,7 @@ Clases :
 
 ### Modulo I: Introduccion a JavaScript
 
-- [09/08 - Clase 1](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/clase01): Variables, datos, operadores, condicionales
+- [09/08 y 11/08- Clase 1 y 2](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/clase01): Variables, datos, operadores, condicionales
 
 
 ###  Modulo II : Node.js
