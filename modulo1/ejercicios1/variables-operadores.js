@@ -214,25 +214,28 @@ function getPerimeterRectangle() {
 }
 
 function getPercentage() {
-  let number = prompt('Ingresa un número : ');
-  let percentageToCalculate = prompt('Ingresa el porcentaje que deseas obtener del número antes ingresado: : ');
+  let number = Number(prompt('Ingresa un número : '));
+  let percentageToCalculate = Number(prompt('Ingresa el porcentaje que deseas obtener del número antes ingresado: : '));
 
   if (number == null || percentageToCalculate == null ||
-    /\D/.test(number) || /\D/.test(percentageToCalculate) ||
+    isNaN(number) || isNaN(percentageToCalculate) ||
     number == "" || percentageToCalculate == "" ||
     number ==  0 ||percentageToCalculate ==  0) {
     alert("Debes ingresar un numero para la base y la altura.");
   };
 
-  percentageRound = getTwoDecimalsRound( (percentageToCalculate * number )/100
-  ); 
+  if(number < 0 || percentageToCalculate < 0) {
+    alert("Los numeros ingresados debe ser mayores a 0");
+  }
+
+  percentageRound = getTwoDecimalsRound((percentageToCalculate * number )/100); 
   text = `El ${percentageToCalculate} % de ${number} es: ${percentageRound}.`;
   d.getElementById("obtener-porcentaje").innerHTML = text;
 }
 
 
 function getTravelTime() {
-  let distance = prompt("Ingrese la distancia a recorrer -en kilometros- :")
+  let distance = Number(prompt("Ingrese la distancia a recorrer -en kilometros- :"));
   if (distance == null ||
     /\D/.test(distance) || 
     distance == "" || 
@@ -251,3 +254,109 @@ function getTravelTime() {
   d.getElementById("obtener-tiempo-viaje").innerHTML = text;
 }
 
+function getFlightDuration() {
+  let firstFlight = prompt("Ingresa el destino del primer vuelo: ");
+  let durationFirstFlight = Number(prompt("Ingresa la duracion -en minutos - del primer vuelo: "));
+  let secondFlight = prompt("Ingresa el destino del segundo vuelo: ");
+  let durationSecondFlight  = Number(prompt("Ingresa la duracion -en minutos - del segundo vuelo: "));
+  let thirdFlight = prompt("Ingresa el destino del tercer vuelo: ");
+  let durationThirdFlight  = Number(prompt("Ingresa la duracion -en minutos - del tercer vuelo: "));
+  let text;
+
+  if (firstFlight == null || secondFlight == null || thirdFlight == null ||
+    firstFlight == "" || secondFlight == "" || thirdFlight == "" || 
+    firstFlight ==  0 || secondFlight ==  0 || thirdFlight ==  0) {
+      alert("Debes ingresar un destino.")
+  };
+
+  if (durationFirstFlight == null || durationSecondFlight == null || durationThirdFlight == null ||
+    isNaN(durationFirstFlight) || isNaN(durationSecondFlight) || isNaN(durationThirdFlight) || 
+    durationFirstFlight == "" || durationSecondFlight == "" || durationThirdFlight == "" || 
+    durationFirstFlight ==  0 || durationSecondFlight ==  0 || durationThirdFlight ==  0) {
+      alert("Debes ingresar un numero.")
+  };
+
+  let totalDuration = durationFirstFlight + durationSecondFlight + durationThirdFlight;
+  let minutes = totalDuration % 60;
+  let hours = (totalDuration - minutes)  / 60;
+  text = `
+  <p>1er vuelo: ${firstFlight} de ${durationFirstFlight} minutos</p>
+  <p>2do vuelo: ${secondFlight} de ${durationSecondFlight} minutos</p>
+  <p>3er vuelo: ${thirdFlight} de ${durationThirdFlight} minutos</p>
+  <p>Timepo total de viaje: ${hours} horas y ${minutes} minutos</p>
+  `
+  d.getElementById("duracion-de-vuelo").innerHTML = text;
+}
+
+function increment() {
+  let firstNumber = Number(prompt("Ingresa un numero de partida: "));
+  let increment = Number(prompt("Ingresa la cantidad a incrementar en cada una de las 5 vueltas: "));
+  let text = ``;
+
+  if (firstNumber == null || increment == null || 
+    firstNumber == "" || increment == "" ||  
+    firstNumber ==  0 || increment ==  0 ||
+    isNaN(firstNumber) || isNaN(increment) ||
+    increment < 0) {
+      alert("Debes ingresar numeros y el incremento debe ser positivo.")
+  };
+
+  let acumulator = firstNumber;
+  for (let index = 0; index < 5; index++) {
+    acumulator += increment;    
+    text += `<p>Incremento ${index+1}) Total: ${acumulator}</p>`;
+  }
+
+  d.getElementById("incremento").innerHTML = text;
+}
+
+function getCToF() {
+  let celsius = Number(prompt("Ingresa los grados Celcius: "));
+  let farenheit;
+  let text = ``;
+
+  if (celsius == null || 
+    celsius == "" ||   
+    celsius ==  0 || 
+    isNaN(celsius) ) {
+      alert("Debes ingresar un numero.")
+  };
+
+  farenheit = (celsius*9/5)+32;
+  text = `Los ${celsius}ºC ingresados equivalen a ${farenheit}F`;
+  d.getElementById("c-a-f").innerHTML = text;
+}
+
+function areMultiples() {
+  let firstNumber = Number(prompt("Ingresa un numero: "));
+  let secondNumber = Number(prompt("Ingresa otro numero: "));
+
+  if (firstNumber == null || secondNumber == null ||
+    firstNumber == "" || secondNumber == ""||  
+    firstNumber ==  0 || secondNumber == 0 || 
+    isNaN(firstNumber) || isNaN(secondNumber) ) {
+      alert("Debes ingresar un numero.")
+  };
+  text = `${firstNumber} y ${secondNumber} son multiplos ? ${firstNumber% secondNumber == 0}`
+  d.getElementById("son-multiplos").innerHTML = text;
+}
+
+function calculateHoursMinutesSeconds() {
+  d.getElementById("h-m-s").innerHTML = text;
+}
+
+function getAmountCaracters() {
+  d.getElementById("cantidad-caracteres").innerHTML = text;
+}
+
+function getAmountGuest() {
+  d.getElementById("cantidad-huespedes").innerHTML = text;
+}
+
+function getTotal() {
+  d.getElementById("gestos").innerHTML = text;
+}
+
+function getOrderToBuy() {
+  d.getElementById("orden-de-compra ").innerHTML = text;
+}
