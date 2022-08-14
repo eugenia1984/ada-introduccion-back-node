@@ -5,6 +5,15 @@ const onlyNumbers = /[0-9]+/; // at least one or more numbers
 function getTwoDecimalsRound(numToRound) {
   return parseFloat(Math.round(numToRound * 100) / 100).toFixed(2);
 }
+/* Function to check is a Number */
+function alertOnlyInsertNumber(number) {
+  if (number == null || number == "" || isNaN(number) ) {
+      alert("Debes ingresar un numero.");
+      return false;
+  } else {
+    return true;
+  } 
+}
 
 function saludo() {
   let firstName = prompt("Ingresa tu nombre: ");
@@ -50,12 +59,9 @@ function getPersonalData() {
   if (
     firstName == null ||  firstName == "" ||
     lastName == null || lastName == "" ||
-    age == null || age == "" ||
-    nationality == null || nationality == "" || 
-    nationalDocument == null ||nationalDocument == "" ) {
+    nationality == null || nationality == "" ||
+    !alertOnlyInsertNumber(age) || !alertOnlyInsertNumber(nationalDocument)) {
       alert("Recuerde completar todos los datos.");
-  }  else if ( isNaN(age) || isNaN(nationalDocument)) {
-    alert("Recuerde ingresar solo números para la edad y el número de documento.");
   } else {
     text = `
       <p>Nuevo usuario agregado al sistema :</p>
@@ -65,8 +71,8 @@ function getPersonalData() {
       <p>Nacionalidad: ${nationality}</p>
       <p>Número de documento: ${nationalDocument}</p>
     `;
-    d.getElementById("datos-personales").innerHTML = text;
   }
+  d.getElementById("datos-personales").innerHTML = text;
 }
 
 function getPlayList() {
@@ -102,7 +108,7 @@ function getAddress() {
   let text = ``;
 
   if (street == null || street == "" ||
-    streetNumber == null || streetNumber == "" || isNaN(streetNumber) ||
+    !alertOnlyInsertNumber(streetNumber) ||
     zipCode == null || zipCode == "" ||
     city == null || city == "" || 
     country == null || country == "" ) {
@@ -330,18 +336,16 @@ function getCToF() {
 function areMultiples() {
   let firstNumber = Number(prompt("Ingresa un numero: "));
   let secondNumber = Number(prompt("Ingresa otro numero: "));
-
-  if (firstNumber == null || secondNumber == null ||
-    firstNumber == "" || secondNumber == ""||  
-    firstNumber ==  0 || secondNumber == 0 || 
-    isNaN(firstNumber) || isNaN(secondNumber) ) {
-      alert("Debes ingresar un numero.")
-  };
-  text = `${firstNumber} y ${secondNumber} son multiplos ? ${firstNumber% secondNumber == 0}`
+  let text= ``;
+  if ( alertOnlyInsertNumber(firstNumber) && alertOnlyInsertNumber(secondNumber) && secondNumber != 0) {
+    text = `${firstNumber} y ${secondNumber} son multiplos ? ${firstNumber% secondNumber == 0}`
+  }
   d.getElementById("son-multiplos").innerHTML = text;
 }
 
 function calculateHoursMinutesSeconds() {
+  let seconds = Number(prompt("ingresa la cantidad de segundos para calcularlos en horas, minutos y segundos: "));
+  alertOnlyInsertNumber(seconds);
   d.getElementById("h-m-s").innerHTML = text;
 }
 
