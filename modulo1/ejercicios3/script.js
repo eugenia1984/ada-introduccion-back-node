@@ -266,7 +266,8 @@ const getValueInputToConvertToCalculatePercentage = () => {
   let numberWithoutPercentage = parseFloat(d.getElementById("numberWithoutPercentage").value);
   let numberOfPercentage = parseFloat(d.getElementById("numberOfPercentage").value);
   let percentage = calcularPorcentaje(numberWithoutPercentage, numberOfPercentage);
-  d.getElementById("calcular-porcentaje").innerHTML = `<p>${percentage}</p>`;
+  let text = `<p>El ${numberOfPercentage}% de ${numberWithoutPercentage} es: ${percentage}</p>`
+  d.getElementById("calcular-porcentaje").innerHTML = text;
 };
 
 const getValueInputToConvertToCalculatePercentageSum = () => {
@@ -321,8 +322,8 @@ const getValueInputToGetScore = () => {
   let easy = parseInt(d.getElementById("easy").value);
   let normal = parseInt(d.getElementById("normal").value);
   let hard = parseInt(d.getElementById("hard").value);
-
-  d.getElementById("calcular-porcentaje").innerHTML = `<p>${calcularPuntaje(easy, normal, hard)}.</p>`;
+  let puntaje = calcularPuntaje(easy, normal, hard);
+  d.getElementById("calcular-porcentaje").innerHTML = `<p>${puntaje}</p>`;
 };
 
 

@@ -100,12 +100,10 @@
     <section>
       <h4>gritar(str)</h4>
       <p>Crear una función gritar que tome como argumento un string y devuelva el mismo string con un signo de exclamación al principio y al final del mismo</p>
-      <h5>Ingresa el nombre y apellido y hace click en el boton NOMBRE COMPLETO</h5>
-      <label for="firstName">Ingrese el nombre: </label>
-      <input type="text" id="firstName" > 
-      <label for="lastName">Ingrese el apellido: </label>
-      <input type="text" id="lastName" > 
-      <button type="button"  onclick="getValueInputFullName()">NOMBRE COMPLETO</button> 
+      <h5>Ingresa una palabra y hace click en el boton GRITAR</h5>
+      <label for="stringToScream">Ingrese la palabra: </label>
+      <input type="text" id="stringToScream" > 
+      <button type="button"  onclick="getValueInputToScream()">GRITAR</button>
       <p id="gritar"></p>
     </section>
     <section>
@@ -186,11 +184,11 @@
     <section>
       <h4>sumarPorcentaje(numero, porcentaje)</h4>
       <p>Crear una función sumarPorcentaje que tome como argumentos un número y un porcentaje y devuelva la suma de dicho número con la de su porcentaje. Usar la función calcularPorcentaje para obtener el porcentaje a sumar</p>
-      <h5>Ingresa ambos números y hace click en el boton CALCULAR PORCENTAJE RESTADO</h5>
+      <h5>Ingresa ambos números y hace click en el boton CALCULAR PORCENTAJE SUMADO</h5>
       <label for="numberWithoutPercentageWithoutSum">Ingrese el numero: </label>
       <input type="number" id="numberWithoutPercentageWithoutSum"> 
-      <label for="numberOfPercentageToSm">Ingrese el numero del porcentaje a restar: </label>
-      <input type="number" id="numberOfPercentageToSmt">
+      <label for="numberOfPercentageToSum">Ingrese el numero del porcentaje a sumar: </label>
+      <input type="number" id="numberOfPercentageToSum">
       <button type="button"  onclick="getValueInputToConvertToCalculatePercentageSum()">CALCULAR PORCENTAJE SUMADO</button> 
       <p id="sumar-porcentaje"></p>
     </section>
@@ -276,7 +274,7 @@
       <input type="number" id="easy" > 
       <label for="normal">Ingrese la cantidad de ejercicios resultos en nivel NORMAL: </label>
       <input type="number" id="normal" > 
-      <label for="hard">Ingrese la cantidad de ejercicios resultos en nivel DIFFCIL: </label>
+      <label for="hard">Ingrese la cantidad de ejercicios resultos en nivel DIFICIL: </label>
       <input type="number" id="hard" > 
       <button type="button"  onclick="getValueInputToGetScore()">CALCULAR PUNTAJE</button> 
       <p id="calcular-porcentaje"></p>
