@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JS | Funciones</title>
   <link rel="shortcut icon" href="https://img.icons8.com/fluency/48/000000/javascript.png" type="image/x-icon">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./style.css">
   <meta name="description" content="Mi segunda practica de JavaScript con funciones para el curso Introduccion a Nodejs en ADA IT.">
   <link rel="apple-touch-icon" href="https://img.icons8.com/fluency/48/000000/javascript.png">
-  <meta name="theme-color" content="#3aada8">
+  <meta name="theme-color" content="#ffe3b3">
   <meta name="twitter:card" content="summary">
   <meta property="og:type" content="website">
   <meta property="og:title" name="twitter:title" content="JS | Funciones">
@@ -20,167 +20,239 @@
 <body>
   <header id="header-3">
     <h1>JavaScript</h1>
-    <h2>Funciones y Condiconales</h2>
+    <h2>Funciones y Condicionales</h2>
   </header>
   <main id="main-3">
-    <h2>Funciones</h2>
+    <h3>Funciones</h3>
     <section>
-      <h3>sumar(a, b)</h3>
+      <h4>sumar(a, b)</h4>
       <p>Crear una función sumar que tome como argumentos dos números y devuelva la suma de ellos</p>
+      <button><p>Ver como funciona sumar</p></button>
+      <p id="ver-sumar"></p>
     </section>
     <section>
-      <h3>restar(a, b)</h3>
+      <h4>restar(a, b)</h4>
       <p>Crear una función restar que tome como argumentos dos números y devuelva la resta de ellos</p>
+      <button><p>Ver como funciona restar</p></button>
+      <p id="ver-restar"></p>
     </section>
     <section>
-      <h3>multiplicar(a, b)</h3>
+      <h4>multiplicar(a, b)</h4>
       <p>Crear una función multiplicar que tome como argumentos dos números y devuelva la multiplicación de ellos</p>
+      <button><p>Ver como funciona multiplicar</p></button>
+      <p id="ver-multiplicar"></p>
     </section>
     <section>
-      <h3>dividir(a, b)</h3>
+      <h4>dividir(a, b)</h4>
       <p>Crear una función dividir que tome como argumentos dos números y devuelva la suma de ellos</p>
+      <button><p>Ver como funciona dividirr</p></button>
+      <p id="ver-dividir"></p>
     </section>
     <section>
-      <h3>esPar(numero)</h3>
+      <h4>esPar(numero)</h4>
       <p>Crear una función esPar que tome como argumento un número y devuelva true si dicho números es par o false si no lo es. TIP: un número es par si divido por 2 el resto (o módulo) de esa operación es 0</p>
+      <button><p>Ver como funciona esPar</p></button>
+      <p id="es-par"></p>
     </section>
     <section>
-      <h3>esImpar(numero)</h3>
+      <h4>esImpar(numero)</h4>
       <p>Crear una función esImpar que tome como argumento un número y devuelva true si dicho números es impar o false si no lo es. TIP: un número es impar si divido por 2 el resto (o módulo) de esa operación no es 0</p>
+      <button><p>Ver como funciona esImpar</p></button>
+      <p id="es-impar"></p>
     </section>
     <section>
-      <h3>calcularAreaTriangulo(base, altura)</h3>
+      <h4>calcularAreaTriangulo(base, altura)</h4>
       <p>Crear una función calcularAreaTriangulo que tome como argumentos la base y la altura de un triángulo y devuelva el área del mismo</p>
+      <button><p>Ver como funciona calcularAreaTriangulo</p></button>
+      <p id="calcular-area-triangulo"></p>
     </section>
     <section>
-      <h3>gritar(str)</h3>
+      <h4>gritar(str)</h4>
       <p>Crear una función gritar que tome como argumento un string y devuelva el mismo string con un signo de exclamación al principio y al final del mismo</p>
+      <button><p>Ver como funciona gritar</p></button>
+      <p id="gritar"></p>
     </section>
     <section>
-      <h3>obtenerNombreCompleto(nombre, apellido)</h3>
+      <h4>obtenerNombreCompleto(nombre, apellido)</h4>
       <p>Crear una función obtenerNombreCompleto que tome como argumento un nombre y un apellido y devuelva un string con la unión de ambos valores</p>
+      <button><p>Ver como funciona obtenerNombreCompleto</p></button>
+      <p id="obtener-nombre-completo"></p>
     </section>
     <section>
-      <h3>saludar(nombre)</h3>
+      <h4>saludar(nombre)</h4>
       <p>Crear una función saludar que tome como argumentos un nombre y devuelva un saludo que lo incluya.</p>
+      <button><p>Ver como funciona saludar</p></button>
+      <p id="saludar"></p>
     </section>
     <section>
-      <h3>saludarGritando(nombre, apellido)</h3>
+      <h4>saludarGritando(nombre, apellido)</h4>
       <p>Usando las funciones anteriores (obtenerNombreCompleto, saludar y gritar), crear una función saludarGritando que tome como argumentos un nombre y un apellido y devuelva un saludo con signos de exclamación. TIP: recordá que los resultados de funciones se pueden guardar en variables para usarlos más adelante</p>
+      <button><p>Ver como funciona saludarGritando</p></button>
+      <p id="saludar-gritando"></p>
     </section>
     <section>
-      <h3>obtenerDatosDeCiudad(nombre, poblacion, pais)</h3>
+      <h4>obtenerDatosDeCiudad(nombre, poblacion, pais)</h4>
       <p>Crear una función obtenerDatosDeCiudad que tome como argumentos un string nombre, un número poblacion y un string pais y devuelva string con el siguiente formato: La ciudad de NOMBRE tiene una población de POBLACION habitantes y está ubicada en PAIS</p>
+      <button><p>Ver como funciona obtenerDatosDeCiudad</p></button>
+      <p id="obtener-datos-de-ciudad"></p>
     </section>
     <section>
-      <h3>convertirHorasEnSegundos(horas)</h3>
+      <h4>convertirHorasEnSegundos(horas)</h4>
       <p>Crear una función convertirHorasEnSegundos que tome como argumento un número de horas y devuelva la conversión a segundos de dicha cantidad de horas</p>
+      <button><p>Ver como funciona convertirHorasEnSegundos</p></button>
+      <p id="convertir-horas-en-segundos"></p>
     </section>
     <section>
-      <h3>calcularPerimetroRectangulo(ancho, alto)
-</h3>
+      <h4>calcularPerimetroRectangulo(ancho, alto)</h4>
       <p>Crear una función calcularAreaTriangulo que tome como argumentos el ancho y el alto de un rectángulo y devuelva su perímetro</p>
+      <button><p>Ver como funciona calcularPerimetroRectangulo</p></button>
+      <p id="calcular-perimetro-rectangulo"></p>
     </section>
     <section>
-      <h3>calcularPorcentaje(numero, porcentaje)</h3>
+      <h4>calcularPorcentaje(numero, porcentaje)</h4>
       <p>Crear una función calcularPorcentaje que tome como argumentos un número y un porcentaje y devuelva el valor del porcentaje correspondiente al número</p>
+      <button><p>Ver como funciona calcularPorcentaje</p></button>
+      <p id="calcular-porcentaje"></p>
     </section>
     <section>
-      <h3>sumarPorcentaje(numero, porcentaje)</h3>
+      <h4>sumarPorcentaje(numero, porcentaje)</h4>
       <p>Crear una función sumarPorcentaje que tome como argumentos un número y un porcentaje y devuelva la suma de dicho número con la de su porcentaje. Usar la función calcularPorcentaje para obtener el porcentaje a sumar</p>
+      <button><p>Ver como funciona sumarPorcentaje</p></button>
+      <p id="sumar-porcentaje"></p>
     </section>
     <section>
-      <h3>restarPorcentaje(numero, porcentaje)</h3>
+      <h4>restarPorcentaje(numero, porcentaje)</h4>
       <p>Crear una función restarPorcentaje que tome como argumentos un número y un porcentaje y devuelva la resta de dicho número con la de su porcentaje. Usar la función calcularPorcentaje para obtener el porcentaje a restar</p>
+      <button><p>Ver como funciona restarPorcentaje</p></button>
+      <p id="restar-porcentaje"></p>
     </section>
     <section>
-      <h3>calcularFPS(fps, minutos)</h3>
+      <h4>calcularFPS(fps, minutos)</h4>
       <p>FPS son cuadros por segundo (frames per second). Crear una una función calcularFPS que tome como argumentos una cantidad de cuadros por segundo y una cantidad de minutos, y devuelva cuántos cuadros hubo en esa cantidad de minutos</p>
+      <button><p>Ver como funciona calcularFPS</p></button>
+      <p id="calcular-fps"></p>
     </section>
     <section>
-      <h3>obtenerCompetencia(a, b)</h3>
+      <h4>obtenerCompetencia(a, b)</h4>
       <p>Crear una función obtenerCompetencia que tome como argumentos dos strings a y b y devuelva un string con el formato a vs. b</p>
+      <button><p>Ver como funciona obtenerCompetencia</p></button>
+      <p id="obtener-competencia"></p>
     </section>
     <section>
-      <h3>generarEmail(usuario, dominio)</h3>
+      <h4>generarEmail(usuario, dominio)</h4>
       <p>Crear una función generarEmail que tome como argumentos dos string usuario y dominio y el un string email con el formato usuario@dominio.com</p>
+      <button><p>Ver como funciona generarEmail</p></button>
+      <p id="generar-email"></p>
     </section>
     <section>
-      <h3>esMayorDeEdad(edad)</h3>
+      <h4>esMayorDeEdad(edad)</h4>
       <p>Crear una función esMayorDeEdad que tome como argumento un número edad y devuelva true si es mayor de edad (18 o más) o false de lo contrario</p>
+      <button><p>Ver como funciona esMayorDeEdad</p></button>
+      <p id="es-mayor-de-edad"></p>
     </section>
     <section>
-      <h3>haceCalor(temperatura)</h3>
+      <h4>haceCalor(temperatura)</h4>
       <p>Crear una función haceCalor que tome como argumento un número temperatura y devuelva true si hace calor (22 grados o más) o false de lo contrario</p>
+      <button><p>Ver como funciona haceCalor</p></button>
+      <p id="hace-calor"></p>
     </section>
     <section>
-      <h3>haceFrio(temperatura)</h3>
+      <h4>haceFrio(temperatura)</h4>
       <p>Crear una función haceCalor que tome como argumento un número temperatura y devuelva true si hace frio (12 grados o menos) o false de lo contrario</p>
+      <button><p>Ver como funciona hace-frio</p></button>
+      <p id="hace-frio"></p>
     </section>
     <section>
-      <h3>calcularPuntaje(facil, normal, dificil)</h3>
+      <h4>calcularPuntaje(facil, normal, dificil)</h4>
       <p>Crear una función calcularPuntaje que calcule el puntaje de un examen que consiste en ejercicios de distinto nivel. Debe tomar como argumento tres que consisten en la cantidad de ejercicios resueltos en cada nivel y devolver un número con el puntaje correspondiente. El puntaje se calcula de la siguiente forma:</p>
       <p>facil: 3 puntos</p>
       <p>normal: 5 puntos</p>
       <p>dificil: 10 puntos</p>
+      <button><p>Ver como funciona calcularPorcentaje</p></button>
+      <p id="calcular-porcentaje"></p>
     </section>
     <section>
-      <h3>aceptaDeposito(monto)</h3>
+      <h4>aceptaDeposito(monto)</h4>
       <p>Crear una función aceptaDeposito que tome como argumento un número monto y devuelva true si el monto es divisible por 10 o false si no lo es</p>
+      <button><p>Ver como funciona aceptaDeposito</p></button>
+      <p id="acepta-deposito"></p>
     </section>
     <section>
-      <h3>esHoraValida(hora)</h3>
+      <h4>esHoraValida(hora)</h4>
       <p>Crear una función esHoraValida que tome como argumento un string hora con el formato HH:mm y determine si es una hora válida del día o no</p>
+      <button><p>Ver como funciona esHoraValida</p></button>
+      <p id="es-hora-valida"></p>
     </section>
     <section>
-      <h3>puedeRenovarCarnet(pasoTests, tieneMultasImpagas, pagoImpuestos)</h3>
+      <h4>puedeRenovarCarnet(pasoTests, tieneMultasImpagas, pagoImpuestos)</h4>
       <p>Crear una función puedeRenovarCarnet que tome como argumentos tres booleanos, pasoTests, tieneMultasImpagas y pagoImpuestos, y devuelva true si una persona está habilitada para renovar su carnet de conducir o false si no. Una persona puede renovar su carnet si pasó los tests, no tiene multas impagas y pagó todos los impuestos</p>
+      <button><p>Ver como funciona puedeRenovarCarnet</p></button>
+      <p id="puede-renovar-carnet"></p>
     </section>
     <section>
-      <h3>puedeGraduarse(asistencia, materiasAprobadas, tesisAprobada)</h3>
+      <h4>puedeGraduarse(asistencia, materiasAprobadas, tesisAprobada)</h4>
       <p>Crear una función puedeGraduarse que tome como argumentos dos números asistencia y materiasAprobadas y un booleano tesisAprobada, y devuelva true si una persona puede gruadarse o false si no. Una persona puede graduarse si tiene un 75% de asistencia o más, 50 materias aprobadas o más y la tesis aprobada.</p>
+      <button><p>Ver como funciona puedeGraduarse</p></button>
+      <p id="puede-graduarse"></p>
     </section>
-    <h2>Condicionales</h2>
-     <section>
-      <h3>esParOImpar(numero)</h3>
+    <h3>Condicionales</h3>
+    <section>
+      <h4>esParOImpar(numero)</h4>
       <p>Crear una función esParOImpar que acepte como argumento un numero y devuelva el string par si el numero es par, o el string impar si el numero es impar</p>
+      <button><p>Ver como funciona esParOImpra</p></button>
+      <p id="es-par-o-impar"></p>
     </section>
     <section>
-      <h3>esPositivoONegativo(numero)</h3>
+      <h4>esPositivoONegativo(numero)</h4>
       <p>Crear una función esPositivoONegativo que acepte como argumento un numero y devuelva el string positivo si el numero es positivo, o el string negativo si el numero es negativo</p>
+      <button><p>Ver como funciona esPositivoONegativo</p></button>
+      <p id="es-positivo-o-negativo"></p>
     </section>
     <section>
-      <h3>avanzarSemaforo(colorActual)</h3>
+      <h4>avanzarSemaforo(colorActual)</h4>
       <p>Crear una función avanzarSemaforo que acepte como argumento un string colorActual y devuelva un string con el siguiente color del semáforo, siguiendo el orden: verde -> amarillo -> rojo -> verde</p>
+      <button><p>Ver como funciona avanzarSemaforo</p></button>
+      <p id="avanzar-semaforo"></p>
     </section>
      <section>
-      <h3>obtenerDiasMes(mes)</h3>
+      <h4>obtenerDiasMes(mes)</h4>
       <p>Crear una función obtenerDiasMes que tome como argumento un string mes y devuelva un número dependiendo de la cantidad de días que tenga ese mes</p>
+      <button><p>Ver como funciona obtenerDiasMes</p></button>
+      <p id="obtener-dias-mes"></p>
     </section>
     <section>
-      <h3>obtenerSensacion(temperatura)</h3>
+      <h4>obtenerSensacion(temperatura)</h4>
       <p>Crear una función obtenerSensacion que tome como argumento un número temperatura y devuelva un string dependiendo de la temperatura, con las siguientes reglas:</p>
       <p>Menor a 0°	¡Está helando!</p>
       <p>Mayor o igual a 0° y menor a 15°	¡Hace frío!</p>
       <p>Mayor o igual a 15° y menor a 25°	Está lindo</p>
       <p>Mayor o igual a entre 25° y menor a 30°	Hace calor</p>
       <p>Mayor o igual de 30°	¡Hace mucho calor!</p>
+      <button><p>Ver como funciona obtenerSensacion</p></button>
+      <p id="obtener-sensacion"></p>
     </section>
     <section>
-      <h3>obtenerNota(puntaje)</h3>
+      <h4>obtenerNota(puntaje)</h4>
       <p>Crear una función obtenerNota que tome como argumento un número puntaje y devuelva un string dependiendo del puntaje redondeado, con las siguientes reglas:</p>
       <p>Menor a 6	Desaprobado</p>
       <p>Mayor o igual a 6 y menor a 7	Regular</p>
       <p>Mayor o igual a 7 y menor a 8	Bueno</p>
       <p>Mayor o igual a entre 8 y menor a 10	Muy bueno</p>
       <p>10  Excelente<p>
+      <button><p>Ver como funciona obtenerNota</p></button>
+      <p id="obtener-nota"></p>
     </section>
     <section>
-      <h3>jugarPiedraPapelTijera(a, b)</h3>
+      <h4>jugarPiedraPapelTijera(a, b)</h4>
       <p>Crear una función jugarPiedraPapelTijera que tome como argumentos dos strings a y b que representen una jugada (piedra, papel, tijera) y dependiendo el devuelva un string con un mensaje avisando qué jugada ganó (o si hubo empate)</p>
+      <button><p>Ver como funciona jugarPiedraPapelTijera</p></button>
+      <p id="jugar-piedra-papel-tijera"></p>
     </section>
   </main>
-  <footer id="footer-3"></footer>
+  <footer id="footer-3">
+    <p>Gracias por interesarse por mis practicas</p>
+    <p>Pueden ver más en mi <a href="https://www.linkedin.com/in/maríaeugeniacosta" target="_blank"><img src="https://img.icons8.com/fluency/48/000000/linkedin.png" alt="logo de linkedin" width="34" height="34"/> (maríaeugeniacosta)</a></p>
+  </footer>
   <script src="./script.js"></script>
 </body>
 </html>
