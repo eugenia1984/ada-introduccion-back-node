@@ -6,6 +6,7 @@ Crear un programa que tenga dos variables:
 Una variable edad, numérica, en la que almacenamos la edad de una persona
 
 Una variable tieneAutorizacion, booleana, donde guardamos true o false según si una persona tiene autorización para ver una película
+
 Si la persona tiene 15 años (o más), o tiene autorización, mostrar en consola el mensaje "La persona está autorizada"
 
 En el caso que no esté autorizada, mostrar en consola el mensaje "La persona NO está autorizada"

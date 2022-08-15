@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&display=swap');
+
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dyna-puff: 'DynaPuff', cursive;
+  --dark-green: #557c83;
+  --green: #3aada8;
+  --light-green: #a2d5ac;
+  --light-yellow: #e5eec1;
+}
+
+/* General */
+body {
+  font-family: var(--dyna-puff);
+  text-align: center;
+}
+
+h1 {
+  font-weight: 700;
+  padding: 1.5rem 0rem;
+}
+
+h2 {
+  font-weight: 600;
+  padding: 1rem 0rem;
+}
+
+h3 {
+  font-weight: 500;
+  padding: 0.75rem 0rem;
+}
+
+h1, h2, h3 { color: var(--dark-green);}
+
+p { line-height: 1.8;}
+
+section {padding: 2rem 1.25rem;}
+
+/* Header - Footer */
+#header-2, 
+#footer-2 {
+  padding: 1rem;
+  background-color: var(--light-yellow);
+}
+
+#footer-2 a {
+  text-decoration: none;
+  color: var(--green);
+  font-weight: 800;
+}
+
+#footer-2 a:hover { color: var(--dark-green);}
