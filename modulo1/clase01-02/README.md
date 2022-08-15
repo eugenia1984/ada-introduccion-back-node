@@ -201,7 +201,7 @@ if ( firstName == null || lastName == null) {
 ---
 ---
 
-- En [**app.js**](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/clase01/app.js) se puede ver la ejercitacion de la clase
+- En [**app.js**](https://github.com/eugenia1984/ada-introduccion-back-node/blob/main/modulo1/clase01-02/aap.js) se puede ver la ejercitacion de la clase
 
 
 ---
