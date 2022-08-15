@@ -29,20 +29,20 @@ Clases :
 
 - [Clase 1 (09/08) y Clase 2 (11/08)](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/clase01-02):  Variables, datos, operadores, condicionales
 
-- [ejercicios 1 - variables, datos, operadores](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/ejercicio1)
+- [ejercicios 1 - variables, datos, operadores](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/ejercicios1)
 
 
-- [ejercicio 2 - condicionales](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/condicionales)
+- [ejercicios 2 - condicionales](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/ejercicios2)
 
-- [Clase 3]((https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/clase03)) : Funciones
+- [Clase 3](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/clase03) : Funciones
 
-- [ejercicio 3 - funciones](- [ejercicio 2 - condicionales](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/condicionales/ejercicio3)
+- [ejercicios 3 - funciones](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/condicionales/ejercicios3)
 
 - Clase 4 y 5 : Arrays, Objetos, ciclos
 
-- [ejercicio 4 - arrays](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/condicionales/ejercicio4)
+- [ejercicios 4 - arrays](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/condicionales/ejercicios4)
 
-- [ejercicio 5 - ciclos](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/condicionales/ejercicio5)
+- [ejercicios 5 - ciclos](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/condicionales/ejercicios5)
 
 - [ejercicio 6 - objetos](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/condicionales/ejercicio6)
 
