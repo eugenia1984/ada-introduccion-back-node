@@ -64,13 +64,13 @@ section {
 
 #main-2 button {
   background-color: var(--light-green);
-  padding: 0.25rem 0.50rem;
+  padding: 0.50rem 0.75rem;
   border: 2px solid var(--green);
-  border-radius: 7px;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  -ms-border-radius: 7px;
-  -o-border-radius: 7px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
   margin: 1rem 2rem;
 }
 
