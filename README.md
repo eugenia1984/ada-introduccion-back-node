@@ -62,4 +62,9 @@ El curso de ADA IT de Introduccion a Back End con Nodejs
 
 ###  Modulo III: MongoDB
 
+| CLASES |
+| ------ |
+| [Intro MongoDB](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo3/intro-mongodb) |
+| [Mongoose](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo3/mongoose) |
+
 ---
