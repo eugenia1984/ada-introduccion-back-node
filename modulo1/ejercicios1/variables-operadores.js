@@ -344,23 +344,96 @@ function areMultiples() {
 }
 
 function calculateHoursMinutesSeconds() {
-  let seconds = Number(prompt("ingresa la cantidad de segundos para calcularlos en horas, minutos y segundos: "));
-  alertOnlyInsertNumber(seconds);
+  let secondsToCalculate = Number(prompt("ingresa la cantidad de segundos para calcularlos en horas, minutos y segundos: "));
+  let text;
+  if (!alertOnlyInsertNumber(secondsToCalculate)) {
+    text = ``;
+  } else {
+    let hours = Math.floor(secondsToCalculate / 3600);
+    let minutes = Math.floor( (secondsToCalculate/60) % 60);
+    let seconds = secondsToCalculate % 60;
+    text =`
+    <p>Los ${secondsToCalculate} ingresados equivalen a : ${hours} horas,
+    ${minutes} minutes y ${seconds} segundos.</p>
+    `;
+  }
+  
   d.getElementById("h-m-s").innerHTML = text;
 }
 
 function getAmountCaracters() {
+  let textToLength = prompt("Ingresa un texto para informarte cuantos caracteres tiene: ");
+  let text = ``;
+  if(textToLength == "" ||
+    textToLength == null) {
+      alert("Debe ingresar un texto");
+  } else {
+    let length = textToLength.length;
+    text = `
+      <p>El texto ingresado tiene ${length} caracteres.</p>
+    `;
+  }
   d.getElementById("cantidad-caracteres").innerHTML = text;
 }
 
 function getAmountGuest() {
+  let doubleRooms = prompt("Ingrese  (en numeros) la cantidad de habitaciones dobles: ");
+  let tripleRooms = prompt("Ingrese  (en numeros) la cantidad de habitaciones triples: ");
+  let cuadRooms = prompt("Ingrese  (en numeros) la cantidad de habitaciones cuadruples: ");
+  let text = ``;
+  if (!alertOnlyInsertNumber(doubleRooms) ||
+    !alertOnlyInsertNumber(tripleRooms) ||
+    !alertOnlyInsertNumber(cuadRooms)) {
+      text = `<p>Puede hacer nuevamente click para calcular.</p>`;
+  } else {
+    let totalGuest = doubleRooms*2+tripleRooms*3+cuadRooms*4;
+    text= `
+      <p>El máximo de huespedes que puede albergar es de: ${totalGuest}.</p>
+    `;
+  }
   d.getElementById("cantidad-huespedes").innerHTML = text;
 }
 
 function getTotal() {
-  d.getElementById("gestos").innerHTML = text;
+  let availableCash = parseInt(prompt('Ingrese el dinero que tiene: '));
+
+  for (let index = 3; index > 0; index--) {
+
+    if (availableCash > 0) {
+      let service = (prompt('INGRESE EL SERVICIO A PAGAR: ')).toUpperCase();
+      let amount = parseInt(prompt(`INGRESE EL MONTO DE ${service} : `));
+      availableCash -= amount;
+      alert(`Quedan ${index-1} servicios por ingresar.\nSALDO: ${availableCash}`);
+    } else {
+      alert(`No tiene el saldo suficiente`);
+    }
+  }  
+  text = `<p>Su dinero disponible ES: $ ${availableCash}</p>`;
+  d.getElementById("gastos").innerHTML = text;
 }
 
 function getOrderToBuy() {
-  d.getElementById("orden-de-compra ").innerHTML = text;
+  let text= ``;
+  let bread = 120;
+  let milk = 100;
+  let cookie = 50;
+  let amountOfBread = Number(prompt('INGRESE CUANTOS PANES LLEVA -EN NUMERO-: '));
+  let amountOfMilk = Number(prompt('INGRESE CUANTAS LECHES LLEVA -EN NUMERO-: '));
+  let amountOfCookie = Number(prompt('INGRESE CUANTAS COOKIES LLEVA -EN NUMERO-: '));
+
+  let totalBread = bread*amountOfBread;
+  let totalMilk = milk*amountOfMilk;
+  let totalCookie = cookie*amountOfCookie;
+  let totalAmount = totalBread + totalMilk + totalCookie;
+
+  let cuota = Number(prompt(`EL TOTAL ES DE : $ ${totalAmount}. INGRESE LA CANTIDAD DE CUOTAS: `));
+
+  text = `
+    <p>PAN ----------- $ ${totalBread}</p>
+    <p>LECHE -------- $ ${totalMilk}</p>
+    <p>COOKIES ------$ ${totalCookie}</p>
+    <p>PAGA EN ${cuota} CUOTAS DE $ ${totalAmount/cuota}</p>
+  `;
+
+  d.getElementById("orden-compra").innerHTML = text;
 }
