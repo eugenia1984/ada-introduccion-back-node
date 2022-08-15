@@ -26,140 +26,243 @@
     <h3>Funciones</h3>
     <section>
       <h4>sumar(a, b)</h4>
-      <p>Crear una función sumar que tome como argumentos dos números y devuelva la suma de ellos</p>
-      <button><p>Ver como funciona sumar</p></button>
+      <p>Crear una función sumar que tome como argumentos dos números y devuelva la suma de ellos.</p>
+      <h5>Ingresa los números ENTEROS y hace click en el boton SUMA</h5>
+      <label for="firstNumberSum">Ingrese un primer numero: </label>
+      <input type="number" id="firstNumberSum" > 
+      <label for="secondNumberSum">Ingrese un segundo numero: </label>
+        <input type="number" id="secondNumberSum" > 
+      <button type="button"  onclick="getValueInputToSum()"><p>SUMAR</p></button>
       <p id="ver-sumar"></p>
     </section>
     <section>
       <h4>restar(a, b)</h4>
       <p>Crear una función restar que tome como argumentos dos números y devuelva la resta de ellos</p>
-      <button><p>Ver como funciona restar</p></button>
+      <h5>Ingresa los números ENTEROS y hace click en el boton RESTAR</h5>
+      <label for="firstNumberSubtract">Ingrese un primer numero: </label>
+      <input type="number" id="firstNumberSubtract" > 
+      <label for="secondNumberSubtract">Ingrese un segundo numero: </label>
+      <input type="number" id="secondNumberSubtract" > 
+      <button type="button"  onclick="getValueInputToSubtract()">RESTAR</button> 
       <p id="ver-restar"></p>
     </section>
     <section>
       <h4>multiplicar(a, b)</h4>
       <p>Crear una función multiplicar que tome como argumentos dos números y devuelva la multiplicación de ellos</p>
-      <button><p>Ver como funciona multiplicar</p></button>
+      <h5>Ingresa los números ENTEROS y hace click en el boton MULTIPLICAR</h4>
+      <label for="firstNumberMultiply">Ingrese un primer numero: </label>
+      <input type="number" id="firstNumberMultiply" > 
+      <label for="secondNumberMultiply">Ingrese un segundo numero: </label>
+      <input type="number" id="secondNumberMultiply" > 
+      <button type="button"  onclick="getValueInputToMultiply()">MULTIPLICAR</button> 
       <p id="ver-multiplicar"></p>
     </section>
     <section>
       <h4>dividir(a, b)</h4>
       <p>Crear una función dividir que tome como argumentos dos números y devuelva la suma de ellos</p>
-      <button><p>Ver como funciona dividirr</p></button>
+      <h5>Ingresa los números ENTEROS y hace click en el boton DIVIDIR</h4>
+      <label for="firstNumberDivide">Ingrese un primer numero: </label>
+      <input type="number" id="firstNumberDivide" > 
+      <label for="secondNumberDivide">Ingrese un segundo numero: </label>
+      <input type="number" id="secondNumberDivide" > 
+      <button type="button"  onclick="getValueInputToDivide()">DIVIDIR</button> 
       <p id="ver-dividir"></p>
     </section>
     <section>
       <h4>esPar(numero)</h4>
       <p>Crear una función esPar que tome como argumento un número y devuelva true si dicho números es par o false si no lo es. TIP: un número es par si divido por 2 el resto (o módulo) de esa operación es 0</p>
-      <button><p>Ver como funciona esPar</p></button>
+      <h5>Ingresa un número ENTERO y hace click en el boton ES PAR</h5>
+      <label for="firstNumberisEven">Ingrese un número: </label>
+      <input type="number" id="firstNumberisEven" > 
+      <button type="button"  onclick="getValueInputToIsEven()">ES PAR ?</button> 
       <p id="es-par"></p>
     </section>
     <section>
       <h4>esImpar(numero)</h4>
       <p>Crear una función esImpar que tome como argumento un número y devuelva true si dicho números es impar o false si no lo es. TIP: un número es impar si divido por 2 el resto (o módulo) de esa operación no es 0</p>
-      <button><p>Ver como funciona esImpar</p></button>
+      <h5>Ingresa un número ENTERO y hace click en el boton ES IMPAR</h4>
+      <label for="firstNumberisOdd">Ingrese un número: </label>
+      <input type="number" id="firstNumberisOdd" > 
+      <button type="button"  onclick="getValueInputToIsOdd()">ES IMPAR ?</button> 
       <p id="es-impar"></p>
     </section>
     <section>
       <h4>calcularAreaTriangulo(base, altura)</h4>
       <p>Crear una función calcularAreaTriangulo que tome como argumentos la base y la altura de un triángulo y devuelva el área del mismo</p>
-      <button><p>Ver como funciona calcularAreaTriangulo</p></button>
+      <h5>Ingresa 2 números y hace click en el boton AREA TRIANGULO</h5>
+      <label for="firstNumberTriangle">Ingrese la BASE del triangulo: </label>
+      <input type="number" id="firstNumberTriangle" > 
+      <label for="secondNumberTriangle">Ingrese la ALTURA del triangulo: </label>
+      <input type="number" id="secondNumberTriangle" > 
+      <button type="button"  onclick="getValueInputAreaTriangle()">AREA TRIANGULO</button> 
       <p id="calcular-area-triangulo"></p>
     </section>
     <section>
       <h4>gritar(str)</h4>
       <p>Crear una función gritar que tome como argumento un string y devuelva el mismo string con un signo de exclamación al principio y al final del mismo</p>
-      <button><p>Ver como funciona gritar</p></button>
+      <h5>Ingresa el nombre y apellido y hace click en el boton NOMBRE COMPLETO</h5>
+      <label for="firstName">Ingrese el nombre: </label>
+      <input type="text" id="firstName" > 
+      <label for="lastName">Ingrese el apellido: </label>
+      <input type="text" id="lastName" > 
+      <button type="button"  onclick="getValueInputFullName()">NOMBRE COMPLETO</button> 
       <p id="gritar"></p>
     </section>
     <section>
       <h4>obtenerNombreCompleto(nombre, apellido)</h4>
       <p>Crear una función obtenerNombreCompleto que tome como argumento un nombre y un apellido y devuelva un string con la unión de ambos valores</p>
-      <button><p>Ver como funciona obtenerNombreCompleto</p></button>
+      <h5>Ingresa el nombre y apellido y hace click en el boton NOMBRE COMPLETO</h5>
+      <label for="firstName">Ingrese el nombre: </label>
+      <input type="text" id="firstName" > 
+      <label for="lastName">Ingrese el apellido: </label>
+      <input type="text" id="lastName" > 
+      <button type="button"  onclick="getValueInputFullName()">NOMBRE COMPLETO</button> 
       <p id="obtener-nombre-completo"></p>
     </section>
     <section>
       <h4>saludar(nombre)</h4>
       <p>Crear una función saludar que tome como argumentos un nombre y devuelva un saludo que lo incluya.</p>
-      <button><p>Ver como funciona saludar</p></button>
+      <h5>Ingresa el nombre y hace click en el boton SALUDAR</h5>
+      <label for="name">Ingrese el nombre: </label>
+      <input type="text" id="name" > 
+      <button type="button"  onclick="getValueInputSaludar()">SALUDAR</button> 
       <p id="saludar"></p>
     </section>
     <section>
       <h4>saludarGritando(nombre, apellido)</h4>
       <p>Usando las funciones anteriores (obtenerNombreCompleto, saludar y gritar), crear una función saludarGritando que tome como argumentos un nombre y un apellido y devuelva un saludo con signos de exclamación. TIP: recordá que los resultados de funciones se pueden guardar en variables para usarlos más adelante</p>
-      <button><p>Ver como funciona saludarGritando</p></button>
+      <h5>Ingresa el nombre y apellido y hace click en el boton SALUDAR GRITANDO</h5>
+      <label for="firstNameScream">Ingrese el nombre: </label>
+      <input type="text" id="firstNameScream" > 
+      <label for="lastNameScream">Ingrese el apellido: </label>
+      <input type="text" id="lastNameScream" > 
+      <button type="button"  onclick="getValueInputSaludarGritando()">SALUDAR GRITANDO</button>
       <p id="saludar-gritando"></p>
     </section>
     <section>
       <h4>obtenerDatosDeCiudad(nombre, poblacion, pais)</h4>
       <p>Crear una función obtenerDatosDeCiudad que tome como argumentos un string nombre, un número poblacion y un string pais y devuelva string con el siguiente formato: La ciudad de NOMBRE tiene una población de POBLACION habitantes y está ubicada en PAIS</p>
-      <button><p>Ver como funciona obtenerDatosDeCiudad</p></button>
+      <h5>Ingresa la ciudad, la población, el país y hace click en el boton OBTENER INFORMACION</h5>
+      <label for="city">Ingrese la ciudad: </label>
+      <input type="text" id="city" > 
+      <label for="totalPeople">Ingrese el total de habitantes (en numeros): </label>
+      <input type="number" id="totalPeople" > 
+      <label for="country">Ingrese el pais: </label>
+      <input type="text" id="country" > 
+      <button type="button"  onclick="getValueInputToGetInfo()">OBTENER INFORMACION</button>
       <p id="obtener-datos-de-ciudad"></p>
     </section>
     <section>
       <h4>convertirHorasEnSegundos(horas)</h4>
       <p>Crear una función convertirHorasEnSegundos que tome como argumento un número de horas y devuelva la conversión a segundos de dicha cantidad de horas</p>
-      <button><p>Ver como funciona convertirHorasEnSegundos</p></button>
+      <h5>Ingresa las horas y hace click en el boton CONVERTIR A SEGUNDOS</h5>
+      <label for="hours">Ingrese las horas para calcular los segundos: </label>
+      <input type="number" id="hours" > 
+      <button type="button"  onclick="getValueInputToConvertToSeconds()">CONVERTIR A SEGUNDOS</button> 
       <p id="convertir-horas-en-segundos"></p>
     </section>
     <section>
       <h4>calcularPerimetroRectangulo(ancho, alto)</h4>
       <p>Crear una función calcularAreaTriangulo que tome como argumentos el ancho y el alto de un rectángulo y devuelva su perímetro</p>
-      <button><p>Ver como funciona calcularPerimetroRectangulo</p></button>
+      <h5>Ingresa el ancho, el alto y hace click en el boton CALCULAR PERIMETRO RECTANGULO</h5>
+      <label for="withRectangle">Ingrese el ANCHO del rectangulo: </label>
+      <input type="number" id="withRectangle" > 
+      <label for="heightRectangle">Ingrese el ALTO del rectangulo: </label>
+      <input type="number" id="heightRectangle" > 
+      <button type="button"  onclick="getValueInputToPerimeterRectangle()">CALCULAR PERIMETRO RECTANGULO</button> 
       <p id="calcular-perimetro-rectangulo"></p>
     </section>
     <section>
       <h4>calcularPorcentaje(numero, porcentaje)</h4>
       <p>Crear una función calcularPorcentaje que tome como argumentos un número y un porcentaje y devuelva el valor del porcentaje correspondiente al número</p>
-      <button><p>Ver como funciona calcularPorcentaje</p></button>
+      <h5>Ingresa ambos números y hace click en el boton CALCULAR PORCENTAJE</h5>
+      <label for="numberWithoutPercentage">Ingrese el numero: </label>
+      <input type="number" id="numberWithoutPercentage"> 
+      <label for="numberOfPercentage">Ingrese el numero del porcentaje a calcular: </label>
+      <input type="number" id="numberOfPercentage">
+      <button type="button"  onclick="getValueInputToConvertToCalculatePercentage()">CALCULAR PORCENTAJE</button> 
       <p id="calcular-porcentaje"></p>
     </section>
     <section>
       <h4>sumarPorcentaje(numero, porcentaje)</h4>
       <p>Crear una función sumarPorcentaje que tome como argumentos un número y un porcentaje y devuelva la suma de dicho número con la de su porcentaje. Usar la función calcularPorcentaje para obtener el porcentaje a sumar</p>
-      <button><p>Ver como funciona sumarPorcentaje</p></button>
+      <h5>Ingresa ambos números y hace click en el boton CALCULAR PORCENTAJE RESTADO</h5>
+      <label for="numberWithoutPercentageWithoutSubstract">Ingrese el numero: </label>
+      <input type="number" id="numberWithoutPercentageWithoutSubstract"> 
+      <label for="numberOfPercentageToSubstract">Ingrese el numero del porcentaje a restar: </label>
+      <input type="number" id="numberOfPercentageToSubstract">
+      <button type="button"  onclick="getValueInputToConvertToCalculatePercentageSubstract()">CALCULAR PORCENTAJE RESTADO</button> 
       <p id="sumar-porcentaje"></p>
     </section>
     <section>
       <h4>restarPorcentaje(numero, porcentaje)</h4>
       <p>Crear una función restarPorcentaje que tome como argumentos un número y un porcentaje y devuelva la resta de dicho número con la de su porcentaje. Usar la función calcularPorcentaje para obtener el porcentaje a restar</p>
-      <button><p>Ver como funciona restarPorcentaje</p></button>
+      <h5>Ingresa ambos números y hace click en el boton CALCULAR PORCENTAJE RESTADO</h4>
+      <label for="numberWithoutPercentageWithoutSubstract">Ingrese el numero: </label>
+      <input type="number" id="numberWithoutPercentageWithoutSubstract"> 
+      <label for="numberOfPercentageToSubstract">Ingrese el numero del porcentaje a restar: </label>
+      <input type="number" id="numberOfPercentageToSubstract">
+      <button type="button"  onclick="getValueInputToConvertToCalculatePercentageSubstract()">CALCULAR PORCENTAJE RESTADO</button> 
       <p id="restar-porcentaje"></p>
     </section>
     <section>
       <h4>calcularFPS(fps, minutos)</h4>
       <p>FPS son cuadros por segundo (frames per second). Crear una una función calcularFPS que tome como argumentos una cantidad de cuadros por segundo y una cantidad de minutos, y devuelva cuántos cuadros hubo en esa cantidad de minutos</p>
-      <button><p>Ver como funciona calcularFPS</p></button>
+      <h5>Ingresa ambos números y hace click en el boton CALCULAR FPS</h5>
+      <label for="framesPerSecond">Ingrese la cantidad de cuadrados por segundo: </label>
+      <input type="number" id="framesPerSecond"> 
+      <label for="minutsAmount">Ingrese los minutos: </label>
+      <input type="number" id="minutsAmount">
+      <button type="button"  onclick="getValueInputToConvertToFramePerSecond()">CALCULAR FPS</button> 
       <p id="calcular-fps"></p>
     </section>
     <section>
       <h4>obtenerCompetencia(a, b)</h4>
       <p>Crear una función obtenerCompetencia que tome como argumentos dos strings a y b y devuelva un string con el formato a vs. b</p>
-      <button><p>Ver como funciona obtenerCompetencia</p></button>
+      <h5>Ingresa ambos competidores y hace click en el boton OBTENER COMPETENCIA</h5>
+      <label for="firstRival">Ingrese el primer rival: </label>
+      <input type="text" id="firstRival"> 
+      <label for="secondRival">Ingrese el segundo rival: </label>
+      <input type="text" id="secondRival">
+      <button type="button"  onclick="getValueInputToConvertToCalculateRivals()">OBETENER COMPETENCIA</button> 
       <p id="obtener-competencia"></p>
     </section>
     <section>
       <h4>generarEmail(usuario, dominio)</h4>
       <p>Crear una función generarEmail que tome como argumentos dos string usuario y dominio y el un string email con el formato usuario@dominio.com</p>
-      <button><p>Ver como funciona generarEmail</p></button>
+      <h5>Ingresa el usuario, el dominio y hace click en el boton GENERAR EMAIL</h4>
+      <label for="user">Ingrese el usuario: </label>
+      <input type="text" id="user" > 
+      <label for="domain">Ingrese el dominio: </label>
+      <input type="text" id="domain" > 
+      <button type="button"  onclick="getValueInputToCreateEmail()">GENERAR EMAIL</button> 
       <p id="generar-email"></p>
     </section>
     <section>
       <h4>esMayorDeEdad(edad)</h4>
       <p>Crear una función esMayorDeEdad que tome como argumento un número edad y devuelva true si es mayor de edad (18 o más) o false de lo contrario</p>
-      <button><p>Ver como funciona esMayorDeEdad</p></button>
+      <h5>Ingresa la edad y hace click en el boton ES MAYOR DE EDAD</h5>
+      <label for="isOlder">Ingrese la edad: </label>
+      <input type="number" id="isOlder" > 
+      <button type="button"  onclick="getValueInputToIsOlder()">ES MAYOR DE EDAD</button>
       <p id="es-mayor-de-edad"></p>
     </section>
     <section>
       <h4>haceCalor(temperatura)</h4>
       <p>Crear una función haceCalor que tome como argumento un número temperatura y devuelva true si hace calor (22 grados o más) o false de lo contrario</p>
-      <button><p>Ver como funciona haceCalor</p></button>
+      <h5>Ingresa la temperatura y hace click en el boton HACE CALOR</h5>
+      <label for="isTemperatureHot">Ingrese la temperatura: </label>
+      <input type="number" id="isTemperatureHot" > 
+      <button type="button"  onclick="getValueInputToIsTemperatureHot()">HACE CALOR</button> 
       <p id="hace-calor"></p>
     </section>
     <section>
       <h4>haceFrio(temperatura)</h4>
       <p>Crear una función haceCalor que tome como argumento un número temperatura y devuelva true si hace frio (12 grados o menos) o false de lo contrario</p>
-      <button><p>Ver como funciona hace-frio</p></button>
+      <h5>Ingresa la temperatura y hace click en el boton HACE FRIO</h4>
+      <label for="isTemperatureCold">Ingrese la temperatura: </label>
+      <input type="number" id="isTemperatureCold" > 
+      <button type="button"  onclick="getValueInputToIsTemperatureCold()">HACE FRIO</button> 
       <p id="hace-frio"></p>
     </section>
     <section>
@@ -168,13 +271,23 @@
       <p>facil: 3 puntos</p>
       <p>normal: 5 puntos</p>
       <p>dificil: 10 puntos</p>
-      <button><p>Ver como funciona calcularPorcentaje</p></button>
+      <h5>Ingresar los 3 numeros y hace click en el boton CALCULAR PUNTAJE</h4>
+      <label for="easy">Ingrese la cantidad de ejercicios resultos en nivel FACIL: </label>
+      <input type="number" id="easy" > 
+      <label for="normal">Ingrese la cantidad de ejercicios resultos en nivel NORMAL: </label>
+      <input type="number" id="normal" > 
+      <label for="hard">Ingrese la cantidad de ejercicios resultos en nivel DIFFCIL: </label>
+      <input type="number" id="hard" > 
+      <button type="button"  onclick="getValueInputToGetScore()">CALCULAR PUNTAJE</button> 
       <p id="calcular-porcentaje"></p>
     </section>
     <section>
       <h4>aceptaDeposito(monto)</h4>
       <p>Crear una función aceptaDeposito que tome como argumento un número monto y devuelva true si el monto es divisible por 10 o false si no lo es</p>
-      <button><p>Ver como funciona aceptaDeposito</p></button>
+      <h5>Ingresa el monto y hace click en el boton ACEPTA DEPOSITO</h4>
+      <label for="deposit">Ingrese el monto del deposito: </label>
+      <input type="number" id="deposit" > 
+      <button type="button"  onclick="getValueInputToAcceptDeposit()">ACEPTA DEPOSITO</button> 
       <p id="acepta-deposito"></p>
     </section>
     <section>

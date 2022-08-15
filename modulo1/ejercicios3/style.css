@@ -21,7 +21,7 @@ body {
   text-align: center;
   font-family: var(--montserrat);
 }
-h1, h2, h4 {
+h1, h2, h4, h5 {
   color: var(--violet);
   padding-bottom: 1rem;
 }
@@ -29,6 +29,9 @@ h3 {
   background-color:  var(--pink);
   color: var(--white);
   padding: 1rem 0.50rem;
+}
+p {
+  line-height: 2;
 }
 /* Header - footer */
 #header-3,
@@ -69,4 +72,16 @@ section {
 #main-3 button:hover {
   background-color:  var(--yellow);
   border-color: var(--violet);
+}
+
+label,
+input {
+  display: block;
+  margin-bottom: 1rem;
+  padding: 0.50rem;
+}
+
+input {
+  width: 250px;
+  margin: 1rem auto;
 }
