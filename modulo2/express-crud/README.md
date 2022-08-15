@@ -37,3 +37,15 @@
 - Ejercicio práctico sobre creación de APIs
 
 ---
+
+## 📚 Material de lectura
+
+[Node - Qué es un Servidor](https://github.com/Ada-IT/bootcamp-frontend/tree/master/04_node#servidor-web)
+
+[Qué es express](https://github.com/Ada-IT/bootcamp-frontend/tree/master/04_node#express)
+
+[Expressjs | Nodejs Framework para Principiantes (Fazt)](https://www.youtube.com/watch?v=794Q71KVw1k)
+
+[Nodejs Curso Desde Cero, para principiantes]https://www.youtube.com/watch?v=BhvLIzVL8_o()
+
+---
