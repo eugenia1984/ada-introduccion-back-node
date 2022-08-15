@@ -52,6 +52,13 @@ El curso de ADA IT de Introduccion a Back End con Nodejs
 | [Node.js Express](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo2/nodejs-express) |
 | [Express CRUD](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo2/express-crud) |
 
+| EJERCICIOS |
+| ---------- |
+| [ejercicios 1 : Node.js, Módulos, NPM](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo2/ejercicios1) |
+| [ejercicios 2 : Node.js - Express](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo2/ejercicios2) |
+| [ejercicios 3 : Express - API](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo2/ejercicios3) |
+
+
 
 ###  Modulo III: MongoDB
 
