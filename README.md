@@ -38,10 +38,10 @@ El curso de ADA IT de Introduccion a Back End con Nodejs
 | ---------- |
 | [ejercicios 1 - variables, datos, operadores](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/ejercicios1) |
 | [ejercicios 2 - condicionales](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/ejercicios2) |
-| [ejercicios 3 - funciones](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/condicionales/ejercicios3) |
-| [ejercicios 4 - arrays](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/condicionales/ejercicios4) |
-| [ejercicios 5 - ciclos](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/condicionales/ejercicios5) |
-| [ejercicio 6 - objetos](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/condicionales/ejercicio6) |
+| [ejercicios 3 - funciones](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/ejercicios3) |
+| [ejercicios 4 - arrays](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/ejercicios4) |
+| [ejercicios 5 - ciclos](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/ejercicios5) |
+| [ejercicio 6 - objetos](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/ejercicio6) |
 
 
 ###  Modulo II : Node.js
