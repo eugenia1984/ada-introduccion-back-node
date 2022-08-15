@@ -23,30 +23,29 @@ El curso de ADA IT de Introduccion a Back End con Nodejs
 
 ---
 
-Clases :
+## Clases y ejercicios:
 
 ### Modulo I: Introduccion a JavaScript
 
-- [Clase 1 (09/08) y Clase 2 (11/08)](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/clase01-02):  Variables, datos, operadores, condicionales
+| CLASES |
+| ------ |
+| [Clase 1 (09/08) y Clase 2 (11/08)](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/clase01-02):  Variables, datos, operadores, condicionales |
+| [Clase 3](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/clase03) : Funciones |
+|  Clase 4 y 5 : Arrays, Objetos, ciclos |
 
-- [ejercicios 1 - variables, datos, operadores](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/ejercicios1)
 
+| EJERCICIOS |
+| ---------- |
+| [ejercicios 1 - variables, datos, operadores](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/ejercicios1) |
+| [ejercicios 2 - condicionales](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/ejercicios2) |
+| [ejercicios 3 - funciones](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/condicionales/ejercicios3) |
+| [ejercicios 4 - arrays](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/condicionales/ejercicios4) |
+| [ejercicios 5 - ciclos](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/condicionales/ejercicios5) |
+| [ejercicio 6 - objetos](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/condicionales/ejercicio6) |
 
-- [ejercicios 2 - condicionales](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/ejercicios2)
-
-- [Clase 3](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/clase03) : Funciones
-
-- [ejercicios 3 - funciones](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/condicionales/ejercicios3)
-
-- Clase 4 y 5 : Arrays, Objetos, ciclos
-
-- [ejercicios 4 - arrays](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/condicionales/ejercicios4)
-
-- [ejercicios 5 - ciclos](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/condicionales/ejercicios5)
-
-- [ejercicio 6 - objetos](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/condicionales/ejercicio6)
 
 ###  Modulo II : Node.js
+
 
 ###  Modulo III: MongoDB
 
