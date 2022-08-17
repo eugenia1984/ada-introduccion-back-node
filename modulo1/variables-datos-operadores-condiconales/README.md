@@ -104,6 +104,15 @@ console.log
 
 # :star: CLASE 01 * MARTES 9 DE AGOSTO
 
+## typeof
+
+Para saber el tipo de dato que tengo en la variable, por ejemplo:
+
+```
+let numero = 10;
+console.log(typepf(numero)); //Number
+```
+
 
 ##  Programación
 
