@@ -206,3 +206,89 @@ if ( firstName == null || lastName == null) {
 
 ---
 ---
+
+# :star: CLASE 03 * 16 Agosto
+
+
+Algunos ejemplos de codigo vistos en clase:
+
+```JavaScript
+// numero es positivo o negativo o igual a 0
+let numero = Number(prompt('Ingrese numero: '));
+// se fija que numero no sea un NaN
+if(!isNaN(numero)) {
+  // se fija si el numero es positivo
+  if(numero > o) {
+    alert('El numero ingresado es positivo');
+  } else if (numero == 0) { // se fija si el numero es 0
+    alert('El numero ingresado es 0');
+  } else { // si no se cumplen las condiciones anteriores es negativo
+    alert('El numero ingresado es negativo');
+  }
+}
+```
+
+##  && - AND (Y) 
+
+Todas las condiciones deben ser true
+
+```JavaScript
+let valor = Number(prompt('Ingrese un numero: ')),
+  minimo = 10,
+  maximo = 99;
+
+// && - AND (Y) , todas las condiciones deben ser true
+if(valor > minimo && valor < maximo) {
+  console.log(`${valor} está entre ${maximo} y ${minimo}`);
+}  
+```
+
+## OR (O) ||
+
+Con que una de las condiciones sea true -> true
+
+```JavaScript
+let colorSemaforo = prompt('Ingresa color semaforo: ').toLowerCase();
+
+if (colorSemaforo == 'verde') {
+  console.log(`Puede avanzar - ${colorSemaforo}`);
+} else if (colorSemaforo == 'rojo' || colorSemaforo == 'amarillo')  {
+  console.log(`No avance - ${colorSemaforo}`);
+} else {
+  console.log('Error: color de semaforo invalido');
+}
+```
+
+---
+
+## Diferencias entre VAR, LET y CONST
+
+| CARACTERISTICA | VAR | LET | CONST |
+| -------------- | --- | --- | ----- |
+| reasignacion | * | * | x |
+| redeclaracion | * | x | x |
+| prop. del objeto global (window) | * | x | x |
+| function scope | * | * | * |
+| block scope | x | * | * |
+| hoisting | * | * | * |
+| TDZ(Temporal Dead Zone) | x | * | * |
+
+
+
+---
+
+## Algunas funciones para Strings
+
+### .lenght()
+
+Para saber la longitud de un String.
+
+### .toLowerCase()
+
+Para cambiar el String a minuscula
+
+### .toUpperCase()
+
+Para cambiar el String a mayúscula
+
+---

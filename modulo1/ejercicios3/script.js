@@ -160,6 +160,26 @@ function aceptaDeposito(monto) {
     return monto % 10 == 0;
   }
 }
+
+function esHoraValida(hora) { }
+
+function puedeRenovarCarnet(pasoTests, tieneMultasImpagas, pagoImpuestos) {}
+
+function puedeGraduarse(asistencia, materiasAprobadas, tesisAprobada) {}
+
+function esParOImpar(numero) {}
+
+function esPositivoONegativo(numero) {}
+
+function avanzarSemaforo(colorActual) {}
+
+function obtenerDiasMes(mes) {}
+
+function obtenerSensacion(temperatura) {}
+
+function obtenerNota(puntaje) {}
+
+function jugarPiedraPapelTijera(a, b) {}
 /****** Para tomar los datos ingresados en los input y mostrarlos en el DOM ******/
 const getValueInputToSum = () => {
   let firstNumber = parseInt(d.getElementById("firstNumberSum").value);
@@ -323,7 +343,8 @@ const getValueInputToGetScore = () => {
   let normal = parseInt(d.getElementById("normal").value);
   let hard = parseInt(d.getElementById("hard").value);
   let puntaje = calcularPuntaje(easy, normal, hard);
-  d.getElementById("calcular-porcentaje").innerHTML = `<p>${puntaje}</p>`;
+  console.log(`${easy} ${normal} ${hard} ${puntaje}`)
+  d.getElementById("calcular-score").innerHTML = `<p>El puntaje total es: ${puntaje}</p>`;
 };
 
 
