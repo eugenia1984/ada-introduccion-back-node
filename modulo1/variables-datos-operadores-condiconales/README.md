@@ -104,6 +104,15 @@ console.log
 
 # :star: CLASE 01 * MARTES 9 DE AGOSTO
 
+## typeof
+
+Para saber el tipo de dato que tengo en la variable, por ejemplo:
+
+```
+let numero = 10;
+console.log(typepf(numero)); //Number
+```
+
 
 ##  Programación
 
@@ -207,6 +216,7 @@ if ( firstName == null || lastName == null) {
 ---
 ---
 
+
 # :star: CLASE 03 * 16 Agosto
 
 
@@ -292,3 +302,8 @@ Para cambiar el String a minuscula
 Para cambiar el String a mayúscula
 
 ---
+=======
+# :star: CLASE 3 * 16 Agosto
+
+---
+
