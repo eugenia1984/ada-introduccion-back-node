@@ -163,15 +163,43 @@ function aceptaDeposito(monto) {
 
 function esHoraValida(hora) { }
 
-function puedeRenovarCarnet(pasoTests, tieneMultasImpagas, pagoImpuestos) {}
+function puedeRenovarCarnet(pasoTests, tieneMultasImpagas, pagoImpuestos) {
+  if(pasoTests == 'true' && tieneMultasImpagas == 'false' && pagoImpuestos == 'true' ) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
-function puedeGraduarse(asistencia, materiasAprobadas, tesisAprobada) {}
+function puedeGraduarse(asistencia, materiasAprobadas, tesisAprobada) {
+  if (asistencia >= 75 && materiasAprobadas >= 50 && tesisAprobada == 'true') {
+    return "SI";
+  } else {
+    return "NO";
+  }
+}
 
-function esParOImpar(numero) {}
+function esParOImpar(numero) {
+  if(numero % 2 == 0 ) {
+    return "PAR";
+  } else {
+    return "IMPAR";
+  }
+}
 
-function esPositivoONegativo(numero) {}
+function esPositivoONegativo(numero) {
+  if(numero == 0) {
+    return "El cero no es positivo ni negativo";
+  } else if (numero < 0) {
+    return "NEGATIVO";
+  } else {
+    return "POSITIVO";
+  }
+}
 
-function avanzarSemaforo(colorActual) {}
+function avanzarSemaforo(colorActual) {
+
+}
 
 function obtenerDiasMes(mes) {}
 
@@ -329,13 +357,25 @@ const getValueInputToIsOlder = () => {
 
 const getValueInputToIsTemperatureHot = () => {
   let isTemperatureHot = parseFloat(d.getElementById("isTemperatureHot").value);
-  d.getElementById("hace-calor").innerHTML = `<p>${haceCalor( isTemperatureHot)}.</p>`;
+  let text;
+  if(isNaN(isTemperatureHot)) {
+    text = "Debe ingresar un numero";
+  } else {
+    test = haceCalor(isTemperatureHot);
+  }
+  d.getElementById("hace-calor").innerHTML = `<p>${text}.</p>`;
 };
 
 const getValueInputToIsTemperatureCold = () => {
   let isTemperatureCold = parseFloat( d.getElementById("isTemperatureCold").value);
+  let text;
+  if(isNaN(isTemperatureCold)) {
+    text = "Debe ingresar un numero";
+  } else {
+    text = haceFrio(isTemperatureCold);
+  }
 
-  d.getElementById("hace-frio").innerHTML = `<p>${haceFrio(isTemperatureCold)}.</p>`;
+  d.getElementById("hace-frio").innerHTML = `<p>${text}.</p>`;
 };
 
 const getValueInputToGetScore = () => {
@@ -350,5 +390,61 @@ const getValueInputToGetScore = () => {
 
 const getValueInputToAcceptDeposit = () => {
   let amountOfDeposit = parseInt(d.getElementById("deposit").value);
-  d.getElementById("acepta-deposito").innerHTML = `<p>${aceptaDeposito( amountOfDeposit)}.</p>`;
+  d.getElementById("acepta-deposito").innerHTML = `<p>${aceptaDeposito(amountOfDeposit)}.</p>`;
 };
+
+const getIfCanHaveNewCarnet = () => {
+  let pasoTests = d.getElementById("paso-tests").value;
+  let tieneMultasImpagas = d.getElementById("tiene-multas-impagas").value;
+  let pagoImpuestos = d.getElementById("pago-impuestos").value;
+  let text = puedeRenovarCarnet(pasoTests, tieneMultasImpagas, pagoImpuestos); 
+  d.getElementById("puede-renovar-carnet").innerHTML = `<p>Puede renovar carnet = ${text}.</p>`;
+}
+
+const getIfCanGraduate = () => {
+  let asistencia = Number(d.getElementById("asistencia").value);
+  let materiasAprobadas = Number(d.getElementById("materias-aprobadas").value);
+  let tesisAprobada = (d.getElementById("tesis-aprobada").value).toLowerCase();
+  let text;
+  if(isNaN(asistencia) || isNaN(materiasAprobadas)) {
+    text = "Debe ingresar numeros para la asistencia y las materias aprobadas";
+  } else if(tesisAprobada == 'true' || tesisAprobada == 'false') {
+    text = puedeGraduarse(asistencia, materiasAprobadas, tesisAprobada);
+  } else {
+    text = "Debe ingresar TRUE o FALSE para informar si aprobo la tesis";
+  }
+  d.getElementById("puede-graduarse").innerHTML = `<p>Puede graduarse = ${text}.</p>`;
+}
+
+const isEvenOrIsOdd = () => {
+  let numero = Number(d.getElementById("par-o-impar").value);
+  let text = esParOImpar(numero);
+  d.getElementById("es-par-o-impar").innerHTML = `<p>${numero} es ${text}</p>`;
+}
+
+const isPositiveOrIsNegative = () => {
+  let numero = Number(d.getElementById("positivo-o-negativo").value);
+  let text = esPositivoONegativo(numero);
+  d.getElementById("es-positivo-o-negativo").innerHTML = `<p>${text}</p>`
+}
+
+const getNextColor = () => {
+  let colorActual = (d.getElementById("color-actual").value).toLowerCase();
+  let text;
+  switch (colorActual) {
+    case 'verde':
+      text = "amarillo";
+      break;
+    case 'amarillo':
+      text = 'rojo';
+      break;
+    case 'rojo':
+      text = 'verde';
+      break;
+    default:
+      text = 'Debe ingresar algún color del semaforo';
+      break;
+  }
+  d.getElementById("avanzar-semaforo").innerHTML = `<p>${text}</p>`
+
+}

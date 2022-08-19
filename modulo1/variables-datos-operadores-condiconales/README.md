@@ -302,8 +302,88 @@ Para cambiar el String a minuscula
 Para cambiar el String a mayúscula
 
 ---
-=======
-# :star: CLASE 3 * 16 Agosto
+
+## HOISTING
+
+```JavaScript
+// var texto = undefined;
+console.log(texto);
+var texto ="Hola";
+```
+
+El codigo se lee de arriba hacia abajo, pero JavaScript pasa todas las declaraciones e variables al principio y si no están definidas las inicializa como **undefined**, hasta llegar al renglón donde está definida y con su valor asignado y le cambia el valor.
+
+Esto pasa si la defino con **var** a la variable.
+
+Pero ... si la declaramos con **let** si bien también la sube, no le asigna undefined, sino que la mete en **TDZ**(Temporal Dead Zone), y me sale el error de que la variable no está definida. Esta es una de las ventajas por la cual usamos **let** y **const** en vez de var.
+
+---
+
+## Coersión de tipos
+
+```JavaScript
+let a = '1';
+let b = 1;
+console.log(typeof(a)); // String
+console.log(typeof(b)); // Number
+console.log(a+b); // 15 
+```
+Se lee de arriba a abajo y de la izquierda a la derecha, como **a** es **String** JavaScript usa el + para concatenar y me convierte el Number a String.
+
+Lo que puedo hacer es conversión de tipos(**parsear**):
+
+
+```JavaScript
+let a = '1';
+let b = 1;
+console.log(typeof(a)); // String
+console.log(typeof(b)); // Number
+console.log(Number(a)+b); // 2 
+```
+
+Porque con **Number()** convierto mi 1 de String a Number.
+
+---
+
+## Truthy
+
+**1** es considerado como true, entonces:
+
+```JavaScript
+let a = 'a';
+console.log(true+true); // 2
+```
+
+```JavaScript
+console.log(a+true); //atrue
+```
+-> Como **a** es un String me pasa el true a una String y concatena
+
+```JavaScript
+console.log(a-true); // 0
+```
+-> a es un caracter que es truthy, lo considera como un 1 y como true tambien vale 1 y tengo el -, entonces los resta
+
+## Falsy 
+
+**0** es considerado como false
+
+---
+
+## == y ===
+
+Con el **===** hacemos una igualdad mas estricta, donde también comparamos el tipo de dato.
+
+```JavaScript
+let c = '2';
+let d = 2;
+console.log(c == d); // true
+console.log(c === d); // false
+```
+
+---
+
+# :star: CLASE 4 * 18 Agosto
 
 ---
 

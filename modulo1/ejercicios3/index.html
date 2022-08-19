@@ -297,32 +297,55 @@
     <section>
       <h4>puedeRenovarCarnet(pasoTests, tieneMultasImpagas, pagoImpuestos)</h4>
       <p>Crear una función puedeRenovarCarnet que tome como argumentos tres booleanos, pasoTests, tieneMultasImpagas y pagoImpuestos, y devuelva true si una persona está habilitada para renovar su carnet de conducir o false si no. Una persona puede renovar su carnet si pasó los tests, no tiene multas impagas y pagó todos los impuestos</p>
-      <button><p>Ver como funciona puedeRenovarCarnet</p></button>
+      <h5>Ingresar <strong>true</strong> o <strong>false</strong> para saber si PUEDE RENOVAR CARNET</h4>
+      <label for="paso-tests">Paso tests : </label>
+      <input type="text" id="paso-tests" > 
+      <label for="tiene-multas-impagas">Tiene multas impagas : </label>
+      <input type="text" id="tiene-multas-impagas" > 
+      <label for="pago-impuestos">Pago impuestos : </label>
+      <input type="text" id="pago-impuestos" > 
+      <button type="button"  onclick="getIfCanHaveNewCarnet()">PUEDE RENOVAR CARNET</button> 
       <p id="puede-renovar-carnet"></p>
     </section>
     <section>
       <h4>puedeGraduarse(asistencia, materiasAprobadas, tesisAprobada)</h4>
       <p>Crear una función puedeGraduarse que tome como argumentos dos números asistencia y materiasAprobadas y un booleano tesisAprobada, y devuelva true si una persona puede gruadarse o false si no. Una persona puede graduarse si tiene un 75% de asistencia o más, 50 materias aprobadas o más y la tesis aprobada.</p>
-      <button><p>Ver como funciona puedeGraduarse</p></button>
+      <h5>Completa para informar su PUEDE GRADUARSE</h4>
+        <label for="asistencia">Ingrese en NUMEROS el % de asistencia : </label>
+        <input type="number" id="asistencia" > 
+        <label for="materias-aprobadas">Ingrese en NUMEROS la cantidad de materias aprobadas : </label>
+        <input type="number" id="materias-aprobadas" > 
+        <label for="tesis-aprobada">Ingrese true (si aprobo la tesis) o false (si n aprobo la tesis) : </label>
+        <input type="text" id="tesis-aprobada" > 
+      <button type="button" onclick="getIfCanGraduate()">PUEDE GRADUARSE</button>
       <p id="puede-graduarse"></p>
     </section>
     <h3>Condicionales</h3>
     <section>
       <h4>esParOImpar(numero)</h4>
       <p>Crear una función esParOImpar que acepte como argumento un numero y devuelva el string par si el numero es par, o el string impar si el numero es impar</p>
-      <button><p>Ver como funciona esParOImpra</p></button>
+      <h5>Ingresa un numero para saber SI ES PAR O IMPAR</h4>
+      <label for="par-o-impar">Ingrese el NUMERO: </label>
+      <input type="number" id="par-o-impar" > 
+      <button type="button" onclick="isEvenOrIsOdd()">ES PAR O IMPAR</button>
       <p id="es-par-o-impar"></p>
     </section>
     <section>
       <h4>esPositivoONegativo(numero)</h4>
       <p>Crear una función esPositivoONegativo que acepte como argumento un numero y devuelva el string positivo si el numero es positivo, o el string negativo si el numero es negativo</p>
-      <button><p>Ver como funciona esPositivoONegativo</p></button>
+      <h5>Ingresa un numero para saber SI ES POSITIVO O NEGATIVO</h4>
+      <label for="positivo-o-negativo">Ingrese el NUMERO: </label>
+      <input type="number" id="positivo-o-negativo" > 
+      <button type="button" onclick="isPositiveOrIsNegative()">ES POSITIVO O NEGATIVO</button>
       <p id="es-positivo-o-negativo"></p>
     </section>
     <section>
       <h4>avanzarSemaforo(colorActual)</h4>
       <p>Crear una función avanzarSemaforo que acepte como argumento un string colorActual y devuelva un string con el siguiente color del semáforo, siguiendo el orden: verde -> amarillo -> rojo -> verde</p>
-      <button><p>Ver como funciona avanzarSemaforo</p></button>
+      <h5>Ingresa el color del semaforo para decirle cual sigue:</h4>
+      <label for="color-actual">Color : </label>
+      <input type="text" id="color-actual" > 
+      <button type="button" onclick="getNextColor()">AVANZAR SEMAFORO</button>
       <p id="avanzar-semaforo"></p>
     </section>
      <section>
