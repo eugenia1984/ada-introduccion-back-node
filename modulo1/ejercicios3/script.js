@@ -244,11 +244,49 @@ function obtenerDiasMes(mes) {
   return text;
 }
 
-function obtenerSensacion(temperatura) {}
+function obtenerSensacion(temperatura) {
+  if(temperatura < 0) {
+    return "¡Está helando!";
+  } else if(temperatura>=0 && temperatura<15) {
+    return "¡Hace frío!";
+  } else if(temperatura>=15 && temperatura<25){
+    return "Está lindo";
+  } else if(temperatura>=25 && temperatura<30) {
+    return "Hace calor";
+  } else {
+    return "¡Hace mucho calor!";
+  }
+}
 
-function obtenerNota(puntaje) {}
+function obtenerNota(puntaje) {
+  if(puntaje>=0 && puntaje<6) {
+    return "Desaprobado";
+  } else if(puntaje>=6 && puntaje<7) {
+    return "Regular";
+  } else if(puntaje>=7 && puntaje<8) {
+    return "Bueno";
+  } else if(puntaje>=8 && puntaje<10) {
+    return "Muy bueno";
+  } else if (puntaje == 10) {
+    return "Excelente";
+  } else {
+    return "Puntaje inválido";
+  }
+}
 
-function jugarPiedraPapelTijera(a, b) {}
+function jugarPiedraPapelTijera(a, b) {
+  if((a!='piedra' && a!='papel' && a!='tijera') || (b!='piedra' && b!='papel' && b!='tijera')) {
+    return  "No ingreso la opción correcta";
+  } else if((a=='piedra' && b=='piedra') || (a=='papel' && b=='papel') || (a=='tijera' && b=='tijera') ) {
+    return "Empate!";
+  } else if((a=='piedra' && b=='tijera') || (a=='tijera' && b=='piedra')) {
+    return "Gano piedra!";
+  } else if((a=='papel' && b=='piedra') ||(a=='piedra' && b =='papel')) {
+    return "Gano papel!";
+  } else {
+    return "Gano tijera!";
+  }
+}
 /****** Para tomar los datos ingresados en los input y mostrarlos en el DOM ******/
 const getValueInputToSum = () => {
   let firstNumber = parseInt(d.getElementById("firstNumberSum").value);
@@ -480,3 +518,23 @@ const getDaysOfMonth = () => {
   let text = obtenerDiasMes(month);
   d.getElementById("obtener-dias-del-mes").innerHTML = `<p>${text}</p>`
 } 
+
+const getTemperature = () => {
+  let temperature = d.getElementById("obtener-temperatura").value;
+  let text = obtenerSensacion(temperature);
+  d.getElementById("obtener-sensacion").innerHTML = `<p>${text}</p>`
+}
+
+const getNote = () => {
+  let puntaje = d.getElementById("obtener-nota").value;
+  text = obtenerNota(puntaje);
+  d.getElementById("obtener-nota-de-puntaje").innerHTML = `<p>${text}</p>`;
+}
+
+const getScore = () => {
+  let firstOption = (d.getElementById("primera-jugada").value).toLowerCase();
+  let secondOption = (d.getElementById("segunda-jugada").value).toLowerCase();
+  let text = jugarPiedraPapelTijera(firstOption,secondOption);
+  d.getElementById("jugar-piedra-papel-tijera").innerHTML = `<p>${text}</p>`
+
+}

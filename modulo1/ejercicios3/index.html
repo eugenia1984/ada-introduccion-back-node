@@ -365,7 +365,10 @@
       <p>Mayor o igual a 15° y menor a 25°	Está lindo</p>
       <p>Mayor o igual a entre 25° y menor a 30°	Hace calor</p>
       <p>Mayor o igual de 30°	¡Hace mucho calor!</p>
-      <button><p>Ver como funciona obtenerSensacion</p></button>
+      <h5>Ingresa la TEMPERATURA para ver la sensacion:</h4>
+      <label for="obtener-temperatura">Temperatura : </label>
+      <input type="number" id="obtener-temperatura" > 
+      <button type="button" onclick="getTemperature()">OBTENER SENSACION</button>
       <p id="obtener-sensacion"></p>
     </section>
     <section>
@@ -376,13 +379,21 @@
       <p>Mayor o igual a 7 y menor a 8	Bueno</p>
       <p>Mayor o igual a entre 8 y menor a 10	Muy bueno</p>
       <p>10  Excelente<p>
-      <button><p>Ver como funciona obtenerNota</p></button>
-      <p id="obtener-nota"></p>
+      <h5>Ingresa el PUNTAJE para informerte la nota:</h4>
+      <label for="obtener-nota">Puntaje : </label>
+      <input type="number" id="obtener-nota" > 
+      <button type="button" onclick="getNote()">OBTENER NOTA</button>
+      <p id="obtener-nota-de-puntaje"></p>
     </section>
     <section>
       <h4>jugarPiedraPapelTijera(a, b)</h4>
-      <p>Crear una función jugarPiedraPapelTijera que tome como argumentos dos strings a y b que representen una jugada (piedra, papel, tijera) y dependiendo el devuelva un string con un mensaje avisando qué jugada ganó (o si hubo empate)</p>
-      <button><p>Ver como funciona jugarPiedraPapelTijera</p></button>
+      <p>Crear una función jugarPiedraPapelTijera que tome como argumentos dos strings a y b que representen una jugada (piedra, papel, tijera) y dependiendo el resultado devuelva un string con un mensaje avisando qué jugada ganó (o si hubo empate)</p>
+      <h5>Ingresa las jugadas (piedra / papel / tijera) para obtener el resultado:</h4>
+      <label for="primera-jugada">Primera : </label>
+      <input type="text" id="primera-jugada" > 
+      <label for="segunda-jugada">Segunda : </label>
+      <input type="text" id="segunda-jugada" > 
+      <button type="button" onclick="getScore()">OBTENER RESULTADO</button>
       <p id="jugar-piedra-papel-tijera"></p>
     </section>
   </main>
