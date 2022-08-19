@@ -198,10 +198,51 @@ function esPositivoONegativo(numero) {
 }
 
 function avanzarSemaforo(colorActual) {
-
+  let text = '';
+  switch (colorActual) {
+    case 'verde':
+      text = "amarillo";
+      break;
+    case 'amarillo':
+      text = 'rojo';
+      break;
+    case 'rojo':
+      text = 'verde';
+      break;
+    default:
+      text = 'Debe ingresar algún color del semaforo';
+      break;
+  }
+  return text;
 }
 
-function obtenerDiasMes(mes) {}
+function obtenerDiasMes(mes) {
+  let text;
+  switch (mes) {
+    case 'enero':
+    case 'marzo':
+    case 'mayo':
+    case 'julio':
+    case 'agosto':   
+    case 'octubre':  
+    case 'diciembre':    
+      text = '31';
+      break;
+    case 'abril':
+    case 'junio':
+    case 'septiembre':
+    case 'noviembre':    
+      text = '30';
+      break;  
+    case 'febrero':
+      text = '28 ó 29';
+      break;
+    default:
+      text = 'No inreso un mes valido';
+      break;
+  }
+  return text;
+}
 
 function obtenerSensacion(temperatura) {}
 
@@ -430,21 +471,12 @@ const isPositiveOrIsNegative = () => {
 
 const getNextColor = () => {
   let colorActual = (d.getElementById("color-actual").value).toLowerCase();
-  let text;
-  switch (colorActual) {
-    case 'verde':
-      text = "amarillo";
-      break;
-    case 'amarillo':
-      text = 'rojo';
-      break;
-    case 'rojo':
-      text = 'verde';
-      break;
-    default:
-      text = 'Debe ingresar algún color del semaforo';
-      break;
-  }
+  let text = avanzarSemaforo(colorActual);
   d.getElementById("avanzar-semaforo").innerHTML = `<p>${text}</p>`
-
 }
+
+const getDaysOfMonth = () => {
+  let month = (d.getElementById("obtener-dias-mes").value).toLowerCase();
+  let text = obtenerDiasMes(month);
+  d.getElementById("obtener-dias-del-mes").innerHTML = `<p>${text}</p>`
+} 
