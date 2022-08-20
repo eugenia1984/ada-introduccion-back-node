@@ -113,3 +113,94 @@ sumar(2); // 2
 - Una función puede o no retornar algo.
 
 ---
+
+## Una función puede invocar a otra
+
+```JavaScript
+function sumar(num1=0, num2=0) {
+  return num1+num2;
+}
+
+function imprimirCuentas(num1, num2) {
+  let resultadoDeSuma = sumar(num1, num2);
+  return resultadoDeSuma;
+}
+
+// ejecutar la funcion
+imprimirCuentas(3, 7)
+```
+
+---
+
+## Otro ejemplo de funcion
+
+```JavaScript
+function gritr(str) {
+  return str + "!";
+}
+gritar('Hola'); // Hola!
+```
+
+Otro modo,  usando un parametro por defecto:
+
+```JavaScript
+function gritr(str='aaa') {
+  let auxiliar = `${str}!`;
+  return auxiliar;
+}
+gritar('Hola'); // Hola!
+```
+
+Otro ejemplo con dos parametros:
+
+
+```JavaScript
+function gritr(str='aaa', dobleGrito) {
+  let auxiliar = `${str}!`;
+  if(dobleGrito === true) {
+    return auxiliar + ' ' + auxiliar;
+  }
+  return auxiliar;
+}
+gritar('Hola', true); // Hola! Hola!
+```
+
+---
+
+- En las funciones también tenemos HOISTING, por lo que se recomienda tener:
+
+-variables
+
+-funciones
+
+---
+
+## Función anónima
+
+```JavaScript
+let sumar2 = function(num1, num2) {
+  return num1 + num2;
+}
+
+sumar2(5,6);
+```
+
+---
+
+## Arrow Function
+
+```JavaScript
+let sumar3 = (num1, num2) {
+  return num1 + num2;
+}
+
+sumar3(5,6);
+```
+
+Si el return esta en una sola linea puedo omitir **return**:
+
+```JavaScript
+let sumar4 = (num1, num2) => num1 + num2;
+
+sumar4(5,6);
+```
