@@ -49,7 +49,7 @@
     <section>
       <h4>multiplicar(a, b)</h4>
       <p>Crear una función multiplicar que tome como argumentos dos números y devuelva la multiplicación de ellos</p>
-      <h5>Ingresa los números ENTEROS y hace click en el boton MULTIPLICAR</h4>
+      <h5>Ingresa los números ENTEROS y hace click en el boton MULTIPLICAR</h5>
       <label for="firstNumberMultiply">Ingrese un primer numero: </label>
       <input type="number" id="firstNumberMultiply" > 
       <label for="secondNumberMultiply">Ingrese un segundo numero: </label>
@@ -60,7 +60,7 @@
     <section>
       <h4>dividir(a, b)</h4>
       <p>Crear una función dividir que tome como argumentos dos números y devuelva la suma de ellos</p>
-      <h5>Ingresa los números ENTEROS y hace click en el boton DIVIDIR</h4>
+      <h5>Ingresa los números ENTEROS y hace click en el boton DIVIDIR</h5>
       <label for="firstNumberDivide">Ingrese un primer numero: </label>
       <input type="number" id="firstNumberDivide" > 
       <label for="secondNumberDivide">Ingrese un segundo numero: </label>
@@ -80,7 +80,7 @@
     <section>
       <h4>esImpar(numero)</h4>
       <p>Crear una función esImpar que tome como argumento un número y devuelva true si dicho números es impar o false si no lo es. TIP: un número es impar si divido por 2 el resto (o módulo) de esa operación no es 0</p>
-      <h5>Ingresa un número ENTERO y hace click en el boton ES IMPAR</h4>
+      <h5>Ingresa un número ENTERO y hace click en el boton ES IMPAR</h5>
       <label for="firstNumberisOdd">Ingrese un número: </label>
       <input type="number" id="firstNumberisOdd" > 
       <button type="button"  onclick="getValueInputToIsOdd()">ES IMPAR ?</button> 
@@ -195,7 +195,7 @@
     <section>
       <h4>restarPorcentaje(numero, porcentaje)</h4>
       <p>Crear una función restarPorcentaje que tome como argumentos un número y un porcentaje y devuelva la resta de dicho número con la de su porcentaje. Usar la función calcularPorcentaje para obtener el porcentaje a restar</p>
-      <h5>Ingresa ambos números y hace click en el boton CALCULAR PORCENTAJE RESTADO</h4>
+      <h5>Ingresa ambos números y hace click en el boton CALCULAR PORCENTAJE RESTADO</h5>
       <label for="numberWithoutPercentageWithoutSubstract">Ingrese el numero: </label>
       <input type="number" id="numberWithoutPercentageWithoutSubstract"> 
       <label for="numberOfPercentageToSubstract">Ingrese el numero del porcentaje a restar: </label>
@@ -228,7 +228,7 @@
     <section>
       <h4>generarEmail(usuario, dominio)</h4>
       <p>Crear una función generarEmail que tome como argumentos dos string usuario y dominio y el un string email con el formato usuario@dominio.com</p>
-      <h5>Ingresa el usuario, el dominio y hace click en el boton GENERAR EMAIL</h4>
+      <h5>Ingresa el usuario, el dominio y hace click en el boton GENERAR EMAIL</h5>
       <label for="user">Ingrese el usuario: </label>
       <input type="text" id="user" > 
       <label for="domain">Ingrese el dominio: </label>
@@ -257,7 +257,7 @@
     <section>
       <h4>haceFrio(temperatura)</h4>
       <p>Crear una función haceCalor que tome como argumento un número temperatura y devuelva true si hace frio (12 grados o menos) o false de lo contrario</p>
-      <h5>Ingresa la temperatura y hace click en el boton HACE FRIO</h4>
+      <h5>Ingresa la temperatura y hace click en el boton HACE FRIO</h5>
       <label for="isTemperatureCold">Ingrese la temperatura: </label>
       <input type="number" id="isTemperatureCold" > 
       <button type="button"  onclick="getValueInputToIsTemperatureCold()">HACE FRIO</button> 
@@ -269,7 +269,7 @@
       <p>facil: 3 puntos</p>
       <p>normal: 5 puntos</p>
       <p>dificil: 10 puntos</p>
-      <h5>Ingresar los 3 numeros y hace click en el boton CALCULAR PUNTAJE</h4>
+      <h5>Ingresar los 3 numeros y hace click en el boton CALCULAR PUNTAJE</h5>
       <label for="easy">Ingrese la cantidad de ejercicios resultos en nivel FACIL: </label>
       <input type="number" id="easy" > 
       <label for="normal">Ingrese la cantidad de ejercicios resultos en nivel NORMAL: </label>
@@ -282,7 +282,7 @@
     <section>
       <h4>aceptaDeposito(monto)</h4>
       <p>Crear una función aceptaDeposito que tome como argumento un número monto y devuelva true si el monto es divisible por 10 o false si no lo es</p>
-      <h5>Ingresa el monto y hace click en el boton ACEPTA DEPOSITO</h4>
+      <h5>Ingresa el monto y hace click en el boton ACEPTA DEPOSITO</h5>
       <label for="deposit">Ingrese el monto del deposito: </label>
       <input type="number" id="deposit" > 
       <button type="button"  onclick="getValueInputToAcceptDeposit()">ACEPTA DEPOSITO</button> 
@@ -291,13 +291,16 @@
     <section>
       <h4>esHoraValida(hora)</h4>
       <p>Crear una función esHoraValida que tome como argumento un string hora con el formato HH:mm y determine si es una hora válida del día o no</p>
-      <button><p>Ver como funciona esHoraValida</p></button>
+      <h5>Ingresa una hora en el formato HH:mm para ver si ES HORA VALIDA</h5>
+      <label for="hora">Ingrese la hora: </label>
+      <input type="text" id="hora" > 
+      <button type="button"  onclick="isValidHour()">ES HORA VALIDA</button> 
       <p id="es-hora-valida"></p>
     </section>
     <section>
       <h4>puedeRenovarCarnet(pasoTests, tieneMultasImpagas, pagoImpuestos)</h4>
       <p>Crear una función puedeRenovarCarnet que tome como argumentos tres booleanos, pasoTests, tieneMultasImpagas y pagoImpuestos, y devuelva true si una persona está habilitada para renovar su carnet de conducir o false si no. Una persona puede renovar su carnet si pasó los tests, no tiene multas impagas y pagó todos los impuestos</p>
-      <h5>Ingresar <strong>true</strong> o <strong>false</strong> para saber si PUEDE RENOVAR CARNET</h4>
+      <h5>Ingresar <strong>true</strong> o <strong>false</strong> para saber si PUEDE RENOVAR CARNET</h5>
       <label for="paso-tests">Paso tests : </label>
       <input type="text" id="paso-tests" > 
       <label for="tiene-multas-impagas">Tiene multas impagas : </label>
@@ -310,7 +313,7 @@
     <section>
       <h4>puedeGraduarse(asistencia, materiasAprobadas, tesisAprobada)</h4>
       <p>Crear una función puedeGraduarse que tome como argumentos dos números asistencia y materiasAprobadas y un booleano tesisAprobada, y devuelva true si una persona puede gruadarse o false si no. Una persona puede graduarse si tiene un 75% de asistencia o más, 50 materias aprobadas o más y la tesis aprobada.</p>
-      <h5>Completa para informar su PUEDE GRADUARSE</h4>
+      <h5>Completa para informar su PUEDE GRADUARSE</h5>
         <label for="asistencia">Ingrese en NUMEROS el % de asistencia : </label>
         <input type="number" id="asistencia" > 
         <label for="materias-aprobadas">Ingrese en NUMEROS la cantidad de materias aprobadas : </label>
@@ -324,7 +327,7 @@
     <section>
       <h4>esParOImpar(numero)</h4>
       <p>Crear una función esParOImpar que acepte como argumento un numero y devuelva el string par si el numero es par, o el string impar si el numero es impar</p>
-      <h5>Ingresa un numero para saber SI ES PAR O IMPAR</h4>
+      <h5>Ingresa un numero para saber SI ES PAR O IMPAR</h5>
       <label for="par-o-impar">Ingrese el NUMERO: </label>
       <input type="number" id="par-o-impar" > 
       <button type="button" onclick="isEvenOrIsOdd()">ES PAR O IMPAR</button>
@@ -333,7 +336,7 @@
     <section>
       <h4>esPositivoONegativo(numero)</h4>
       <p>Crear una función esPositivoONegativo que acepte como argumento un numero y devuelva el string positivo si el numero es positivo, o el string negativo si el numero es negativo</p>
-      <h5>Ingresa un numero para saber SI ES POSITIVO O NEGATIVO</h4>
+      <h5>Ingresa un numero para saber SI ES POSITIVO O NEGATIVO</h5>
       <label for="positivo-o-negativo">Ingrese el NUMERO: </label>
       <input type="number" id="positivo-o-negativo" > 
       <button type="button" onclick="isPositiveOrIsNegative()">ES POSITIVO O NEGATIVO</button>
@@ -342,7 +345,7 @@
     <section>
       <h4>avanzarSemaforo(colorActual)</h4>
       <p>Crear una función avanzarSemaforo que acepte como argumento un string colorActual y devuelva un string con el siguiente color del semáforo, siguiendo el orden: verde -> amarillo -> rojo -> verde</p>
-      <h5>Ingresa el color del semaforo para decirle cual sigue:</h4>
+      <h5>Ingresa el color del semaforo para decirle cual sigue:</h5>
       <label for="color-actual">Color : </label>
       <input type="text" id="color-actual" > 
       <button type="button" onclick="getNextColor()">AVANZAR SEMAFORO</button>
@@ -351,7 +354,7 @@
      <section>
       <h4>obtenerDiasMes(mes)</h4>
       <p>Crear una función obtenerDiasMes que tome como argumento un string mes y devuelva un número dependiendo de la cantidad de días que tenga ese mes</p>
-      <h5>Ingresa el MES para decirle cuantos dias tiene:</h4>
+      <h5>Ingresa el MES para decirle cuantos dias tiene:</h5>
       <label for="obtener-dias-mes">Mes : </label>
       <input type="text" id="obtener-dias-mes" > 
       <button type="button" onclick="getDaysOfMonth()">OBTENER DIAS MES</button>
@@ -365,7 +368,7 @@
       <p>Mayor o igual a 15° y menor a 25°	Está lindo</p>
       <p>Mayor o igual a entre 25° y menor a 30°	Hace calor</p>
       <p>Mayor o igual de 30°	¡Hace mucho calor!</p>
-      <h5>Ingresa la TEMPERATURA para ver la sensacion:</h4>
+      <h5>Ingresa la TEMPERATURA para ver la sensacion:</h5>
       <label for="obtener-temperatura">Temperatura : </label>
       <input type="number" id="obtener-temperatura" > 
       <button type="button" onclick="getTemperature()">OBTENER SENSACION</button>
@@ -379,7 +382,7 @@
       <p>Mayor o igual a 7 y menor a 8	Bueno</p>
       <p>Mayor o igual a entre 8 y menor a 10	Muy bueno</p>
       <p>10  Excelente<p>
-      <h5>Ingresa el PUNTAJE para informerte la nota:</h4>
+      <h5>Ingresa el PUNTAJE para informerte la nota:</h5>
       <label for="obtener-nota">Puntaje : </label>
       <input type="number" id="obtener-nota" > 
       <button type="button" onclick="getNote()">OBTENER NOTA</button>
@@ -388,7 +391,7 @@
     <section>
       <h4>jugarPiedraPapelTijera(a, b)</h4>
       <p>Crear una función jugarPiedraPapelTijera que tome como argumentos dos strings a y b que representen una jugada (piedra, papel, tijera) y dependiendo el resultado devuelva un string con un mensaje avisando qué jugada ganó (o si hubo empate)</p>
-      <h5>Ingresa las jugadas (piedra / papel / tijera) para obtener el resultado:</h4>
+      <h5>Ingresa las jugadas (piedra / papel / tijera) para obtener el resultado:</h5>
       <label for="primera-jugada">Primera : </label>
       <input type="text" id="primera-jugada" > 
       <label for="segunda-jugada">Segunda : </label>

@@ -19,10 +19,10 @@ function estaEnRango(valor, minimo, maximo) {
 }
 
 function puedeAvanzar(colorSemaforo) {
-  if(colorSemaforo == "verde") {
+  if(colorSemaforo === "verde") {
     console.log("Puede avanzar");
     return "Puede avanzar";
-  } else if(colorSemaforo == "amarillo" || colorSemaforo == "rojo") {
+  } else if(colorSemaforo === "amarillo" || colorSemaforo === "rojo") {
     console.log("No avance");
     return "No avance";
   } else {

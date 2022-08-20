@@ -1,4 +1,5 @@
 const d = document;
+const hourFormat = /[0-9]{2}:[0-9]{2}/;
 
 /******** FUNCIONES **********/
 function sumar(num1, num2) {
@@ -161,10 +162,12 @@ function aceptaDeposito(monto) {
   }
 }
 
-function esHoraValida(hora) { }
+function esHoraValida(hora) { 
+  
+}
 
 function puedeRenovarCarnet(pasoTests, tieneMultasImpagas, pagoImpuestos) {
-  if(pasoTests == 'true' && tieneMultasImpagas == 'false' && pagoImpuestos == 'true' ) {
+  if(pasoTests === 'true' && tieneMultasImpagas === 'false' && pagoImpuestos === 'true' ) {
     return true;
   } else {
     return false;
@@ -471,6 +474,17 @@ const getValueInputToAcceptDeposit = () => {
   let amountOfDeposit = parseInt(d.getElementById("deposit").value);
   d.getElementById("acepta-deposito").innerHTML = `<p>${aceptaDeposito(amountOfDeposit)}.</p>`;
 };
+
+const isValidHour = () => {
+  let hora = d.getElementById("hora").value;
+  let text;
+  if(hourFormat.test(hora)) {
+    text = esHoraValida(hora);
+  } else {
+    text = "No ingreso el formato correcto";
+  }
+  d.getElementById("es-hora-valida").innerHTML = `<p>${text}</p>`
+}
 
 const getIfCanHaveNewCarnet = () => {
   let pasoTests = d.getElementById("paso-tests").value;

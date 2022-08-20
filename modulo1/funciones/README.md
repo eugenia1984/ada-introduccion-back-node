@@ -51,3 +51,65 @@
 - Parámetros por default
 
 ---
+---
+
+# :star: CLASE 4 * 18 Agosto * Funciones
+
+
+## Función
+
+Un conjunto de instrucciones que realiza una tarea, y las puedo reutilizar todas las veces necesarias.
+
+Un ejemplo de una función:
+```JavaScript
+function incrementoDeNumeros(numeroInicial, incremento) {
+  numeroInicial += incremento;
+  console.log(numeroInicial);
+  console.log(`Se incremento: ${incremento}`);
+}
+```
+
+¿Cómo la utilizo ?
+
+Invocandola:
+```JavaScript
+incrementoDeNumeros(10,5);
+```
+
+- Otro ejemplo de funcion
+
+```JavaScript
+// declaro la funcion
+Function imprimir(nombre) {
+  console.log(`Hola ${nombre}`);
+}
+// la invoco
+imprimir("Euge");
+```
+
+## Parámetros y parámetros por defecto
+
+- Una función puede o no recibir **parametros**, los valores que va a recibir entre los ().
+
+Ejemplo de una función que suma:
+```JavaScript
+function sumar(num1, num2) {
+  console.log(num1+num2);
+}
+sumar(2,3); // 5
+```
+
+- Si usaría ```sumar(4);``` obtendria ```undefined``` para el num2 y me imprimiría ```NaN```, por eso es que debo poner la misma cantidad de datos que me pide la función. Otro modo es dar **valores por defecto**:
+
+```JavaScript
+function sumar(num1=0, num2=0) {
+  console.log(num1+num2);
+}
+sumar(2); // 2
+```
+
+## Return
+
+- Una función puede o no retornar algo.
+
+---

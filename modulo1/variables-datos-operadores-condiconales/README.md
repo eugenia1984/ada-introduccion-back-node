@@ -191,7 +191,12 @@ Cuando en el prompt hacer click en **cancelar** el dato llega como **null**
 
 **NaN** -> not a number, cuando quiero parsear un String a Number voy a tener NaN
 
+- Puedo comprobar con **isNan()** si tengo un dato de tipo Number:
 
+```JavaScript
+let numero = 10;
+console.log(isNaN(numero)); // true
+```
 
 ### Condicional : IF - IF / ELSE
 
@@ -383,7 +388,6 @@ console.log(c === d); // false
 
 ---
 
-# :star: CLASE 4 * 18 Agosto
 
----
+
 
