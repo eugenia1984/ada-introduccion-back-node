@@ -204,3 +204,11 @@ let sumar4 = (num1, num2) => num1 + num2;
 
 sumar4(5,6);
 ```
+
+Y si tengo un solo parametro puedo obviar los ():
+
+```JavaScript
+let sumar4 = num1 => num1 + 5;
+
+sumar4(6);
+```
