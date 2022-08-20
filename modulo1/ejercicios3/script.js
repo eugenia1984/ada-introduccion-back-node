@@ -163,7 +163,10 @@ function aceptaDeposito(monto) {
 }
 
 function esHoraValida(hora) { 
-  
+  let horaParaVerificar = hora.split(":");
+  let horasSeparadas = Number(horaParaVerificar[0]);
+  let minutosSeparados = Number(horaParaVerificar[1]);
+  return ((horasSeparadas>=0 && horasSeparadas<=24) && (minutosSeparados>=0 && minutosSeparados<=59))? "Hora valida":"Hora invalida";
 }
 
 function puedeRenovarCarnet(pasoTests, tieneMultasImpagas, pagoImpuestos) {
