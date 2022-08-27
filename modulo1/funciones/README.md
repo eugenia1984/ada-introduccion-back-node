@@ -328,6 +328,8 @@ texto.toLowerCase(); // 'hola'
 console.log(texto.concat(' como estas?)); // 'hola como estas?'
 console.log(texto.startsWith('H')); // false
 console.log(texto.endsWith('estas?')); // true
+console.log(texto.indexOf('como')); // 6
+console.log('Ian'.repeat(3)); //'IanIanIan'
 ```
 
 1. **.toLowerCase()** -> devuelve el valor en minúsculas de la cadena(String) que realiza la llamada/invocación. toLowerCase no afecta el valor de la cadena en si misma.
@@ -339,6 +341,10 @@ console.log(texto.endsWith('estas?')); // true
 4. **startsWith()** -> devuelve true si comienza con la string que le paso por parametro, sino devuelve(retorna) false. Hay que tener en cuenta que es case sensitive (sensible a las mayúsculas y las minúsculas) y los acentos.
 
 5. **endsWith()** ->  devuelve true si finaliza con la string que le paso por parametro, sino devuelve(retorna) false. Hay que tener en cuenta que es case sensitive (sensible a las mayúsculas y las minúsculas) y los acentos.
+
+6. **indexOf()** -> me retorna el indiceo posición en que encuentra (donde comienza)el string que recibe como parametro.
+
+7. **repeat()** -> me va  arepetir el String las N vences que recibe como parametro.  
 
 -> Los **métodos** son las **funciones** de los **objetos**, que en JavaScript son los **prototypes**
 
