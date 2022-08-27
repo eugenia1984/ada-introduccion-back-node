@@ -210,5 +210,16 @@ Y si tengo un solo parametro puedo obviar los ():
 ```JavaScript
 let sumar4 = num1 => num1 + 5;
 
-sumar4(6);
+let resultado = sumar4(6);
 ```
+
+En este caso en **resultado** voy a guardar en una variable lo que me va a devolver mi función sumar4 al pasarle 6 como parametro.
+
+---
+
+Si una función está declarada dentro de una función el scope de la variable es dentro de la función, si la llamo por fuera de la función no va a existir.
+
+---
+
+
+# :star: CLASE 5 * 13 Agosto * Funciones
