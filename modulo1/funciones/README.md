@@ -356,7 +356,7 @@ conosle.log('20:11'.slice(0,2)); // '20'
 
 10. **trim()** -> me elimina los espacios tanto al principio como al final. Se usa para comprobar los login y sacarle si las personas por error dejan un espacio en al ingresar el dato.
 
-11. **slice(paran1, param2)** -> para cortar un String, el param1 es desde donde comienzo a cortar y el param 2 es hasta donde corto (se incluye en el corte).
+11. **slice(param1, param2)** -> para cortar un String, el param1 es desde donde comienzo a cortar y el param 2 es hasta donde corto (no se incluye en el corte), en este caso hay que recordar que se comienza desde el 0. Y si tengo **slice(param1)** me va a cortar un solo elemento del String, el que le paso como parametro, por ejemplo '20:31'.slice(3) -> '3'
 
 -> .toLowerCase y .toUpperCase no necesitan parámetros, los demás métodos vistos si.
 
