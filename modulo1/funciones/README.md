@@ -325,7 +325,7 @@ const suma3 = (num1, num2) => num1 + num2;
 ```JavaScript
 let texto = 'hola'.toUpperCase(); // 'HOLA'
 texto.toLowerCase(); // 'hola'
-console.log(texto.concat(' como estas?)); // 'hola como estas?'
+console.log(texto.concat(' como estas?')); // 'hola como estas?'
 console.log(texto.startsWith('H')); // false
 console.log(texto.endsWith('estas?')); // true
 console.log(texto.indexOf('como')); // 6
@@ -333,7 +333,7 @@ console.log('Ian'.repeat(3)); //'IanIanIan'
 console.log('hola hola'.replaceAll('h', 'H')); // 'Hola Hola'
 console.log('hola'.length); // 4
 console.log('  hola  '.trim()); // 'hola'
-conosle.log('20:11'.slice(0,2)); // '20'
+console.log('20:11'.slice(0,2)); // '20'
 ```
 
 1. **.toLowerCase()** -> devuelve el valor en minúsculas de la cadena(String) que realiza la llamada/invocación. toLowerCase no afecta el valor de la cadena en si misma.
@@ -356,7 +356,7 @@ conosle.log('20:11'.slice(0,2)); // '20'
 
 10. **trim()** -> me elimina los espacios tanto al principio como al final. Se usa para comprobar los login y sacarle si las personas por error dejan un espacio en al ingresar el dato.
 
-11. **slice(param1, param2)** -> para cortar un String, el param1 es desde donde comienzo a cortar y el param 2 es hasta donde corto (no se incluye en el corte), en este caso hay que recordar que se comienza desde el 0. Y si tengo **slice(param1)** me va a cortar un solo elemento del String, el que le paso como parametro, por ejemplo '20:31'.slice(3) -> '3'
+11. **slice(param1, param2)** -> para cortar un String, el param1 es desde donde comienzo a cortar y el param 2 es hasta donde corto (no se incluye en el corte), en este caso hay que recordar que se comienza desde el 0. Y si tengo **slice(param1)** me va a cortar desde el elemento del String indicado hasta el final, por ejemplo '20:31'.slice(3) -> '31'
 
 -> .toLowerCase y .toUpperCase no necesitan parámetros, los demás métodos vistos si.
 
