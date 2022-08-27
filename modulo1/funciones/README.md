@@ -221,6 +221,7 @@ En este caso en **resultado** voy a guardar en una variable lo que me va a devol
 Si una función está declarada dentro de una función el scope de la variable es dentro de la función, si la llamo por fuera de la función no va a existir.
 
 ---
+---
 
 
 # :star: CLASE 5 * 13 Agosto * Funciones
@@ -254,5 +255,69 @@ let grito = gritar('Hola'); // 'Hola !'
 let saludar = saludar('Ada'); // 'Hola Ada, un gusto conocerte' 
 let nombreCompleto = obtenerNombreCompleto('Ada', 'Lovelave'); // 'Ada Lovelace'
 saludarGritando('Ada', 'Lovelace'); // 'Hola Ada Lovalace, un gusto conocerte'
-
 ```
+
+- En vez de declarar tres variables en saludarGritando(), otra cosa que puedo hacer es redeclarar la misma variable, ya que primero va a realizar la invocación a la función y lego va a reasignar el valor a la variable:
+
+
+```JavaScript
+function saludarGritando() {
+  let resultado = obtenerNombreCompleto('Ada', 'Lovelave'); // 'Ada Lovelace'
+  resultado = saludar(resultado); // 'Hola Ada Lovelace, un gusto conocerte'
+  resultado = gritar(resultado); // 'Hola Ada Lovelace, un gusto conocerte !'
+  return resultado;
+}
+
+saludarGritando('Ada', 'Lovelace'); // 'Hola Ada Lovalace, un gusto conocerte'
+```
+
+- Modificación del valor de una variable:
+
+```JavaScript
+let texto = 'Esto es un texto'; // creo la variable y le asigno un valor
+texto = 'Este es otro texto'; // Le reasigno otro valor a la misma variable
+console.log(texto); // 'Este es otro texto'
+texto = 88; // Tambien puedo cambiar el tipo de dato que guarda, pasa de guardar un String a un Number
+console.log(texto); // 88
+```
+
+- **Use strict**:
+
+```JavaScript
+textoNumeroDos = 'Esto es el segund texto'; // creo otra variable pero sin let, var o const; pero no es buena practica
+console.log(textoNumeroDos); // 'Esto es el segundo texto'
+```
+
+Un modo de evitar estas malas practica es utilizando el use strict asi no va va a dejar crear la variable y me va a dar un error:
+
+```JavaScript
+'use strict'
+
+textoNumeroDos = 'Esto es el segund texto'; // creo otra variable pero sin let, var o const; pero no es buena practica
+console.log(textoNumeroDos); // ReferenceError: textonumeroDos is not defined
+```
+
+- Formas de crear funciones:
+
+1. Crear una variable y guardarla en una constante, la cual va a tener una función anónima:
+
+```JavaScript
+const sumar 2 = function(num1, num2) {
+return num1 + num2;
+}
+```
+2. Función declarada:
+
+```JavaScript
+function sumar(num1, num2) {
+return num1 + num2;
+}
+```
+
+3. Arrow function, guardada en una constante:
+
+```JavaScript
+const suma3 = (num1, num2) => num1 + num2;
+```
+
+---
