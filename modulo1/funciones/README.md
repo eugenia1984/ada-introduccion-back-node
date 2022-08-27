@@ -320,6 +320,12 @@ return num1 + num2;
 const suma3 = (num1, num2) => num1 + num2;
 ```
 
+---
+
+-> [Aca se puede ver en codigo las funciones](https://github.com/eugenia1984/ada-introduccion-back-node/blob/main/modulo1/funciones/funciones.js)
+
+---
+
 - Algunos **metodos con Strings**:
 
 ```JavaScript
@@ -361,5 +367,10 @@ console.log('20:11'.slice(0,2)); // '20'
 -> .toLowerCase y .toUpperCase no necesitan parámetros, los demás métodos vistos si.
 
 -> Los **métodos** son las **funciones** de los **objetos**, que en JavaScript son los **prototypes**
+
+---
+
+
+-> [Aca se puede ver en codigo los métodos de las Strings](https://github.com/eugenia1984/ada-introduccion-back-node/blob/main/modulo1/funciones/strings-methods.js)
 
 ---

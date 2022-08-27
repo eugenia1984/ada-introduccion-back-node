@@ -388,6 +388,8 @@ console.log(c === d); // false
 
 ---
 
+-> [Aca hay algunos ejericios](https://github.com/eugenia1984/ada-introduccion-back-node/blob/main/modulo1/variables-datos-operadores-condicionales/app.js)
 
+---
 
 

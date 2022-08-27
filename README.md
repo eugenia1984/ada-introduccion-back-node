@@ -6,30 +6,30 @@ El curso de ADA IT de Introduccion a Back End con Nodejs
 
 ---
 
-## Practica
+## :star: Practica
 
 [**Aca pueden ver las practicas de JavaScript**](https://eugenia1984.github.io/ada-introduccion-back-node)
 
 ---
 
-## Temas
+## :star:  Temas
 
-- Modulo I: Introduccion a JavaScript
+- [**Modulo I: Introduccion a JavaScript**](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1) <img src="https://img.icons8.com/fluency/24/000000/javascript.png"/>
 
-- Modulo II : Node.js
+- [**Modulo II : Node.js**](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo2) <img src="https://img.icons8.com/color/24/000000/nodejs.png"/>
 
-- Modulo III: MongoDB
+- [**Modulo III: MongoDB**](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo3) <img src="https://img.icons8.com/color/24/000000/mongodb.png"/>
 
 
 ---
 
-## Clases y ejercicios:
+## :star:  Clases y ejercicios:
 
 ### Modulo I: Introduccion a JavaScript
 
 | CLASES |
 | ------ |
-| [Clase 1 (09/08) - Clase 2 (11/08) - Clase 3 (16/08)](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/variables-datos-operadores-condiconales):  Variables, datos, operadores, condicionales |
+| [Clase 1 (09/08) - Clase 2 (11/08) - Clase 3 (16/08)](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/variables-datos-operadores-condicionales):  Variables, datos, operadores, condicionales |
 | [Clase 4 (18/8) - Clase 5 (23/8)](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/funciones) : Funciones, métodos de Strings |
 | [Clase 6](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/arrays-objetos-ciclos) : Arrays, Objetos, ciclos |
 
