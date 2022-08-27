@@ -224,7 +224,7 @@ Si una función está declarada dentro de una función el scope de la variable e
 ---
 
 
-# :star: CLASE 5 * 13 Agosto * Funciones
+# :star: CLASE 5 * 23 Agosto * Funciones
 
 - Repaso de funciones
 
@@ -297,7 +297,7 @@ textoNumeroDos = 'Esto es el segund texto'; // creo otra variable pero sin let, 
 console.log(textoNumeroDos); // ReferenceError: textonumeroDos is not defined
 ```
 
-- Formas de crear funciones:
+- **Formas de crear funciones**:
 
 1. Crear una variable y guardarla en una constante, la cual va a tener una función anónima:
 
@@ -319,5 +319,27 @@ return num1 + num2;
 ```JavaScript
 const suma3 = (num1, num2) => num1 + num2;
 ```
+
+- Algunos **metodos con Strings**:
+
+```JavaScript
+let texto = 'hola'.toUpperCase(); // 'HOLA'
+texto.toLowerCase(); // 'hola'
+console.log(texto.concat(' como estas?)); // 'hola como estas?'
+console.log(texto.startsWith('H')); // false
+console.log(texto.endsWith('estas?')); // true
+```
+
+1. **.toLowerCase()** -> devuelve el valor en minúsculas de la cadena(String) que realiza la llamada/invocación. toLowerCase no afecta el valor de la cadena en si misma.
+
+2. **.toUpperCase()** -> devuelve el valor en mayúsculas de la cadena(String) que realiza la llamada/invocación.
+
+3. **concat()** -> concatena (une) cadenas(Strings).
+
+4. **startsWith()** -> devuelve true si comienza con la string que le paso por parametro, sino devuelve(retorna) false. Hay que tener en cuenta que es case sensitive (sensible a las mayúsculas y las minúsculas) y los acentos.
+
+5. **endsWith()** ->  devuelve true si finaliza con la string que le paso por parametro, sino devuelve(retorna) false. Hay que tener en cuenta que es case sensitive (sensible a las mayúsculas y las minúsculas) y los acentos.
+
+-> Los **métodos** son las **funciones** de los **objetos**, que en JavaScript son los **prototypes**
 
 ---
