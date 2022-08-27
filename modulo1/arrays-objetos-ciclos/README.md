@@ -68,4 +68,11 @@ join
 
 - Propiedades computadas (vs literales)
 
+
+---
+---
+
+
+# :star: CLASE 6 * 25/08 * Arrays
+
 ---

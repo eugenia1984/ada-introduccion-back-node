@@ -343,27 +343,41 @@ console.log('20:11'.slice(0,2)); // '20'
 console.log('hola'.includes('h')); // true
 ```
 
+
 1. **.toLowerCase()** -> devuelve el valor en minúsculas de la cadena(String) que realiza la llamada/invocación. toLowerCase no afecta el valor de la cadena en si misma.
+
 
 2. **.toUpperCase()** -> devuelve el valor en mayúsculas de la cadena(String) que realiza la llamada/invocación.
 
+
 3. **concat()** -> concatena (une) cadenas(Strings).
+
 
 4. **startsWith()** -> devuelve true si comienza con la string que le paso por parametro, sino devuelve(retorna) false. Hay que tener en cuenta que es case sensitive (sensible a las mayúsculas y las minúsculas) y los acentos.
 
+
 5. **endsWith()** ->  devuelve true si finaliza con la string que le paso por parametro, sino devuelve(retorna) false. Hay que tener en cuenta que es case sensitive (sensible a las mayúsculas y las minúsculas) y los acentos.
 
-6. **indexOf()** -> me retorna el indiceo posición en que encuentra (donde comienza)el string que recibe como parametro. Si en vez de un parámetro le paso **dos parámetros, y el segundo es un número entero, me va a indicar a partir de que posición debe comenzar a buscarlo, no me va a recorrer todo el String sino que comienza donde le indico
+
+6. **indexOf()** -> me retorna el indiceo posición en que encuentra (donde comienza)el string que recibe como parametro. Si en vez de un parámetro le paso **dos parámetros**, y el segundo es un número entero, me va a indicar a partir de que posición debe comenzar a buscarlo, no me va a recorrer todo el String sino que comienza donde le indico. Si el caracter que busco **no está** en el String voy a tener un **-1**.
+
 
 7. **repeat()** -> me va a repetir el String las N vences que recibe como parametro.  
 
+
 8. **replaceAll(param1, param2)** -> va a reemplazr todos los param1 por el param2 en el String, puede ser cualquier caracter. Se usa para eliminar algo, por ejemplo: **.replaceAll(' ', '')** y voy a eliminar los espacios.
+
 
 9. **lenght** -> me retorna el largo del String, el totla de caracteres que tiene. Este es distinto, no tiene los ().
 
+
 10. **trim()** -> me elimina los espacios tanto al principio como al final. Se usa para comprobar los login y sacarle si las personas por error dejan un espacio en al ingresar el dato.
 
-11. **slice(param1, param2)** -> para cortar un String, el param1 es desde donde comienzo a cortar y el param 2 es hasta donde corto (no se incluye en el corte), en este caso hay que recordar que se comienza desde el 0. Y si tengo **slice(param1)** me va a cortar desde el elemento del String indicado hasta el final, por ejemplo '20:31'.slice(3) -> '31'
+
+11. **slice(param1, param2)** -> para cortar un String, el param1 es desde donde comienzo a cortar y el param 2 es hasta donde corto (no se incluye en el corte), en este caso hay que recordar que se comienza desde el 0. Y si tengo **slice(param1)** me va a cortar desde el elemento del String indicado hasta el final, por ejemplo '20:31'.slice(3) -> '31'.
+
+Si tiene como parámetros **índices negativos** se empieza a contar de atras hacia adelante, por ejemplo 'Hola' a=-1, l=-2; o=-3; H=-4.
+
 
 12. **includes()** -> va a buscar en el string lo que le paso por parametro, si lo encuentra da true y sino da false.
 
@@ -435,6 +449,7 @@ cosole.log(Math.round(13.4)); // 13.5
 
 1. **toFixed()** -> si no le paso parametros me deja un numero entero (sin decimales). Si le paso como parametro un numero me va a dejar tantos numeros decimales como le indique de parametro. Lo que si hay que ver es que este método va a devolver un **String** por eso en el ejemplo lo casteo con Number.
 
+
 2. **Math** es un objeto que tiene muchos métodos matemáticos:
 
 - **sqrt()** para calcular la raiz cuadrada 
@@ -445,8 +460,53 @@ cosole.log(Math.round(13.4)); // 13.5
 
 Y también tiene constantes como **PI**.
 
+
 3. Otros métodos de recondeo son:
 
 - **floor()** -> redondea hacia abajo
 
 - **ciel()** -> redondea hacia arriba
+
+
+---
+---
+
+
+# :star: CLASE 6 * 25/08 * Arrays
+
+---
+
+- Revimos el ejerccios de chequear si un numero es multiplo del otro:
+
+```JavaScript
+let numero1Usuario = 24;
+let numero2Usuario = 8;
+
+console.log(24%8); // 0 -> compruebo que es multiplo
+
+if(numero1Usuario % numero2Usaurio == 0) {
+  console.log(`${numero1Usario} es múltiplo de ${numero2Usuario}`);
+} else {
+  console.log("No es multiplo");
+}
+```
+
+- Un mini repaso de Strings:
+
+```JavaScript
+let str = 'hola';
+console.log(str[0]); // 'h'
+console.log(str[1]); // 'o'
+console.log(str[2]); // 'l'
+console.log(str[3]); // 'a'
+console.log(str[4]); // 'undefined'
+console.log(str.length); // 4
+str.toUpperCase(); // 'HOLA'
+str.toLowerCase(); // 'hola'
+str[0].toUpperCase(); // 'Hola'
+str.indexOf('a'); // 3
+str.indexOf('x'); // -1 porque no está
+str.slice(0,2); // 'ho' el segundo nro. es hasta donde se corta y no se incluye
+str.slice(-2); // 'la' cuando utilizo los negativos empiezo de atras hacia adelante
+str.includes('a'); // true - si no lo encuentra da false
+```
