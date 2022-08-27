@@ -330,6 +330,10 @@ console.log(texto.startsWith('H')); // false
 console.log(texto.endsWith('estas?')); // true
 console.log(texto.indexOf('como')); // 6
 console.log('Ian'.repeat(3)); //'IanIanIan'
+console.log('hola hola'.replaceAll('h', 'H')); // 'Hola Hola'
+console.log('hola'.length); // 4
+console.log('  hola  '.trim()); // 'hola'
+conosle.log('20:11'.slice(0,2)); // '20'
 ```
 
 1. **.toLowerCase()** -> devuelve el valor en minúsculas de la cadena(String) que realiza la llamada/invocación. toLowerCase no afecta el valor de la cadena en si misma.
@@ -342,9 +346,19 @@ console.log('Ian'.repeat(3)); //'IanIanIan'
 
 5. **endsWith()** ->  devuelve true si finaliza con la string que le paso por parametro, sino devuelve(retorna) false. Hay que tener en cuenta que es case sensitive (sensible a las mayúsculas y las minúsculas) y los acentos.
 
-6. **indexOf()** -> me retorna el indiceo posición en que encuentra (donde comienza)el string que recibe como parametro.
+6. **indexOf()** -> me retorna el indiceo posición en que encuentra (donde comienza)el string que recibe como parametro. Si en vez de un parámetro le paso **dos parámetros, y el segundo es un número entero, me va a indicar a partir de que posición debe comenzar a buscarlo, no me va a recorrer todo el String sino que comienza donde le indico
 
-7. **repeat()** -> me va  arepetir el String las N vences que recibe como parametro.  
+7. **repeat()** -> me va a repetir el String las N vences que recibe como parametro.  
+
+8. **replaceAll(param1, param2)** -> va a reemplazr todos los param1 por el param2 en el String, puede ser cualquier caracter. Se usa para eliminar algo, por ejemplo: **.replaceAll(' ', '')** y voy a eliminar los espacios.
+
+9. **lenght** -> me retorna el largo del String, el totla de caracteres que tiene. Este es distinto, no tiene los ().
+
+10. **trim()** -> me elimina los espacios tanto al principio como al final. Se usa para comprobar los login y sacarle si las personas por error dejan un espacio en al ingresar el dato.
+
+11. **slice(paran1, param2)** -> para cortar un String, el param1 es desde donde comienzo a cortar y el param 2 es hasta donde corto (se incluye en el corte).
+
+-> .toLowerCase y .toUpperCase no necesitan parámetros, los demás métodos vistos si.
 
 -> Los **métodos** son las **funciones** de los **objetos**, que en JavaScript son los **prototypes**
 
