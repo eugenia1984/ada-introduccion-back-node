@@ -340,6 +340,7 @@ console.log('hola hola'.replaceAll('h', 'H')); // 'Hola Hola'
 console.log('hola'.length); // 4
 console.log('  hola  '.trim()); // 'hola'
 console.log('20:11'.slice(0,2)); // '20'
+console.log('hola'.includes('h')); // true
 ```
 
 1. **.toLowerCase()** -> devuelve el valor en minúsculas de la cadena(String) que realiza la llamada/invocación. toLowerCase no afecta el valor de la cadena en si misma.
@@ -364,13 +365,88 @@ console.log('20:11'.slice(0,2)); // '20'
 
 11. **slice(param1, param2)** -> para cortar un String, el param1 es desde donde comienzo a cortar y el param 2 es hasta donde corto (no se incluye en el corte), en este caso hay que recordar que se comienza desde el 0. Y si tengo **slice(param1)** me va a cortar desde el elemento del String indicado hasta el final, por ejemplo '20:31'.slice(3) -> '31'
 
+12. **includes()** -> va a buscar en el string lo que le paso por parametro, si lo encuentra da true y sino da false.
+
+
 -> .toLowerCase y .toUpperCase no necesitan parámetros, los demás métodos vistos si.
 
+
 -> Los **métodos** son las **funciones** de los **objetos**, que en JavaScript son los **prototypes**
+
+
+---
+
+- Rehacemos le ejercicio de ver si la lera es una consonante utilizando los metodos de los strings
+
+```JavaScript
+function esConsonante(letra) {
+  let consonantes= 'bcdfghjklmnñpqrstvwxyz';
+  return (consonantes.includes(letra.toLowerCase()));
+}
+
+esConsonante('b'); //true
+```
 
 ---
 
 
 -> [Aca se puede ver en codigo los métodos de las Strings](https://github.com/eugenia1984/ada-introduccion-back-node/blob/main/modulo1/funciones/strings-methods.js)
 
+
 ---
+
+- Repasando todo lo visto hacemos le ejercicio de validar las horas ingresadas:
+
+```JavaScript
+function esHoraValida(str) {
+  let horas = Number(str.slice(0,2));
+  let minutos = Number(str.slice(3));
+  let esHoraValida = ( (horas>=0 && horas <= 23) && (minutos>=0 && minutos<=60))?true:false;
+  return esHoraValida;
+}
+```
+
+Si lo quiero hacer en arrow function:
+
+```JavaSCript
+const esHoraValida = str => {
+  let horas = Number(str.slice(0,2));
+  let minutos = Number(str.slice(3));
+  let esHoraValida = ( (horas>=0 && horas <= 23) && (minutos>=0 && minutos<=60))?true:false;
+  return esHoraValida;
+}
+```
+
+-> Al solo recibir un parametro la función puedo sacarle los () a la arrow function
+
+
+---
+
+- Algunos **métodos de los Numbers**:
+
+```JavaScript
+console.log(Number((1533/11).toFixed(2)));
+console.log(Math.sqrt(9)); // 3 para calcular la raiz cuadrada
+console.log(Math.pow(7,2)); // 49 para elevar numeros en este caso es 7 al cuadrado
+console.log(7 ** 2); // 49 es otro modo de elevar al cuadrado, la diferencia es que con pow elevo a cualquier numero
+console.log(Math.round(13.60)); // 14
+cosole.log(Math.round(13.4)); // 13.5
+```
+
+1. **toFixed()** -> si no le paso parametros me deja un numero entero (sin decimales). Si le paso como parametro un numero me va a dejar tantos numeros decimales como le indique de parametro. Lo que si hay que ver es que este método va a devolver un **String** por eso en el ejemplo lo casteo con Number.
+
+2. **Math** es un objeto que tiene muchos métodos matemáticos:
+
+- **sqrt()** para calcular la raiz cuadrada 
+
+- **pow()** para elevar numeros
+
+- **round()** para redondear en base a 50 centecimos
+
+Y también tiene constantes como **PI**.
+
+3. Otros métodos de recondeo son:
+
+- **floor()** -> redondea hacia abajo
+
+- **ciel()** -> redondea hacia arriba
