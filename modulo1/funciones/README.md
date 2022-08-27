@@ -69,9 +69,10 @@ function incrementoDeNumeros(numeroInicial, incremento) {
 }
 ```
 
-¿Cómo la utilizo ?
+## ¿Cómo la utilizo ?
 
 Invocandola:
+
 ```JavaScript
 incrementoDeNumeros(10,5);
 ```
@@ -132,7 +133,7 @@ imprimirCuentas(3, 7)
 
 ---
 
-## Otro ejemplo de funcion
+## Otro ejemplo de función
 
 ```JavaScript
 function gritr(str) {
@@ -223,3 +224,35 @@ Si una función está declarada dentro de una función el scope de la variable e
 
 
 # :star: CLASE 5 * 13 Agosto * Funciones
+
+- Repaso de funciones
+
+- Realizamos el ejercicio de la guía donde una función invoca a otras funciones:
+
+```JavaScript
+function obtenerNombreCompleto(nombre, apellido) {
+  let nombreCompleto = `${nombre} ${apellido}`;
+  return nombreCompleto;
+}
+
+function saludar(nombre) {
+  return `Hola ${nombre}, un gusto conocerte}`;
+}
+
+function gritar(grito) {
+  return `${grito} !`;
+}
+
+function saludarGritando() {
+  let nombreCompleto = obtenerNombreCompleto('Ada', 'Lovelave'); // 'Ada Lovelace'
+  let saludo = saludar(nombreCompleto); // 'Hola Ada Lovelace, un gusto conocerte'
+  let saludoGritando = gritar(saludo); // 'Hola Ada Lovelace, un gusto conocerte !'
+  return saludoGritando;
+}
+
+let grito = gritar('Hola'); // 'Hola !'
+let saludar = saludar('Ada'); // 'Hola Ada, un gusto conocerte' 
+let nombreCompleto = obtenerNombreCompleto('Ada', 'Lovelave'); // 'Ada Lovelace'
+saludarGritando('Ada', 'Lovelace'); // 'Hola Ada Lovalace, un gusto conocerte'
+
+```
