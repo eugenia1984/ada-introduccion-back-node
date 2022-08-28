@@ -81,3 +81,10 @@ function sumarNumeros(arrayDeNumeros) {
 }
 
 sumarNumeros([5, 7, 10, 12, 24]) // 58
+
+// split - reverse - join
+let palabraAInvertir = "invertir";
+// con .split separo todos los caracteres del string a un elemento del array ['i', 'n', 'v', 'e', 'r', 't', 'i', 'r']
+// con .reverse los invierto de orden ['r', 'i', 't', 'r', 'e', 'v', 'n', 'i']
+// con .join paso de un array a un string
+let palabrainvertida= palabraAInvertir.split("").reverse().join(""); 

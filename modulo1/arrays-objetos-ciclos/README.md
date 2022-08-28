@@ -251,3 +251,57 @@ sumarNumeros([5, 7, 10, 12, 24]) // 58
 ```
 
 ---
+
+## .split()
+
+- Método que va a separar a un **String** y lo convertierte en un **Array**.
+
+-> Si no paso ningún parámetros me separa caracter por caracter, cada carcter es un elemento del array:
+
+```JavaScript
+let str = 'hola Euge';
+let arr = str.split(''); // ['h', 'o', 'l', 'a', ' ', 'E', 'u', 'g', 'e']
+```
+
+->Si paso un caracter de espacio vacío, separo mi string en un array de palabras, va recorriendo letra or letra y cuando llega al espacio la corta, asi separa palabra por palabra:
+
+```JavaScript
+let str = 'hola Euge';
+let arrayDeTodasLasPalabras = str.split(' '); // ['hola', 'Euge']
+```
+
+-> Asi como se pasa el espacio en blanco, tambien se puede cortar por cuanquier caracter ya sea un **;** ó **:**, por ejemplo (es similar al slice del String).
+
+---
+
+## .reverse() y .join()
+
+- Para invertir el array -> **.reverse()**
+
+- Para pasar de un array a un String -> **.join()**. Si no le paso parametros entre los paréntesis me va a dejar una como entre cada caracter, si le dejo un caracter vacío no me deja nada entre cada caracter.
+
+```JavaScript
+let str = "invertir";
+// con .split separo todos los caracteres del string a un elemento del array ['i', 'n', 'v', 'e', 'r', 't', 'i', 'r']
+// con .reverse los invierto de orden ['r', 'i', 't', 'r', 'e', 'v', 'n', 'i']
+// con .join paso de un array a un string
+let palabrainvertida= str.split("").reverse().join(""); // ['ritrevni']
+```
+
+---
+
+- El ejercicio de si tengo una letra en minuscula la paso a mayúscula y viceversa
+
+```JavaScript
+let str = 'holA';
+// Primero con un split hay que separar cada caracter en un elemento dle array
+// Luego con un forEach vamos recorriendo elemento por elemento y los pasamos a mayuscula o minuscula
+if(str[2] == str[2].toLowerCase()) { // para saber si el caracter está en minúscula
+  str[2].toUpperCase()
+} else {
+  str[2].toLowerCase()
+}
+// despues con el join los juntamos
+```
+
+---
