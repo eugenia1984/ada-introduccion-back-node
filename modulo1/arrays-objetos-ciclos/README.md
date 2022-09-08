@@ -623,6 +623,91 @@ if(colorSemaforo == 'verde') {
 
 Crear una función sonIguales(a, b) que tome como argumentos dos arrays a y b y devuelva true si ambos arrays tienen los mismos valores en la misma posición, o false sino.
 
+```JavaScript
+function sonIguales(arr1, arr2) {
+  // primero compruebo que tengan la misma cantidad de elementos
+  if(arr1.length !== arr2.length) {
+    return false;
+  }
+  // segundo compruebo que los elementos sean iguales
+  for( let i = 0; i < arr1.length; i++) {
+    if(arr1[i] !== arr2[i]) {
+      return false;
+    }
+    return true;
+  }
+}
 
+sonIguales([10, 25, 6, 33, 48, 105], [10, 25, 6, 33, 48, 105]) // true
+sonIguales([10, 25, 6, 33, 48, 105], [11, 25, 6, 33, 48, 105]) // false
+sonIguales([10, 25, 6, 33, 48, 105], [25, 10, 6, 33, 48, 105]) // false
+```
+
+---
+
+## Repasamos otro ejercicio
+
+### invertir(arr)
+
+Crear una funcion invertir que tome como argumento un array **array** y que devuelva un array con los mismos valores pero en orden invertido
+
+```JavaSCript
+function invertir(arr) {
+  cost arrayInvertido = [];
+
+  for(let i = arr.length -1; i > 0; i++) {
+    arrayInvertido.put(arr[i]);
+  }
+  return arrayInvertido;
+}
+```
+
+---
+
+## For of
+
+Un for simplificado para recorrer un array. En este caso no necesito tener que poner la longitud del array, lo recorre elemento por elemento del array.
+
+
+Quiero imprimir cada elemento del array.
+```JavaSCript
+for (let num in arr) {
+  console.log(num);
+}
+```
+
+---
+
+### esPalindromo
+
+```JavaSCript
+function invertir(arr) {
+  const arrInvertido = [];
+  for(let i = arr.lemgth - 1; i >= 0; i--) {
+    arrayInvertido.push(arr[i]);
+  }
+  return arrayInvertido;
+}
+
+function esPalindromo(str) {
+  let strInvertido = invertir(str.split('')).join(''); // invoco a la funcion invertir declarada arriba
+  if(str === strInvertido) {
+    return true;
+  }
+  return false;
+}
+```
+
+Tambien se podia manejar utilizando el metodo **.reverse()**.
+
+```JavaSCript
+function esPalindromo(str) {
+  let strInvertido = str.split('').reverse().join('')
+  if(str === strInvertido) {
+    return true;
+  }
+  return false;
+}
+```
 ---
 ---
