@@ -124,3 +124,44 @@ Las reglas son:
 - Para dos usuarias debe mostrar: NOMBRE_USUARIA_1 y NOMBRE_USUARIA_2 estan conectadas
 - Para más de dos usuarias debe mostrar: NOMBRE_USUARIA_1, NOMBRE_USUARIA_2 y x persona(s) mas estan conectadas
 */
+function obtenerChatStatus(arr) {
+  if(arr.length === 0) {
+     // en el caso de que el array este vacio
+     return 'No hay nadie conectada'
+  } else if(arr.length === 1) { // solo tengo una usuaria
+    return `${arr[0]} esta conectada`
+  } else if(arr.length === 2) { // tengo dos usuarias
+    return `${arr[0]} y ${arr[1]} estan conectadas`
+  } else { // tengo mas de dos usuarias
+    return `${arr[0]}, ${arr[1]} y ${arr.length - 2} persona(s) estan conectadas`
+  }
+
+}
+obtenerChatStatus([]); // 'No hay nadie conectada'
+obtenerChatStatus(['Ada']); // 'Ada esta conectada'
+obtenerChatStatus(['Ada', 'Grace']); //  'Ada y Grace estan conectadas'
+obtenerChatStatus(['Ada', 'Grace', 'Maria']); // 'Ada, Grace y 1 persona(s) estan conectadas'
+
+// Ejercicio con map
+/*
+Crear una funcion multiplicar que tome como argumentos un numero "multiplicador" y un array de numeros "numeros", y que devuelva un array donde cada elemento es el resultado del elemento del primer array (en la misma pisicion) multiplicado por el numero ingresado
+*/
+const arrNumeros3 = [4, 1, 33, 10, 42];
+
+function multiplicar(multiplicador, numeros) {
+  const arrMultiplicado = numeros.map((numero) => numero * multiplicador);
+  return arrMultiplicado;
+}
+
+multiplicar(1, arrNumeros3); // 4, 1, 33, 10 ,42
+multiplicar(2, arrNumeros3); // 8, 2, 66, 20, 84
+
+// Ejercicio con filter
+/*
+Crear una funcion "filtrarLongitud" que tome como argumentos un numero "longitud" y un array de strings "palabras" y que devuelva un array con todas las palabras que tengan una cantidad de letras mayor a "longitud".
+*/
+function filtrarLongitud(longitud, palabras) {
+  return palabras.filre( (palabra) => palabra.length > longitud)
+}
+
+filtrarLongitud(4, ["sol", "hola", "amistad"]); // amistad

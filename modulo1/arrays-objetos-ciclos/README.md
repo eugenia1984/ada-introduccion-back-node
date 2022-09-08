@@ -461,13 +461,91 @@ Las reglas son
 - Para más de dos usuarias debe mostrar: NOMBRE_USUARIA_1, NOMBRE_USUARIA_2 y x persona(s) mas estan conectadas
 
 ```JavaScript
+function obtenerChatStatus(arr) {
+  if(arr.length === 0) {
+     // en el caso de que el array este vacio
+     return 'No hay nadie conectada'
+  } else if(arr.length === 1) { // solo tengo una usuaria
+    return `${arr[0]} esta conectada`
+  } else if(arr.length === 2) { // tengo dos usuarias
+    return `${arr[0]} y ${arr[1]} estan conectadas`
+  } else { // tengo mas de dos usuarias
+    return `${arr[0]}, ${arr[1]} y ${arr.length - 2} persona(s) estan conectadas`
+  }
+
+}
+obtenerChatStatus([]); // 'No hay nadie conectada'
+obtenerChatStatus(['Ada']); // 'Ada esta conectada'
+obtenerChatStatus(['Ada', 'Grace']); //  'Ada y Grace estan conectadas'
+obtenerChatStatus(['Ada', 'Grace', 'Maria']); // 'Ada, Grace y 1 persona(s) estan conectadas'
 ```
 
+---
+
+## map
+
+- La ventaja de **map** es que no modifica mi array, por eso se utiliza tanto.
+
+- Lo vemos en un ejemplo. Quiero tener un array con todos mis elementos multiplicados por 2:
+
+Haciendolo con un **.forEach()**:
 ```JavaScript
+const arrNumeros2 = [4, 1, 33, 10, 42];
+const arrVacio = [];
+arrNumeros2.forEach((numero) => arrVacio.push(numero*2));
+console.log(arrVacio); // 8, 2, 66, 20, 84 
 ```
 
+Haciendolo con un **.map()**:
 ```JavaScript
+const arrNumeros2 = [4, 1, 33, 10, 42];
+const arrNuevo = arrNumeros2.map((numero) => numero*2);
+console.log(arrNuevo); // 8, 2, 66, 20, 84 
 ```
+
+### Hacemos otro ejercicio para practicas
+
+Crear una funcion **multiplicar** que tome como argumentos un numero **multiplicador** y un array de numeros **numeros**, y que devuelva un array donde cada elemento es el resultado del elemento del primer array (en la misma pisicion) multiplicado por el numero ingresado
+
+
+```JavaScript
+const arrNumeros3 = [4, 1, 33, 10, 42];
+
+function multiplicar(multiplicador, numeros) {
+  return numeros.map((numero) => numero * multiplicador);
+}
+
+multiplicar(1, arrNumeros3); // 4, 1, 33, 10 ,42
+multiplicar(2, arrNumeros3); // 8, 2, 66, 20, 84
+```
+
+---
+
+## filter
+
+- Nos devuelve un array que cumpla con la condición que le pida.
+
+Lo vemos con un ejemplo: quiero filtrar todos los elementos menores a 5:
+
+```JavaScript
+const arrNumeros4 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+arrNumeros4.filter( (num) => num < 5);
+console.log(arrNumeros4); // 1, 2, 3, 4
+```
+
+#### Realizamos un ejercicio
+
+Crear una funcion **filtrarPorLongitudMayorA** que tome como argumentos un numero **longitud** y un array de strings **palabras** y que devuelva un array con todas las palabras que tengan una cantidad de letras mayor a **longitud**.
+
+```JavaScript
+function filtrarPorLongitudMayorA(longitud, palabras) {
+  return palabras.filre( (palabra) => palabra.length > longitud)
+}
+
+filtrarPorLongitudMayor(4, ["sol", "hola", "amistad"]); // amistad
+```
+
 
 ---
 ---
