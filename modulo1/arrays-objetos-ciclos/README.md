@@ -311,7 +311,7 @@ if(str[2] == str[2].toLowerCase()) { // para saber si el caracter está en minú
 
 ---
 
-## REpaso de lo visto la clase pasada de arrays
+## Repaso de lo visto la clase pasada de arrays
 
 - Definición: son una lista de elementos, puede guardar distintos tipos: Number, String, Boolean, otro array, undefined, null, una función, etc.
 
@@ -396,6 +396,38 @@ const arrStrings = ["Hola", "me", "llamo", "Ian", "Mucho", "gusto"];
 // aca incvoco la funcion
 mostrarConsola(arrStrings); 
 ```
+
+---
+
+- Hacemos el sigueinte ejercicios:
+
+Crea una función invertirCaso que tome como argumento
+un String y devuelva un String donde cada letra tiene 
+el caso invertido, es decir, cada letra está en 
+mayúscula si estaba en minúscula y viceversa.
+
+```JavaScript
+function invertirCaso(str) {
+  // separo cada letra y la transformo en un elemento del array
+  const arr = str.split(''); 
+  const arrVacio = [];
+  arr.forEach((letra) => {
+    // compruebo que la letra este en minuscula y los caracteres que no son letras
+    if(letra === letra.toLowerCase()) {
+      // la paso a mayúscula
+      // y lo voy agregando al array vacio
+      arrVacio.push(letra.toUpperCase());
+    } else { // va a estar en mayuscula
+      // la paso a minuscula
+      // y lo voy agregando al array vacio
+      arrVacio.push(letra.tuLowerCase());
+    }
+  })
+  return arrVacio.join('');
+}
+```
+
+
 
 ```JavaScript
 ```

@@ -88,3 +88,29 @@ let palabraAInvertir = "invertir";
 // con .reverse los invierto de orden ['r', 'i', 't', 'r', 'e', 'v', 'n', 'i']
 // con .join paso de un array a un string
 let palabrainvertida= palabraAInvertir.split("").reverse().join(""); 
+
+// Hacemos el ejercicio de invertir caso
+/*
+Crea una función invertirCaso que tome como argumento
+un String y devuelva un String donde cada letra tiene 
+el caso invertido, es decir, cada letra está en 
+mayúscula si estaba en minúscula y viceversa.
+*/
+function invertirCaso(str) {
+  // separo cada letra y la transformo en un elemento del array
+  const arr = str.split(''); 
+  const arrVacio = [];
+  arr.forEach((letra) => {
+    // compruebo que la letra este en minuscula y los caracteres que no son letras
+    if(letra === letra.toLowerCase()) {
+      // la paso a mayúscula
+      // y lo voy agregando al array vacio
+      arrVacio.push(letra.toUpperCase());
+    } else { // va a estar en mayuscula
+      // la paso a minuscula
+      // y lo voy agregando al array vacio
+      arrVacio.push(letra.tuLowerCase());
+    }
+  })
+  return arrVacio.join('');
+}
