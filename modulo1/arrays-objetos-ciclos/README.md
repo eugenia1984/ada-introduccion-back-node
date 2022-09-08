@@ -73,7 +73,7 @@ join
 ---
 
 
-# :star: CLASE 6 * 25/08 * Arrays (arreglos)
+# :star: CLASE 6 * 25/08 * ARRAYS (arreglos) :star:
 
 ---
 
@@ -307,4 +307,100 @@ if(str[2] == str[2].toLowerCase()) { // para saber si el caracter está en minú
 ---
 ---
 
-# :star: CLASE 7 * 30/08 * Arrays (arreglos)
+# :star2: CLASE 7 * 30/08 * ARRAYS (arreglos) :star2:
+
+---
+
+## REpaso de lo visto la clase pasada de arrays
+
+- Definición: son una lista de elementos, puede guardar distintos tipos: Number, String, Boolean, otro array, undefined, null, una función, etc.
+
+- Se declaran entre []
+
+- Para crear un array vacío:
+```JavaScript
+let numeros = []
+```
+
+- Para saber su longitud (la cantidad de elementos que tiene) tenemos el metodo **.length()**:
+```JavaScript
+console.log(numeros.length); // 0
+```
+
+- Para ver un elemento del array utilizo los [] y como parametro le paso el índice del elemento. Recordar que los índices comienzan en 0.
+```JavaScript
+numeros = [1, 2, 3];
+console.log(numeros[0]); // 1
+```
+
+- con **.push()** **agrego** elementos al final del array y con **.pop()** **elimino**     elementos al final del array. Con **.shift()** y con **.unshift()** hago lo mismo pero en vez de al final del array es al principio. Estos 4 métodos van a **modificar mi array original**.
+
+```JavaScript
+numeros.push(4);
+console.log(numeros); // 1 2 3 4
+numeros.pop(); 
+console.log(numeros); // 1 2 3 
+```
+
+- Para **cortar** un array puedo utilizar el método **.slice()**, el primer parametro indica desde que elemento comienza a cortar (lo incluye) y el segundo parámetro indica hasta que elemento lo corta (no lo incluye).
+```JavaScript
+numeros.slice(0,2);
+console.log(numeros); // 1 2
+```
+
+- Para saber si un elemento está en el array utilizamos el método **.includes()**, retorna true si está y false si no está.
+```JavaScript
+console.log(numeros.includes(10)); // false
+console.log(numeros.includes(1)); // true
+```
+
+- Para ordenar el array tenemos el método **.sort()**, ordena por defecto de forma ascendente, para las letras, pero hay que tener cuidado que es CASE SENSIBLE, por lo que me va a separar primero los que tenga en mayusucla ascendente y luego los que son con minuscula en forma descendente. Para corregir esto tenemos el método **.localeCompare()**:
+```JavaScript
+const arrStrings = ["Hola", "me", "llamo", "Ian", "Mucho", "gusto"];
+// con localeCompare() comparamos sin importar si son mayusculas o minusculas
+arrStrings.sort((a,z) => a.localeCompare(z));
+```
+
+Pero... si tengo números: 100 me queda antes que el 11. Para ordenarlos bien ascendentemete utilizamos:
+```JavaScript
+// orden ascendente para NUMEROS
+numeros.sort( (a,z) => a-z)
+// orden descendente para NUMEROS
+numeros.sort( (a,z) => z-a)
+```
+
+- Para recorrer cada elemento del array, tenemos el **.forEach()**, que va a necesitar una función, la cual suele ser un arraow function, que recibe como primer parámetro cada uno de los elementos del array. Es como un ciclo **for** mejorado:
+```JavaScript
+function paraElForEach(palabra) {
+  console.log(palabra);
+}
+
+function mostrarConsola(arr) {
+  arrStrings.forEach(paraElForEach)
+}
+
+ //este es el array que voy a recorrer elemento por elemento
+const arrStrings = ["Hola", "me", "llamo", "Ian", "Mucho", "gusto"];
+// aca incvoco la funcion
+mostrarConsola(arrStrings); 
+```
+
+Otro modo, en vez de escribir la funcion aparte, la dejo ya dentro. Otro modo sería guardar la arrow function en una constante y luego invocarla.
+```JavaScript
+function mostrarConsola(arr) {
+  arrStrings.forEach((palabra) => console.log(palabra))
+}
+
+ //este es el array que voy a recorrer elemento por elemento
+const arrStrings = ["Hola", "me", "llamo", "Ian", "Mucho", "gusto"];
+// aca incvoco la funcion
+mostrarConsola(arrStrings); 
+```
+
+```JavaScript
+```
+
+```JavaScript
+```
+---
+---
