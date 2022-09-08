@@ -570,7 +570,7 @@ Un **bucle** es un **estructura de control que se repite muchas veces**
 **i ++** es lo mismo que decir **i = i + 1**.
 
 
-Si quiero imprmir los números entre el 0 al 10.
+Lo vemos en un ejemplo: si quiero imprmir los números entre el 0 al 10.
 ```JavaScript
 let numero = 10;
 for(let i = 1; i <= numero, i++) {
@@ -578,13 +578,37 @@ for(let i = 1; i <= numero, i++) {
 }
 ```
 
+-> Lo usamos cuando sabemos exactamente cuantas vueltas necesitamos dar
+
+
+---
+
+## WHILE
+
+Es similar al FOR, pero lo utilizamo cuando no sabemos exactamente cuantas vueltas vamos a realizar.
+
+- Puede ser que nunca se ejecute si la condición nunca se cumple
+
+- Puede ser que quede un loop infinito si la condición siempre es true y no pasa a ser false. Esto hay que evitarlo.
+
+- Primero evalua la condicion, y si se cumple se ejecuta. Si no se cumple no se ejecuta.
 
 ```JavaScript
+let colorSemaforo = prompt('Ingrese color semaforo: ').toLowerCase();
+
+// para asegurarme que ingresa el color correcto
+while(colorSemaforo !00 'verede' && colorSemaforo !== 'amarilo' && colorSemaforo !== 'rojo') {
+  colorSemaforo = prompt('Ingrese color semaforo correcto: ').toLowerCase();
+}
+
+if(colorSemaforo == 'verde') {
+  cosnole.log(`Puede avanzar ${colorSemaforo}`)
+} else if(colorSemaforo == 'rojo' || colorSemaforo == 'amarillo') {
+  console.log(`No avance - ${colorSemaforo}`)
+} else {
+  console.log('Error: color de semaforo invalido)
+}
 ```
 
-
-
-```JavaScript
-```
 ---
 ---
