@@ -664,7 +664,7 @@ function invertir(arr) {
 
 ---
 
-## For of
+## FOR OF
 
 Un for simplificado para recorrer un array. En este caso no necesito tener que poner la longitud del array, lo recorre elemento por elemento del array.
 
@@ -709,5 +709,37 @@ function esPalindromo(str) {
   return false;
 }
 ```
+
+
+---
+---
+
+## :star: CLASE 8 * 01/09 *** OBJETOS *** :star:
+
+- En Python los llaman **diciconarios**.
+
+- Se declaran enre **{}**
+
+- Tienen los pares **key:value** (llave : valor), la key es el atributo dle objeto. Cada par key-value se separa con **,**.
+
+- Pueden tener Number, String, Boolean, funciones y arrays como valores.
+
+
+Ejemplo 
+
+```JavaScript
+const usuario = {
+  nombre: 'Ian',
+  edad: 28,
+  numeroTelefono: 123456789,
+  saludo: () => console.log('Hola')
+}
+
+// para ver el valor del atributo nombre
+console.log(usuario.nombre); // 'Ian'
+// Puedo ejecutar la funcion que tiene el usuario
+console.log(usuario.saludo()); // 'Hola'
+```
+
 ---
 ---
