@@ -612,3 +612,17 @@ if(colorSemaforo == 'verde') {
 
 ---
 ---
+
+## :star: CLASE 8 * 01/09 *** CICLOS (BUCLES / LOOPS) *** :star:
+
+---
+
+## Repasamos un ejercicio de arrays
+
+#### sonIguales(a, b)
+
+Crear una función sonIguales(a, b) que tome como argumentos dos arrays a y b y devuelva true si ambos arrays tienen los mismos valores en la misma posición, o false sino.
+
+
+---
+---
