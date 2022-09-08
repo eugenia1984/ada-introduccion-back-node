@@ -448,7 +448,7 @@ console.log(arrNumeros[(Math.random() * arrNumeros.length)])
 
 ---
 
-### Realizamos el siguiente ejercicios
+### Realizamos el siguiente ejercicio
 
 Crear una funcion obtenerChatStatus(usuarias) que tome como argumento un array de strings usuarios y devuelva un string con el status deñ chat. 
 
@@ -503,7 +503,7 @@ const arrNuevo = arrNumeros2.map((numero) => numero*2);
 console.log(arrNuevo); // 8, 2, 66, 20, 84 
 ```
 
-### Hacemos otro ejercicio para practicas
+### Hacemos otro ejercicio para practicar
 
 Crear una funcion **multiplicar** que tome como argumentos un numero **multiplicador** y un array de numeros **numeros**, y que devuelva un array donde cada elemento es el resultado del elemento del primer array (en la misma pisicion) multiplicado por el numero ingresado
 
