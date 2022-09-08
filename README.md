@@ -31,7 +31,7 @@ El curso de ADA IT de Introduccion a Back End con Nodejs
 | ------ |
 | [Clase 1 (09/08) - Clase 2 (11/08) - Clase 3 (16/08)](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/variables-datos-operadores-condicionales):  Variables, datos, operadores, condicionales |
 | [Clase 4 (18/8) - Clase 5 (23/8)](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/funciones) : Funciones, métodos de Strings |
-| [Clase 6 (25/8)](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/arrays-objetos-ciclos) : Arrays, Objetos, ciclos |
+| [Clase 6 (25/8) - Clase 7 (30/08)](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/arrays-objetos-ciclos) : Arrays, Objetos, ciclos |
 
 
 | EJERCICIOS |

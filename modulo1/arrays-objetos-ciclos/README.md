@@ -525,6 +525,8 @@ multiplicar(2, arrNumeros3); // 8, 2, 66, 20, 84
 
 - Nos devuelve un array que cumpla con la condición que le pida.
 
+- Si ningún elemento cumple con la condición me devuelve un array vacío.
+
 Lo vemos con un ejemplo: quiero filtrar todos los elementos menores a 5:
 
 ```JavaScript
@@ -547,5 +549,42 @@ filtrarPorLongitudMayor(4, ["sol", "hola", "amistad"]); // amistad
 ```
 
 
+---
+---
+
+# :star2: CLASE 7 * 30/08 *** CICLOS (BUCLES / LOOPS) *** :star2:
+
+---
+
+Un **bucle** es un **estructura de control que se repite muchas veces**
+
+
+## FOR
+
+- **let i = 1** es el inicializador, el index(indice)
+
+- **i <= numero** es la condicion a evaluar en cada iteración del bucle, debe volverse false en un momento, sino tengo un bulce infinito.
+
+- **i++** es lo que se va a ir modificando mi indice en cada iteracion. Si quiero que incremente de uno en uno en cada iteración uso **i--**. Si cambia de 2 en 2 por ejemplo uso **i+2**
+
+**i ++** es lo mismo que decir **i = i + 1**.
+
+
+Si quiero imprmir los números entre el 0 al 10.
+```JavaScript
+let numero = 10;
+for(let i = 1; i <= numero, i++) {
+  console.log(i)
+}
+```
+
+
+```JavaScript
+```
+
+
+
+```JavaScript
+```
 ---
 ---
