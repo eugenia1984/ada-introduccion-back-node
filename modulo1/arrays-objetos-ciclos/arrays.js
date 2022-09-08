@@ -112,5 +112,15 @@ function invertirCaso(str) {
       arrVacio.push(letra.tuLowerCase());
     }
   })
+  // con el .join lo vuelvo a pasar a un string
   return arrVacio.join('');
 }
+
+// Hacemos otro ejercicio
+/*
+Crear una funcion obtenerChatStatus(usuarias) que tome como argumento un array de strings usuarios y devuelva un string con el status deñ chat. 
+Las reglas son:
+- Para una usuaria debe mostrar: NOMBRE_USUARIA_1 esta conectada
+- Para dos usuarias debe mostrar: NOMBRE_USUARIA_1 y NOMBRE_USUARIA_2 estan conectadas
+- Para más de dos usuarias debe mostrar: NOMBRE_USUARIA_1, NOMBRE_USUARIA_2 y x persona(s) mas estan conectadas
+*/

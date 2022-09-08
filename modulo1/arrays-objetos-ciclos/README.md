@@ -423,16 +423,51 @@ function invertirCaso(str) {
       arrVacio.push(letra.tuLowerCase());
     }
   })
+  // con el .join lo vuelvo a pasar a un string
   return arrVacio.join('');
 }
 ```
 
+---
 
+### Math
+
+Para poder hacer operaciones matemáticas tenemos **Math**.
+
+Uno de todos los métodos es el **random()** que nos da un numero random retornando numero entre 0 y 1 (el 1 no lo incluye).
+
+Y tenemos le **.floor()** que redondea para abajo (floor = piso), sacando los decimales.
+
+```JavaScript
+const arrNumeros = [1, 3, 455, 41, 11, 312, 5]
+console.log(Math.random());
+console.log(Math.random() * arrNumeros.length);
+console.log(Math.floor());
+console.log(arrNumeros[(Math.random() * arrNumeros.length)])
+```
+
+---
+
+### Realizamos el siguiente ejercicios
+
+Crear una funcion obtenerChatStatus(usuarias) que tome como argumento un array de strings usuarios y devuelva un string con el status deñ chat. 
+
+Las reglas son
+
+- Para una usuaria debe mostrar: NOMBRE_USUARIA_1 esta conectada
+
+- Para dos usuarias debe mostrar: NOMBRE_USUARIA_1 y NOMBRE_USUARIA_2 estan conectadas
+
+- Para más de dos usuarias debe mostrar: NOMBRE_USUARIA_1, NOMBRE_USUARIA_2 y x persona(s) mas estan conectadas
 
 ```JavaScript
 ```
 
 ```JavaScript
 ```
+
+```JavaScript
+```
+
 ---
 ---
