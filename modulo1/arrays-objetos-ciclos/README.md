@@ -105,7 +105,7 @@ let arr = [1, 'Hola', true, 2.8, 'a'];
 
 - Hay métodos propios de los arrays:
 
--**Métodos que modifican el array**:
+- **Métodos que modifican el array**:
 
 1. Para eliminar o agregar al final:
 
@@ -305,3 +305,6 @@ if(str[2] == str[2].toLowerCase()) { // para saber si el caracter está en minú
 ```
 
 ---
+---
+
+# :star: CLASE 7 * 30/08 * Arrays (arreglos)
