@@ -213,6 +213,21 @@ Con nodemon no tenemos que cortar la terminal para actualizar los cambios y volv
 - Para ver las librerias instaladas globalmente: ```npm list -D ```
 
 ---
+
+## :star: Libreria Express
+
+
+---
+
+## otras librerias
+
+- React
+
+- Electron ( aplicaciones de escritorio)
+
+- REact Native (aplicaciones mobiles)
+
+---
 ---
 
 ## :star: npm cheatsheet
