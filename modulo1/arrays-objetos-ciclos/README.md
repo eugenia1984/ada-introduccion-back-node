@@ -742,4 +742,60 @@ console.log(usuario.saludo()); // 'Hola'
 ```
 
 ---
+
+## Hacemos el primer ejercicio
+
+**sobre mi**
+
+Crear una variable llamada **sobreMi**, a la que le vamos a asignar un objeto.
+
+El objeto tiene que tener 3 propiedades: **nombre**, **apellido**, **edad**
+
+Mostrar en consola el objeto sobreMi
+
+
+```JavaScript
+const sobreMi = {
+  nombre: 'María Eugenia',
+  apellido: 'Costa',
+  edad: 38
+}
+// Muestro todo el objeto 
+console.log(sobreMi);
+// ARmo una presentacion con los valores del objeto
+console.log(`Soy ${sobreMi.nombre} ${sobreMi.apellido} y tengo ${sobreMi.edad} años.`)
+```
+
+---
+
+### Hacemos el segundo ejercicio
+
+**presentar**
+
+Crear una variable llamada user, a la que le vamos a asignar un objeto.
+
+El objeto tiene que tener 3 propiedades: fullname, email, age
+
+Mostrar en consola el objeto user
+
+Mostrar en la consola el nombre y la edad de la persona: "Hola, mi nombre es [ACA EL NOMBRE] y tengo [ACA LA EDAD] años"
+
+```JavaScript
+const user = {
+  fullname: 'Maria Eugenia Costa',
+  email: 'example@example.com',
+  age: 38
+}
+console.log(`Hola, mi nombre es ${user.fullname} y tengo ${user.age} años.`);
+```
+
+---
+
+## Tipo de datos
+
+En JavaScript tenemos los tipos de **datos primitivos**, como son los: Numbers, bigint (numeros que terminan en **n**), Strings, null, undefined (no está definido), boolean.
+
+Y también tenemos los **datos complejos**, como por ejemplo el **array**, el **objeto** y las **funciones** (que por debajo también son objetos, se le pueden agregar atributos).
+
+---
 ---
