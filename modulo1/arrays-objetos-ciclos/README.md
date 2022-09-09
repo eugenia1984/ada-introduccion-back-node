@@ -926,4 +926,100 @@ const todosLosAtributos = Object.entries(user);
 
 -> Nos da un array de arrays, donde cada una tiene cada par key - value.
 
+
+---
+---
+
+## :star: CLASE 9 * 06/09 *** OBJETOS *** :star:
+
+- Repaso de la clase pasada.
+
+```JavaScript
+const objVacio = {}; // objeto vacio
+const arrVacio = []; // array vacio
+const taza = {
+  marca: 'marcaDeTaza',
+  precio: 123,
+  disenio: 'A',
+  romperse: () => console.log('Romperse')
+}
+// para acceder a una propiedad del objeto
+taza.marca; // 'marcaDeTaza'
+// para acceder a un metodo del objeto
+taza.romperse(); // 'romperse'
+// para agregar atributos
+taza.nuevoAtributo = 'soy un nuevo atributo';
+// si el atributo ya existe se sobreescribe
+taza.marca = 'marcaTaza';
+```
+
+- Si en vez de usar **dot notation** se utiliza **[]** en este caso las key se pueden usar como variables.
+
+- Todo lo que es objeto se guarda en memoria como una direccion, es la referencia del objeto, por esto podemso utilizar **const** en objetos y modificarle sus key-values.
+
+```JavaScript
+// para copiar todo el objeto en uno nuevo, tambien nos sirve para copiar arrays
+const obj2 = {... taza};
+```
+
+- Con el **for(let .. in ..)** se pueden recorrer los objetos.
+```JavaScript
+datos = {
+  id: 1,
+  nombre: 'Ada'
+}
+for(let llave in datos) {
+  console.log(llave + " : " + datos[llave]);
+}
+``` 
+
+- **.freeze()** para que no se pueda modificar el objeto
+
+```JavaScript
+obj2 = Object.freeze(obj2);
+obj2.id = 2;
+console.log(obj2.id); // 1 no se me modifico
+``` 
+
+- **.keys()** devuelve todas las llaves en forma de array, **.veluae()** devuelve todos los valores del objeto en un array
+
+
+---
+
+## Contar letras de un String
+
+```JavaScript
+let texto = "Tenemos la variable disco con un objeto que guarda datos de un album";
+// le saco los espacios, paso todo a minuscula y lo transformo a un array de letras
+const arrayDeLetras = texto.replace(' ', '').toLowerCase().split('');
+console.log(arrayDeLetras);
+/*
+["T", "e", "n", "e", "m", "o", "s", " ", "l", "a", " ", "v", "a", "r", "i", "a", "b", "l", "e", " ", "d", "i", "s", "c", "o", " ", "c", "o", "n", " ", "u", "n", " ", "o", "b", "j", "e", "t", "o", " ", "q", "u", "e", " ", "g", "u", "a", "r", "d", "a", " ", "d", "a", "t", "o", "s", " ", "d", "e", " ", "u", "n", " ", "a", "l", "b", "u" , "m"]
+*/
+cont objDeLetras = {}; // aca voy a llenar las letras
+for(let letra of arrayDeLetras) {
+  if(objDeLetras[letr] === undefined) { // la llave no existe en el objeto
+    objDeLetras[letra] = 1;
+  } else { // cuando ya existe la llave
+    objDeLetras[letra]++;
+  }
+}
+``` 
+
+### Encontrar la letra que se repite más
+
+```JavaScript
+let letraQueSeRepiteMas = ''; // aca guardo la letra que mas se repite
+let vecesDeLetra = 0; // aca guardo cuantas veces se repite
+for(let llave in objDeLetras) {
+  if(objDeLetras[llave] > vecesDeLetra) { // veo los valores
+    letraQueSeRepiteMas = llave; // guardo la letra
+    vecesDeLetra = objDeLetras[llave]; // guardo cuantas veces se repite
+  }  
+}
+console.log(letraQueSeRepiteMas);
+console.log(vecesDeLetra );
+``` 
+
+---
 ---
