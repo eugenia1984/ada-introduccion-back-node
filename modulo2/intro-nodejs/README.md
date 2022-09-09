@@ -123,5 +123,101 @@ Asi ahora por consola veo:
 
 - Ahora la consola nos va a ayudar, si tenemos algun error lo vamos a poder ver.
 
+
+---
+
+### npm init
+
+Para iniciar un proyecto propios.
+
+Con ```npm init``` me lo inciia y me pide que complete ciertos datos:
+
+- nombre dle paquete
+
+- version
+
+- descripcion
+
+- git repository
+
+- palabras claves
+
+- autor
+
+- licencia (ISC)
+
+Y le damos YES
+
+-> Otro modo de crearlo es con ```npm init -y``` y se inciializa, pero sin los datos personalizados, crea un package.json vacío (y lo puedo modificar directo en el archivo package.json).
+
+-> Se crea el archivo **package.json** con los datos completados y ahi voy a poder ver que librerias bajo.
+
+-> De este modo creo un entorno para poder usar npm
+
+
+---
+
+## :star: Bajando librerias
+
+- Las instalamos por medio de la terminal con el comando:
+
+```npm install nombre_de_la_libreria```
+
+- una vez instalada voy a tener el archivo **package.json** (que tiene el detalle de mi proyecto y las librerias utilizadas con sus versiones), el **package.lockjson** (con todas las dependencias que utilizan las librerias) y **node_modules** (donde estan las librerias)
+
+- Si necesit desinstalar una libeería: 
+```npm un nombre_de_la_libreria``` (**un** de uninstall / desisntalar)
+
+#### Libreria is-odd
+
+- Como primera practica vamos a intalar la libreria: [**is-odd**](https://www.npmjs.com/package/is-odd)
+
+Y ahora en mi **package.json** veo:
+
+```JSON
+"dependencies": {
+  "is-odd": "^3.0.1"
+}
+```
+
+Y en la web de npm veo la minima información de la librería:
+
+#### Install
+
+Install with npm:
+
+```$ npm install --save is-odd```
+
+#### Usage
+
+**Returns true if the given number is odd, and is an integer that does not exceed the JavaScript MAXIMUM_SAFE_INTEGER.**
+
+Works with strings or numbers.
+
+```JavaScript
+const isOdd = require('is-odd');
+ 
+console.log(isOdd('1')); //=> true
+console.log(isOdd('3')); //=> true
+console.log(isOdd(0)); //=> false
+console.log(isOdd(2)); //=> false
+```
+
+
+## Libreria nodemon
+
+```npm i nodemon -D``` con la **D** queda omo dependencia de desarrollo, se usa solo en desarrollo.
+
+Con nodemon no tenemos que cortar la terminal para actualizar los cambios y volverla a correrlo.
+
+- Para ver las librerias instaladas globalmente: ```npm list -D ```
+
+---
+---
+
+## :star: npm cheatsheet
+
+Se puede ver en [https://devhints.io/npm](https://devhints.io/npm)
+
 ---
 ---
