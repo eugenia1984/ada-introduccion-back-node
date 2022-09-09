@@ -718,7 +718,7 @@ function esPalindromo(str) {
 
 - En Python los llaman **diciconarios**.
 
-- Se declaran enre **{}**
+- Se declaran entre **{}**
 
 - Tienen los pares **key:value** (llave : valor), la key es el atributo dle objeto. Cada par key-value se separa con **,**.
 
@@ -739,10 +739,17 @@ const usuario = {
 console.log(usuario.nombre); // 'Ian'
 // Puedo ejecutar la funcion que tiene el usuario
 console.log(usuario.saludo()); // 'Hola'
+// Para modificar un valor de una key que ya existe
+usuario.edad = 30;
+console.log(usuario.edad); // 30
+// para agregar una nueva key-value
+usuario.codigo = 123;
+// Puedo utilizar variables para ls llaves
+let pais = "Argentina";
+usuario.[pais] = "ARG";
 ```
 
 ---
-
 ## Hacemos el primer ejercicio
 
 **sobre mi**
@@ -798,4 +805,4 @@ En JavaScript tenemos los tipos de **datos primitivos**, como son los: Numbers, 
 Y también tenemos los **datos complejos**, como por ejemplo el **array**, el **objeto** y las **funciones** (que por debajo también son objetos, se le pueden agregar atributos).
 
 ---
----
+
