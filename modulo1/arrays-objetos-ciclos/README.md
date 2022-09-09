@@ -804,5 +804,7 @@ En JavaScript tenemos los tipos de **datos primitivos**, como son los: Numbers, 
 
 Y también tenemos los **datos complejos**, como por ejemplo el **array**, el **objeto** y las **funciones** (que por debajo también son objetos, se le pueden agregar atributos).
 
+Los objetos se guardan en una **direccion de memoria** , va a utilizar varios bloques de memoria, ya que tiene varios pares key-value; por eso podemos utilizar **const** en opbjetos y modificar del mismo sus key y values.
+
 ---
 
