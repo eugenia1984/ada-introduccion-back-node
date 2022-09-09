@@ -6,7 +6,7 @@
 
 ## obtenerIndice(valor, array)
 
-Crear una función obtenerIndice que tome como argumento un valor cualquiera valor y un array cualquiera array y devuelva el índice del primer ítem con dicho valor en el array, o -1 si no hay ninguno.
+Crear una función obtenerIndice que tome como argumento un valor cualquiera **valor** y un array cualquiera **array** y devuelva el índice del primer ítem con dicho valor en el array, o -1 si no hay ninguno.
 ```
 obtenerIndice(12, [5, 7, 12, 34, 54, 2, 12]) // 2
 obtenerIndice(83, [5, 7, 12, 34, 54, 2, 12]) // -1
@@ -14,7 +14,7 @@ obtenerIndice(83, [5, 7, 12, 34, 54, 2, 12]) // -1
 
 ## repetir(valor, cantidad)
 
-Crear una función repetir que tome como argumento un valor valor y un número entero cantidad, y devuelva una array con valor repetido cantidad de veces.
+Crear una función repetir que tome como argumento un valor **valor** y un número entero **cantidad**, y devuelva una array con valor repetido cantidad de veces.
 ```
 repetir('lovelace', 3) // ['lovelace', 'lovelace', 'lovelace']
 repetir('a', 5) // ['a', 'a', 'a', 'a', 'a']
@@ -65,9 +65,9 @@ repetirLetras('ah!', 5) // 'aaaaahhhhh!!!!!'
 repetirLetras('basta', 1) // 'basta'
 ```
 
-#3♣ capitalizarPalabras(string)
+## capitalizarPalabras(string)
 
-Crear una función capitalizarPalabras tome como argumento un string string y devuelva un string donde cada palabra está capitalizada (con la primera letra ma´yuscula). Dejar las demás letras como están.
+Crear una función capitalizarPalabras tome como argumento un string string y devuelva un string donde cada palabra está capitalizada (con la primera letra mayuscula). Dejar las demás letras como están.
 ```
 capitalizarPalabras('Esto es un título') // 'Esto Es Un Título'
 capitalizarPalabras('había una vez') // 'Había Una Vez'
