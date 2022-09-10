@@ -241,3 +241,232 @@ Se puede ver en [https://devhints.io/npm](https://devhints.io/npm)
 
 ---
 ---
+
+
+## :star: CLASE 10 * 08/09 *** INTRO NODE.JS *** :star:
+
+### Repaso de clase pasada
+
+- Con **Node.js** podemos correr JavaScript en consola, fuera del navegador, gracias al motor **v8**
+
+- **npm** nos facilita manejar los paquetes, nos permite bajar librerías y poder iniciar proyectos (```npm init``` completando nosotros todo ó ```npm init -y```) y se nos crea el **package.json** (el cual puede modificarse, si comenzamoe el proyecto con npm init -y).
+
+- Con ```npm install nombre_librería``` ò ```npm i nombre_libreria``` para instalarlas. Y para poder usarlas debo requerirlas y guardarlas en constante para usarlas, por ejemplo: ```const isOdd = require('is-odd')````
+
+
+---
+
+## :star: Modulos * exportar e importar
+
+### Hacemos el primer ejercicio de la guia para tranajar con modulos
+
+- Para poder **exportar** *una  sola función* que luego pueda ser invocada en otro archivo, utilizamos **module.exports**:
+
+```JavaScript
+module.exports = function sumar(num1, num2) {
+  if(isNaN(num1) || isNaN(num2)) {
+    return "Error: los parametros deben ser números";
+  }
+  return num1 + num2;
+}
+```
+
+Y para poder utilizarlo en otro archivo debo **importarlo** con **required**:
+
+```JavaScript
+const sumar = require('./calculadora');
+```
+
+- Para poder exportar *más de una función* vamos a **exportar un objeto** la key es el modo con que voy a invocar la funcion que le paso como value.
+
+```JavaScript
+module.exports = {
+  sumar: sumar,
+  restar: restar,
+  multiplicar: multiplicar,
+  dividir: dividir
+}
+```
+
+Con ES6 si el key y el value tienen el mismo nombre, se puede poner una sola vez, quedando:
+```JavaScript
+module.exports = {
+  sumar,
+  restar,
+  multiplicar,
+  dividir
+}
+```
+
+Y para poder utilizarla :
+```JavaScript
+const {sumar, restar, multiplicar, dividir } = require('./calculadora');
+```
+
+O sino las guardo en un objeto, el cual va a tener esas funciones:
+
+```JavaScript
+const calc = require('./calculadora');
+
+console.log (calc.sumar(4, 2));
+```
+
+- Otro modo es mediante el archivo **package.json** agregamos **"type" : "modules"**:
+
+```JavaScript
+{
+  "description": "la descripcion",
+  "type": "modules"
+}
+```
+
+Y vamos a ver que el **require** no nos funciona, entonces podemos **importar** de este modo: 
+```JavaScript
+import calc from './calc/calculadora';
+```
+
+Queda igual al import de Python.
+
+Y para **importar**:
+
+```JavaScript
+export default = {
+  sumar,
+  restar,
+  multiplicar,
+  dividir
+}
+```
+
+Lo bueo de este modo es que puedo importar más de un solo objeto, por ejemplo:
+```JavaScript
+export default = {
+  sumar,
+  restar,
+  multiplicar,
+  dividir
+};
+
+export const hola = 'Hola mucho gusto'
+```
+
+Y lo uso:
+```JavaScript
+import calc, { hola } from './calc/calculadora';
+```
+
+Sin los {} va lo que exporto por default.
+
+---
+
+**./** es para buscar en el mismo directorio en el que estoy (en esta carpeta). 
+
+**../** es para ir un directorio hacia atras. 
+
+Si es una **libreria de node_modules** solo la nombro, no tengo que detallar el path.
+
+---
+
+**calculadora**
+
+Crear un **módulo** llamado calculadora donde vamos a tener funciones: sumar, restar, multiplicar, dividir.
+
+Cada función recibe 2 parámetros, tiene que realizar la operación matemática con esos parámetros y retornar el resultado.
+
+El módulo tiene exportar un objeto con estas 4 funciones.
+
+Luego, crear un archivo **app.js**, donde vamos a importar este módulo y utilizar las funciones para mostrar los resultados de distintas operaciones.
+
+Por ejemplo:
+```JavaScript
+console.log( calc.sumar(4, 2) ); // muestra 6
+console.log( calc.restar(4, 2) ); // muestra 2
+console.log( calc.multiplicar(4, 2) ); // muestra 8
+console.log( calc.dividir(4, 2) ); // muestra 2
+```
+
+
+En mi archivo **calculadora.js**:
+
+```JavaScript
+function sumar(num1, num2) {
+  if(isNaN(num1) || isNaN(num2)) {
+    return "Error: los parametros deben ser números";
+  }
+  return num1 + num2;
+}
+
+function restar(num1, num2) {
+  if(isNaN(num1) || isNaN(num2)) {
+    return "Error: los parametros deben ser números";
+  }
+  return num1 - num2;
+}
+
+function multiplicar(num1, num2) {
+  if(isNaN(num1) || isNaN(num2)) {
+    return "Error: los parametros deben ser números";
+  }
+  return num1 * num2;
+}
+
+function dividir(num1, num2) {
+  if(isNaN(num1) || isNaN(num2)) {
+    return "Error: los parametros deben ser números";
+  }
+  if(num2 === 0 ) {
+    return "Error : no se puede dividir por 0";
+  } 
+  return num1 / num2;
+}
+
+module.exports = {
+  sumar,
+  restar,
+  multiplicar,
+  dividir
+}
+
+```
+
+Y en el app.js:
+```JavaScript
+const {sumar, restar, multiplicar, dividir } = require('./calculadora');
+// const calc = require('./calculadora');
+
+// console.log (calc.sumar(4, 2));
+console.log( sumar(4, 2) ); // muestra 6
+console.log( restar(4, 2) ); // muestra 2
+console.log( multiplicar(4, 2) ); // muestra 8
+console.log( dividir(4, 2) ); // muestra 2
+```
+
+---
+
+### Script en package.json
+
+- En el **package.json** tenemos **scripts**:
+
+```
+"scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
+```
+
+Y para ejecutarlo en consola: ``` npm run echo``` (npm run nombre_del_script).
+
+- Uno muy usado es:
+
+```
+"scripts": {
+  "start": "nodemon main.js",
+  "dev": "node main.js"
+},
+```
+
+Asi al ejecutar en consola ``` npm run start``` voy a estar ejecutando el archivo main.js con nodemon y si ejecuto en consola ``` npm run dev```  voy a ejecutar el archivo main.js pero con node (si hago un cambio voy a tener que cerrar la consola y volver a ejecutarla.)
+
+
+
+---
+---

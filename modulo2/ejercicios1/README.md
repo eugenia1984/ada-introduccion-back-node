@@ -20,6 +20,10 @@ console.log( calc.multiplicar(4, 2) ); // muestra 8
 console.log( calc.dividir(4, 2) ); // muestra 2
 ```
 
+-> Está en los archicos **app.js** y **calculadora.js**
+
+---
+
 ## 2 - Netflix
 
 Vamos a crear un pequeño módulo para gestionar películas de netflix. Para esto, vamos a tener dos archivos: netflix.js y db.js.
