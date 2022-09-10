@@ -31,7 +31,7 @@ El curso de ADA IT de Introduccion a Back End con Nodejs
 | ------ |
 | [Clase 1 (09/08) - Clase 2 (11/08) - Clase 3 (16/08)](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/variables-datos-operadores-condicionales):  Variables, datos, operadores, condicionales |
 | [Clase 4 (18/8) - Clase 5 (23/8)](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/funciones) : Funciones, métodos de Strings |
-| [Clase 6 (25/8) - Clase 7 (30/08) - Clase 8 (01/09) - cLASE 9 (06/09)](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/arrays-objetos-ciclos) : Arrays, Objetos, ciclos |
+| [Clase 6 (25/8) - Clase 7 (30/08) - Clase 8 (01/09) - Clase 9 (06/09)](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1/arrays-objetos-ciclos) : Arrays, Objetos, ciclos |
 
 
 | EJERCICIOS |
@@ -48,7 +48,7 @@ El curso de ADA IT de Introduccion a Back End con Nodejs
 
 | CLASES |
 | ------ |
-| [Intro Node.js - CLASE 9 (06/09)](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo2/intro-nodejs) |
+| [Intro Node.js - Clase 9 (06/09)](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo2/intro-nodejs) |
 | [Node.js Express](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo2/nodejs-express) |
 | [Express CRUD](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo2/express-crud) |
 
