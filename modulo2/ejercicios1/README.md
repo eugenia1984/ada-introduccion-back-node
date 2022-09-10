@@ -26,7 +26,9 @@ console.log( calc.dividir(4, 2) ); // muestra 2
 
 ## 2 - Netflix
 
-Vamos a crear un pequeño módulo para gestionar películas de netflix. Para esto, vamos a tener dos archivos: netflix.js y db.js.
+Vamos a crear un pequeño módulo para gestionar películas de netflix. 
+
+Para esto, vamos a tener dos archivos: netflix.js y db.js.
 
 Dentro de db.js vamos a tener las siguientes funciones:
 ```JavaScript
@@ -66,11 +68,15 @@ db.mostrarPeliculas();
 // Flash - 5
 ```
 
+---
+
 ## 3 - NPM
 
 Tomemos los dos ejercicios de la clase anterior (la calculadora y el netflix), y armarlos como proyectos de NPM.
 
 Para eso vamos a tener que crear una carpeta por cada proyecto llamadas calculadora y netflix. Dentro, vamos a iniciar el proyecto de NPM como lo vimos anteriormente, agregar el código de la solución y configurar el script start dentro del package.json para que podamos ejecutar los ejercicios utilizando npm run start.
+
+---
 
 ## 4 - IDs únicos
 
