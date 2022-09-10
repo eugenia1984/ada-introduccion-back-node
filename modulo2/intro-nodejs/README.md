@@ -76,7 +76,7 @@ Antes JavaScript solo se podía correr en el navegador, y con Node.js se puede c
 
 ---
 
-### npm
+### :star: npm
 
 **Node Package Manager** es el manejador de paquetes de node que ya viene por defecto para poder compartir e instalar librerías.
 
@@ -126,7 +126,7 @@ Asi ahora por consola veo:
 
 ---
 
-### npm init
+### :star:  npm init
 
 Para iniciar un proyecto propios.
 
@@ -168,7 +168,9 @@ Y le damos YES
 - Si necesit desinstalar una libeería: 
 ```npm un nombre_de_la_libreria``` (**un** de uninstall / desisntalar)
 
-#### Libreria is-odd
+---
+
+#### :star: Libreria is-odd
 
 - Como primera practica vamos a intalar la libreria: [**is-odd**](https://www.npmjs.com/package/is-odd)
 
