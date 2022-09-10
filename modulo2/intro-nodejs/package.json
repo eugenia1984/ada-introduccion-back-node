@@ -1,17 +1,23 @@
 {
   "name": "intro-nodejs",
   "version": "1.0.0",
-  "description": "----",
+  "description": "Practica de introduccion a Node.js y Express.",
+  "type": "module",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon main.js",
+    "dev": "node main.js"
   },
   "keywords": [
-    " nodejs"
+    "javascipt",
+    " nodejs",
+    "express"
   ],
   "author": "Maria Eugenia Costa",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.18.1",
     "is-odd": "^3.0.1"
   },
   "devDependencies": {

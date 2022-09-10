@@ -74,4 +74,101 @@ Empiezan y terminan con {}, tienen key (que va siempre entre " ") y value, cada 
 Antes para poder enviar información se utilizaba **XML** es un lenguaje de etiqueta, similar a HTML, pero actualmente se utiliza **JSON** que es más ligero.
 
 ---
+
+## :star: Express
+
+En el proyecto lo instalamos con : ```npm install express```ó ```npm i express```
+
+
+En el **package.json** LO VEO EN DEPENDENCIAS:
+```JSON
+  "dependencies": {
+    "express": "^4.18.1",
+    "is-odd": "^3.0.1"
+  },
+```
+
+Y también tengo que tener:
+```JSON
+  "type": "module",
+```
+
+Para poder importar con **import** en vez de **required**.
+
+Y en el **main.js** importo la librería **expres**:
+
+```JavaScript
+import express from 'express'; // importamos la libreria express
+const app = express(); // creamos una instancia de express
+
+// peticion en la tura principal (/)
+app.get('/', (req,res) => { 
+  res.send('Hello world')
+});
+
+app.listen(3000, () => {
+  console.log('Server started');
+});
+```
+
+- De este modo vamos a poder crear un servidor para el BackEnd.
+
+- Cuando hacen una peticion **GET** en la ruta principal **'/'** la respuesta (**res**) será el mensaje 'Hello world'.
+
+- **req** required, que me piden, **res** es la response(respuesta).
+
+- voy a escuchar en el puerto **3000**, y una vez que se conecta va a ejecutar la arrow function que va a tenr el console.log.
+
+- Si corro mi archivo ```node main.js``` , por consola veo: ```Server started``` es decir mi console.log y si en un navegador voy a **http://localhost:3000/** voy a ver el Hello world
+
+- Como ahora ya tengo corriendo mi servidor no voy a poder usar la consola, salvo que lo pare con ***ctrl+c**
+
+- Si quiero que en vez de un **String** mi servidor responda con un **JSON**:
+
+```JavaScript
+import express from 'express'; // importamos la libreria express
+const app = express(); // creamos una instancia de express
+
+app.get('/', (req,res) => {
+  // para responder con un JSON
+  res.json({message: 'Esto es un JSON'});
+});
+
+app.listen(3000, () => {
+  console.log('Server started');
+});
+```
+Prettier lo transforma, pero lo podria poner tal cual un JSON:
+```JavaScript
+res.json({"message": "Esto es un JSON"});
+```
+
+Y en el localhost:3000 veo, por consola:
+
+```
+[JSONViewer] Your json was stored into 'window.json', enjoy!
+content.js:214 JSON Formatter: Type "json" to inspect.
+```
+
+Y en el navegador:
+```
+// 20220910190502
+// http://localhost:3000/
+{
+  "message": "Esto es un JSON"
+}
+```
+
+-> Bajandonos la extension de Chrome **JSON Formatter** se puede ver así.
+
+
+---
+
+## :star: API
+
+Tenemos la [pokeapi.co](https://pokeapi.co/) que tiene JSONs y acorde a la consulta que le hacemos es la información que me trae.
+
+Por detrás es un servidor al cual haciendole la peticion nos devuelve el JSON con los pokemones.
+
+---
 ---
