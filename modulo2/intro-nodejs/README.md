@@ -206,7 +206,7 @@ console.log(isOdd(2)); //=> false
 ```
 
 
-## Libreria nodemon
+## :star: Libreria nodemon
 
 ```npm i nodemon -D``` con la **D** queda omo dependencia de desarrollo, se usa solo en desarrollo.
 
