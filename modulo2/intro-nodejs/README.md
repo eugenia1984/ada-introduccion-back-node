@@ -104,7 +104,7 @@ En el VSC con **ctl+ñ** se abre la consola, sino desde **Terminal > New Termina
 
 ---
 
-## Correr Javacript fuera dle navegador
+## Correr Javacript fuera del navegador
 
 - Si por ejemplo tengo le archivo **main.js** con el siguiente codigo:
 
@@ -212,10 +212,13 @@ Con nodemon no tenemos que cortar la terminal para actualizar los cambios y volv
 
 - Para ver las librerias instaladas globalmente: ```npm list -D ```
 
+- Toda la información en [https://www.npmjs.com/package/nodemon](https://www.npmjs.com/package/nodemon)
+
 ---
 
 ## :star: Libreria Express
 
+Es con la que vamos a estar trabajando . Toda la información en [https://www.npmjs.com/package/express](https://www.npmjs.com/package/express)
 
 ---
 
