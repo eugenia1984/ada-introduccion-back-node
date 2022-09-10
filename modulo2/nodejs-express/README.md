@@ -37,6 +37,7 @@
 [Nodejs Curso Desde Cero, para principiantes](https://www.youtube.com/watch?v=BhvLIzVL8_o)
 
 ---
+---
 
 ## :star: CLASE 10 * 08/09 *** INTRO NODE.JS *** :star:
 
@@ -46,3 +47,31 @@
 En este módulo vamos a hacer un **servidor** con **Express**.
 
 ### ¿ Qué es un serviidor?
+
+
+Un conjunto de computadoras capaces de recibir la petición de un cliente y devolver una respuesta en concrdancia.
+
+```
+  CLIENTE    -->  peticion -->     SERVIDOR    -->  BASE
+ (navegador) <-- respuesta <--   (computadora) <-- DE DATOS
+(aplicacion)                       (cluster)
+------------                     -------------
+ FRONT END                          BACK END
+```
+
+
+Los servidores van a recibir un **JSON**:
+
+```
+{
+  "email": "ejemplo@ejemplo.com",
+  "password": 123
+}
+```
+
+Empiezan y terminan con {}, tienen key (que va siempre entre " ") y value, cada par de key-value se separa entre **,**, salvo entre el último que no lleva.
+
+Antes para poder enviar información se utilizaba **XML** es un lenguaje de etiqueta, similar a HTML, pero actualmente se utiliza **JSON** que es más ligero.
+
+---
+---

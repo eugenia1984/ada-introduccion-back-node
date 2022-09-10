@@ -48,9 +48,9 @@ El curso de ADA IT de Introduccion a Back End con Nodejs
 
 | CLASES |
 | ------ |
-| [Intro Node.js - Clase 9 (06/09) - Clase 10 (08/09)](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo2/intro-nodejs) |
-| [Node.js Express - Clase 10 (08/09)](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo2/nodejs-express) |
-| [Express CRUD](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo2/express-crud) |
+| [Clase 9 (06/09) - Clase 10 (08/09)](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo2/intro-nodejs) : Intro Node.js |
+| [Clase 10 (08/09)](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo2/nodejs-express) : Node.js Express |
+| [Clase](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo2/express-crud) : Express CRUD |
 
 | EJERCICIOS |
 | ---------- |
@@ -64,7 +64,7 @@ El curso de ADA IT de Introduccion a Back End con Nodejs
 
 | CLASES |
 | ------ |
-| [Intro MongoDB](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo3/intro-mongodb) |
-| [Mongoose](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo3/mongoose) |
+| [Clase](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo3/intro-mongodb) : Intro MongoDB|
+| [Clase](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo3/mongoose) : Mongoose |
 
 ---
