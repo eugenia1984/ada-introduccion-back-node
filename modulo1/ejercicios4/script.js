@@ -37,7 +37,6 @@ function sumar(numeros) {
 
 sumar(numerosASumar); // 58
 
-
 /*******************************************
   Ejercicio 3 : contiene(numero, numeros) 
 ********************************************/
@@ -62,7 +61,7 @@ contiene(54, [5, 7, 99, 3, 4, 54, 2, 12]); // true
 contiene(103, [5, 7, 99, 3, 4, 54, 2, 12]); // false
 
 /***********************************
- Ejercicio 5 : invertirCaso(string) 
+ Ejercicio 4 : invertirCaso(string) 
 ***********************************/
 /*
 Crear una función invertirCaso que tome como argumento un string string y devuelva un string donde cada letra tiene el caso invertido, es decir, cada letra está mayúscula si estaba en minúscula, y viceversa.
@@ -93,34 +92,42 @@ function invertirCaso(string) {
 invertirCaso('Ada Lovelace') // 'aDA lOVELACE'
 invertirCaso('feliz cumple') // 'FELIZ CUMPLE'
 invertirCaso('jAvAsCrIpT') // 'JaVaScRiPt'
+
 /*********************************
- Ejercicio 6 : gano(tragamonedas) 
+ Ejercicio 5 : gano(tragamonedas) 
 *********************************/
 /*
 Crear una función gano que tome como argumento un array tragamonedas con 5 símbolos y devuelva true si son iguales y false sino. Si el array tiene más de 5 símbolos, sólo debe comparar los 5 primeros.
-gano(['⭐️', '⭐️', '⭐️', '💫', '✨']) // false
-gano(['💫', '💫', '💫', '💫', '💫']) // true
-gano(['💫', '💫', '💫', '💫', '💫', '⭐️']) // true
 */
 function  gano(tragamonedas) {
+  let resultado = true;
+  let primerSimbolo = tragamonedas.slice(0,1);
 
+  if (tragamonedas.length >=6 ) {
+    tragamonedas = tragamonedas.slice(0,5);
+  }
+  
+  tragamonedas.forEach( element => {
+    if(element != primerSimbolo) {
+      resultado = false;
+    }
+  });
+
+  return resultado;
 }
+
 gano(['⭐️', '⭐️', '⭐️', '💫', '✨']) // false
 gano(['💫', '💫', '💫', '💫', '💫']) // true
 gano(['💫', '💫', '💫', '💫', '💫', '⭐️']) // true
 
 /*******************************************
- Ejercicio 7 : obtenerChatStatus(usuarias) 
+ Ejercicio 6 : obtenerChatStatus(usuarias) 
 *******************************************/
 /*
 Crear una función obtenerChatStatus que tome como argumento un array de strings usuarias y devuelva un string con el status del chat. Las reglas son:
 Para una usuaria, debe mostrar: NOMBRE_USUARIA_1 está conectada
 Para dos usuarias, debe mostrar: NOMBRE_USUARIA_1 y NOMBRE_USUARIA_2 + están conectadas
 Para más de dos usuarias, debe mostrar: NOMBRE_USUARIA_1, NOMBRE_USUARIA_2 y X persona(s) más están conectadas
-Ejemplo:
-obtenerChatStatus(['Ada']) // 'Ada está conectada'
-obtenerChatStatus(['Ada', 'Grace']) // 'Ada y Grace están conectadas'
-obtenerChatStatus(['Ada', 'Grace', 'Marie']) // 'Ada, Grace y 1 persona(s) más están conectadas'
 */
 function obtenerChatStatus(arr) {
   if(arr.length === 0) {
@@ -141,12 +148,10 @@ obtenerChatStatus(['Ada', 'Grace']); //  'Ada y Grace estan conectadas'
 obtenerChatStatus(['Ada', 'Grace', 'Maria']); // 'Ada, Grace y 1 persona(s) estan conectadas'
 
 /***************************************************
- Ejercicio 8 : multiplicar(multiplicador, numeros)
+ Ejercicio 7 : multiplicar(multiplicador, numeros)
 ***************************************************/
 /*
-Crear una función multiplicar que tome como argumentos un número multiplicador y un array de números numeros, y que devuelva un array donde cada elemento es el resultado del elemento del primer array (en la misma posición) multiplicado por el número ingresado. Ejemplo:
-multiplicar(2, [5, 7, 15, 22, 40]) // [10, 14, 30, 44, 80]
-multiplicar(10, [2, 5, 77]) // [20, 50, 770]
+Crear una función multiplicar que tome como argumentos un número multiplicador y un array de números numeros, y que devuelva un array donde cada elemento es el resultado del elemento del primer array (en la misma posición) multiplicado por el número ingresado.
 */
 const arrNumeros3 = [4, 1, 33, 10 ,42];
 
@@ -159,10 +164,23 @@ multiplicar(1, arrNumeros3); // 4, 1, 33, 10 ,42
 multiplicar(2, arrNumeros3); // 8, 2, 66, 20, 84
 
 /***********************************************************
- Ejercicio 9 : filtrarPorLongitudMayorA(longitud, palabras)
+ Ejercicio 8 : filtrarPorLongitudMayorA(longitud, palabras)
  ***********************************************************/
 /*
-Crear una función filtrarPorLongitud que tome como argumentos un número longitud y un array de strings palabras y que devuelva un array con las palabras que tengan una cantidad de letras mayor a longitud. Ejemplo:
+Crear una función filtrarPorLongitud que tome como argumentos un número longitud y un array de strings palabras y que devuelva un array con las palabras que tengan una cantidad de letras mayor a longitud. 
+*/
+
+function filtrarPorLongitudMayorA(longitud, palabras) {
+  const arr = [];
+  palabras.forEach(palabra => {
+    if(palabra.length > longitud) {
+      console.log(palabra);
+      arr.push(palabra);
+    }
+  })
+  return arr; 
+}
+
 filtrarPorLongitudMayorA(4, [
   'dia',
   'remolacha',
@@ -171,25 +189,33 @@ filtrarPorLongitudMayorA(4, [
   'te',
   'verde',
 ]) // ['remolacha', 'sorpresa', 'verde']
-*/
 
 /***************************************************
-  Ejercicio 10 : recortar(cantidadLetras, palabras)
+  Ejercicio 9 : recortar(cantidadLetras, palabras)
  **************************************************/
 /*
 Crear una función recortar que tome como argumentos un número cantidadLetras y un array de strings palabras y devuelva un array con las mismas palabras pero recortadas. Las palabras se recortan dejando cantidadLetras letras al iniciando, y recortando las demás. Por ejemplo, elefante recortada a 4 letras queda elef.
-recortar(4, ['elefante', 'dinosaurio'. 'chocolate', 'avion', 'america']) // ['eleft', 'dino' 'chocolate', 'avio', 'amer']
-recortar(1, ['algoritmo', 'bug', 'compilador']) // ['a', 'b', 'c']
 */
+function recortar(cantidadLetras, palabras) {
+  const arr = [];
+  palabras.forEach(palabra => {
+    if(palabra.length > cantidadLetras) {
+      arr.push(palabra.slice(0, cantidadLetras));
+    } else {
+      arr.push(palabra);
+    }
+  })
+  return arr; 
+}
+
+recortar(4, ['elefante', 'dinosaurio', 'chocolate', 'avion', 'america']) // ['eleft', 'dino' 'chocolate', 'avio', 'amer']
+recortar(1, ['algoritmo', 'bug', 'compilador']) // ['a', 'b', 'c']
 
 /**********************************
- Ejercicio 11 : sonIguales(a, b) 
+ Ejercicio 10 : sonIguales(a, b) 
 ***********************************/
 /*
 Crear una función sonIguales(a, b) que tome como argumentos dos arrays a y b y devuelva true si ambos arrays tienen los mismos valores en la misma posición, o false sino.
-sonIguales([10, 25, 6, 33, 48, 105], [10, 25, 6, 33, 48, 105]) // true
-sonIguales([10, 25, 6, 33, 48, 105], [11, 25, 6, 33, 48, 105]) // false
-sonIguales([10, 25, 6, 33, 48, 105], [25, 10, 6, 33, 48, 105]) // false
 */
 function sonIguales(arr1, arr2) {
   // primero compruebo que tengan la misma cantidad de elementos
@@ -210,7 +236,7 @@ sonIguales([10, 25, 6, 33, 48, 105], [11, 25, 6, 33, 48, 105]) // false
 sonIguales([10, 25, 6, 33, 48, 105], [25, 10, 6, 33, 48, 105]) // false
 
 /****************************************************************************
- Ejercicio 12 : obtenerResultado(jugadoraA, jugadoraB, puntajesA, puntajesB) 
+ Ejercicio 11 : obtenerResultado(jugadoraA, jugadoraB, puntajesA, puntajesB) 
 *****************************************************************************/
 /*
 Crear una función obtenerResultado que tome como argumentos dos strings jugadoraA y jugadoraB con los nombres de cada jugadora respectivamente, y dos arrays de numeros puntajesA y puntajesB de la misma longitud. La función debe devolver un string con el nombre de la ganadora o Empate en caso de que no haya ninguna. Para eso, debe comparar las mismas posiciones de cada array de puntajes, y sumar puntos a la jugadora correspondiente dependiendo de quien tenga el puntaje más alto. Por ejemplo:
@@ -220,12 +246,31 @@ const puntajesB = [4, 6, 2]
 // puntajesA[1] vs. puntajesB[1] -> Gana B
 // puntajesA[2] vs. puntajesB[2] -> Empate
 // Resultado final: Gana Jugadora B
-obtenerResultado('Ada', 'Grace', [4, 4, 4], [1, 2, 3]) // Ada
-obtenerResultado('Ada', 'Grace', [3, 5, 5, 7], [4, 1, 2, 9]) // Empate
-obtenerResultado('Ada', 'Grace', [5, 6, 3, 1, 8], [8, 2, 4, 2, 3]
 */
 const puntajesA = [3, 5, 2];
 const puntajesB = [4, 6, 2];
+
+function  obtenerResultado(jugadoraA, jugadoraB, puntajesA, puntajesB) {
+  let contadorA = 0;
+  let contadorB = 0;
+  for(let i = 0; i < puntajesA.length; i++) {
+    if(puntajesA[i] === puntajesB[i]) {
+      contadorA++;
+      contadorB++;
+    } else if(puntajesA[i] > puntajesB[i]) {
+      contadorA++;
+    } else {
+      contadorB++;
+    }
+  }
+  if(contadorA > contadorB) {
+    return jugadoraA;
+  } else if (contadorA < contadorB) {
+    return jugadoraB;
+  } else {
+    return "Empate";
+  }
+}
 
 obtenerResultado('Ada', 'Grace', [4, 4, 4], [1, 2, 3]); // Ada
 obtenerResultado('Ada', 'Grace', [3, 5, 5, 7], [4, 1, 2, 9]); // Empate
