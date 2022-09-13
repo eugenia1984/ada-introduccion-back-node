@@ -62,6 +62,7 @@ contiene(54, [5, 7, 99, 3, 4, 54, 2, 12]) // true
 contiene(103, [5, 7, 99, 3, 4, 54, 2, 12]) // false
 */
 function contiene(numero, numeros) {
+  
   return numeros.includes(numero)
 }
 

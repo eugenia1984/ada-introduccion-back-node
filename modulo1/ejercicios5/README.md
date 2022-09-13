@@ -4,27 +4,30 @@
 
 🔄 Estructuras de control: bucles
 
-## obtenerIndice(valor, array)
+## 1 - obtenerIndice(valor, array)
 
 Crear una función obtenerIndice que tome como argumento un valor cualquiera **valor** y un array cualquiera **array** y devuelva el índice del primer ítem con dicho valor en el array, o -1 si no hay ninguno.
-```
+```JavaScript
 obtenerIndice(12, [5, 7, 12, 34, 54, 2, 12]) // 2
 obtenerIndice(83, [5, 7, 12, 34, 54, 2, 12]) // -1
 ```
 
-## repetir(valor, cantidad)
+---
+
+## 2 - repetir(valor, cantidad)
 
 Crear una función repetir que tome como argumento un valor **valor** y un número entero **cantidad**, y devuelva una array con valor repetido cantidad de veces.
-```
+```JavaScript
 repetir('lovelace', 3) // ['lovelace', 'lovelace', 'lovelace']
 repetir('a', 5) // ['a', 'a', 'a', 'a', 'a']
 repetir('html', 0) // []
 ```
 
-## sumarImparesHasta(numero)
+---
+## 3 - sumarImparesHasta(numero)
 
 Crear una función sumarImparesHasta que tome como argumento un número numero y que devuelva la suma de todos los impares empezando desde 0 hasta dicho numero inclusive.
-```
+```JavaScript
 sumarImparesHasta(5) // 9 (1 + 3 + 5 = 9)
 sumarImparesHasta(13) // 49
 sumarImparesHasta(47) // 576

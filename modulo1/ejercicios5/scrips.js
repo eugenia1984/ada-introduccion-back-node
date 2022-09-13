@@ -5,6 +5,12 @@
 /*
 Crear una función obtenerIndice que tome como argumento un valor cualquiera "valor" y un array cualquiera "array" y devuelva el índice del primer ítem con dicho valor en el array, o -1 si no hay ninguno.
 */
+function obtenerIndice(valor, array) {
+  return (array.includes(valor))?valor:-1;
+}
+
+obtenerIndice(12, [5, 7, 12, 34, 54, 2, 12]) // 12
+obtenerIndice(83, [5, 7, 12, 34, 54, 2, 12]) // -1
 
 /****************************************
  Ejercicio 2 : repetir(valor, cantidad)
@@ -12,6 +18,17 @@ Crear una función obtenerIndice que tome como argumento un valor cualquiera "va
 /*
 Crear una función repetir que tome como argumento un valor "valor" y un número entero "cantidad", y devuelva una array con valor repetido cantidad de veces.
 */
+function repetir(valor, cantidad) {
+  const arr = []
+  for(let i = 0; i < cantidad; i++) {
+    arr.push(valor);
+  }
+  return arr;
+}
+
+repetir('lovelace', 3) // ['lovelace', 'lovelace', 'lovelace']
+repetir('a', 5) // ['a', 'a', 'a', 'a', 'a']
+repetir('html', 0) // []
 
 /******************************************
  Ejercicio 3 :  sumarImparesHasta(numero)
@@ -19,7 +36,21 @@ Crear una función repetir que tome como argumento un valor "valor" y un número
 /*
 Crear una función sumarImparesHasta que tome como argumento un número numero y que devuelva la suma de todos los impares empezando desde 0 hasta dicho numero inclusive.
 */
+function sumarImparesHasta(numero) {
+  
+  for(let i = 0; i <= numero; i++) { 
+    let acumulador = 0;
+    if( i % 2 != 0) {
+      acumulador+=acumulador;
+    }
+    return acumulador;
+  }
+  
+}
 
+sumarImparesHasta(5) // 9 (1 + 3 + 5 = 9)
+sumarImparesHasta(13) // 49
+sumarImparesHasta(47) // 576
 /***************************************************
  Ejercicio 4 :  crearCuentaRegresiva(numeroInicial)
 ****************************************************/
