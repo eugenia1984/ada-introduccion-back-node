@@ -40,15 +40,16 @@ mostrarPeliculas()
 
 También, dentro de db.js, vamos a tener un array de peliculas. Una película está representada por un objeto que tiene 3 propiades: id, nombre y rating.
 
-Cuando utilicemos la función agregarPelicula, vamos a pasarle como parámetro un objeto con la película que queremos agregar.
+- Cuando utilicemos la función agregarPelicula, vamos a pasarle como parámetro un objeto con la película que queremos agregar.
 
-Cuando utilicemos la función obtenerPelicula, vamos a pasarle como parámetro un ID de la película que queremos obtener. Esta función nos debe retornar el objeto de la película que estamos pidiendo.
+- Cuando utilicemos la función obtenerPelicula, vamos a pasarle como parámetro un ID de la película que queremos obtener. Esta función nos debe retornar el objeto de la película que estamos pidiendo.
 
-Cuando utilicemos la función eliminarPelicula, vamos a pasarle como parámetro un ID de la película que queremos eliminar. Esta función tiene que borrar del array la película que tiene la propiedad ID con el valor que le pasamos por parámetro.
+- Cuando utilicemos la función eliminarPelicula, vamos a pasarle como parámetro un ID de la película que queremos eliminar. Esta función tiene que borrar del array la película que tiene la propiedad ID con el valor que le pasamos por parámetro.
 
-La función mostrarPeliculas, tiene que mostrar por consola todas las peliculas que tenemos en el array.
+- La función mostrarPeliculas, tiene que mostrar por consola todas las peliculas que tenemos en el array.
 
-En el archivo netflix.js, vamos a exportar nuestro módulo db y vamos a utilizar las funciones de la siguiente forma:
+-En el archivo netflix.js, vamos a exportar nuestro módulo db y vamos a utilizar las funciones de la siguiente forma:
+
 ```JavaScript
 db.agregarPelicula({ id: 1, titulo: 'Batman', rating: 10 });
 db.agregarPelicula({ id: 2, titulo: 'Superman', rating: 2 });

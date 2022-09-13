@@ -5,10 +5,11 @@
 Crear una función obtenerMenor que tome como argumento un array de números numeros y devuelva el menor de ellos. Ejemplo:
 obtenerNumeroMenor([5, 7, 99, 34, 54, 2, 12]) // 2
 */
+// Infinity https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity
 let numerosABuscarMenor = [5, 7, 99, 34, 54, 2, 12];
 
 function obtenerNumeroMenor(numerosArray) {
-  let menor = 9999;
+  let menor = Infinity;
   // recorro los elementos del array y los voy comparando con la variable menor para encontra el menor
   numerosArray.forEach(element => {
     if(element<menor) {
@@ -18,7 +19,7 @@ function obtenerNumeroMenor(numerosArray) {
   return menor;  
 }
 
-obtenerNumeroMenor(numerosABuscarMenor);
+obtenerNumeroMenor(numerosABuscarMenor); // 2
 
 /*******************************
   Ejercicio 2 : sumar(numeros)
@@ -34,7 +35,7 @@ function sumar(numeros) {
   return suma;
 }
 
-sumar(numerosASumar);
+sumar(numerosASumar); // 58
 
 
 /*******************************************
@@ -57,8 +58,8 @@ function contiene(numero, numeros) {
   return resultado;
 }
 
-contiene(54, [5, 7, 99, 3, 4, 54, 2, 12]);
-contiene(103, [5, 7, 99, 3, 4, 54, 2, 12]); 
+contiene(54, [5, 7, 99, 3, 4, 54, 2, 12]); // true
+contiene(103, [5, 7, 99, 3, 4, 54, 2, 12]); // false
 
 /***********************************
  Ejercicio 5 : invertirCaso(string) 
@@ -82,13 +83,16 @@ function invertirCaso(string) {
     } else { // va a estar en mayuscula
       // la paso a minuscula
       // y lo voy agregando al array vacio
-      arrVacio.push(letra.tuLowerCase());
+      arrVacio.push(letra.toLowerCase());
     }
   })
   // con el .join lo vuelvo a pasar a un string
   return arrVacio.join('');
 }
 
+invertirCaso('Ada Lovelace') // 'aDA lOVELACE'
+invertirCaso('feliz cumple') // 'FELIZ CUMPLE'
+invertirCaso('jAvAsCrIpT') // 'JaVaScRiPt'
 /*********************************
  Ejercicio 6 : gano(tragamonedas) 
 *********************************/
@@ -98,6 +102,12 @@ gano(['⭐️', '⭐️', '⭐️', '💫', '✨']) // false
 gano(['💫', '💫', '💫', '💫', '💫']) // true
 gano(['💫', '💫', '💫', '💫', '💫', '⭐️']) // true
 */
+function  gano(tragamonedas) {
+
+}
+gano(['⭐️', '⭐️', '⭐️', '💫', '✨']) // false
+gano(['💫', '💫', '💫', '💫', '💫']) // true
+gano(['💫', '💫', '💫', '💫', '💫', '⭐️']) // true
 
 /*******************************************
  Ejercicio 7 : obtenerChatStatus(usuarias) 
@@ -138,6 +148,8 @@ Crear una función multiplicar que tome como argumentos un número multiplicador
 multiplicar(2, [5, 7, 15, 22, 40]) // [10, 14, 30, 44, 80]
 multiplicar(10, [2, 5, 77]) // [20, 50, 770]
 */
+const arrNumeros3 = [4, 1, 33, 10 ,42];
+
 function multiplicar(multiplicador, numeros) {
   const arrMultiplicado = numeros.map((numero) => numero * multiplicador);
   return arrMultiplicado;
@@ -212,4 +224,9 @@ obtenerResultado('Ada', 'Grace', [4, 4, 4], [1, 2, 3]) // Ada
 obtenerResultado('Ada', 'Grace', [3, 5, 5, 7], [4, 1, 2, 9]) // Empate
 obtenerResultado('Ada', 'Grace', [5, 6, 3, 1, 8], [8, 2, 4, 2, 3]
 */
+const puntajesA = [3, 5, 2];
+const puntajesB = [4, 6, 2];
 
+obtenerResultado('Ada', 'Grace', [4, 4, 4], [1, 2, 3]); // Ada
+obtenerResultado('Ada', 'Grace', [3, 5, 5, 7], [4, 1, 2, 9]); // Empate
+obtenerResultado('Ada', 'Grace', [5, 6, 3, 1, 8], [8, 2, 4, 2, 3]);
