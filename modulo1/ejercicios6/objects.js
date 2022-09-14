@@ -347,6 +347,7 @@ const bandas = [
   { id: 3, nombre: 'Queens of the Stone Age', fundacion: 1997, activa: true },
   { id: 3, nombre: 'Pearl Jam', fundacion: 1990, activa: true },
 ];
+
 for(let obj of bandas) {
   if(obj.activa === true) {
     console.log(` ${obj.nombre} está activa desde el año ${obj.fundacion}`)

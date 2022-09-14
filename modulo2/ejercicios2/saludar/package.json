@@ -1,0 +1,14 @@
+{
+  "name": "saludar",
+  "version": "1.0.0",
+  "description": "Practica de Node.js",
+  "main": "index.js",
+  "scripts": {
+    "saludar": "Hola, este es mi primer script!"
+  },
+  "keywords": [
+    "nodajs"
+  ],
+  "author": "Maria Eugenia Costa",
+  "license": "ISC"
+}

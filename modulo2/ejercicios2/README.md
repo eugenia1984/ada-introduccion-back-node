@@ -9,6 +9,10 @@
 - Crear un script en package.json que reciba el comando "saludar". Al correr npm run saludar en la consola, debemos ver "Hola, este es mi primer script!".
 
 
+-> Está en la carpeta **saludar**, en consola llego a la carpeta saludar y ejecuto: ``` npm run```
+
+---
+
 ## 2 - Cuanto falta para mi cumpleaños
 
 Usando el objeto Date podemos saber la fecha actual.
@@ -27,6 +31,8 @@ const navidad = new Date(2020,11,25);
 
 - Instalar el paquete de npm [pretty-ms*(https://www.npmjs.com/package/pretty-ms). Investigarlo y utilizarlo para mostrar en consola cuántos días faltan para tu cumpleaños.
 
+
+---
 
 ## 3 - Server de gatitos
 
