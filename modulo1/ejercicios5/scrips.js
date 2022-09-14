@@ -37,15 +37,13 @@ repetir('html', 0) // []
 Crear una función sumarImparesHasta que tome como argumento un número numero y que devuelva la suma de todos los impares empezando desde 0 hasta dicho numero inclusive.
 */
 function sumarImparesHasta(numero) {
-  
+  let acumulador = 0;
   for(let i = 0; i <= numero; i++) { 
-    let acumulador = 0;
     if( i % 2 != 0) {
-      acumulador+=acumulador;
+      acumulador+=i;
     }
-    return acumulador;
   }
-  
+  return acumulador;
 }
 
 sumarImparesHasta(5) // 9 (1 + 3 + 5 = 9)
@@ -57,21 +55,46 @@ sumarImparesHasta(47) // 576
 /*
 Crear una función crearCuentaRegresiva que tome como argumento un número entero numeroInicial y que devuelva un array con cuyo primer ítem sea numeroInicial y los demás ítems sean números enteros sucesivos descendientes, hasta llegar a 0.
 */
+function crearCuentaRegresiva(numeroInicial) {
+  const arr = [];
+  for(let i = numeroInicial; i >= 0; i--) { 
+    arr.push(i)
+  }
+  return arr;
+}
+
+crearCuentaRegresiva(3) // [3, 2, 1, 0]
+crearCuentaRegresiva(5) // [5, 4, 3, 2, 1, 0]
 
 /*******************************
- Ejercicio 5 :  invertir(a*rray)
+ Ejercicio 5 :  invertir(array)
 *******************************/
 /*
 Crear una función invertir que tome como argumento un array array y que devuelva un array con los mismos valores pero en orden invertido.
 */
+function invertir(array) {
+  const arrayInvertido = [];
 
+  for(let i = array.length-1; i >= 0; i--) {
+    arrayInvertido.push(array[i]);
+  }
+  return arrayInvertido;
+}
+
+invertir([1, 2, 3]) // [3, 2, 1]
+invertir([5, 7, 99, 34, 54, 2, 12]) // [12, 2, 54, 34, 99, 7, 5]
 /*****************************************
  Ejercicio 6 : removerDuplicados(array) 
 ****************************************/
 /*
-
 Crear una función removerDuplicados que tome como argumento un array array y que devuelva un array con los mismos valores de array pero sin valores duplicados.
 */
+function removerDuplicados(array)  {
+
+}
+removerDuplicados([1, 1, 1]) // [1]
+removerDuplicados([1, 1, 2, 2, 3, 3]) // [1, 2 ,3]
+removerDuplicados([5, 23, 8, 5, 5, 44, 23]) // [5, 23 ,8, 44]
 
 /************************************************
  Ejercicio 7 : repetirLetras(palabra, cantidad)
@@ -80,6 +103,14 @@ Crear una función removerDuplicados que tome como argumento un array array y qu
 Crear una función repetirLetras que tome como argumento un string palabra y un número entero cantidad, y devuelva una string donde cada letra de palabra esté repetida cantidad de veces.
 repetirLetras('hola', 2) // 'hhoollaa'
 */
+function repetirLetras(palabra, cantidad) {
+
+}
+
+repetirLetras('hola', 2) // 'hhoollaa'
+repetirLetras('ada', 3) // 'aaadddaaa'
+repetirLetras('ah!', 5) // 'aaaaahhhhh!!!!!'
+repetirLetras('basta', 1) // 'basta'
 
 /*******************************************
  Ejercicio 8 : capitalizarPalabras(string)
@@ -88,7 +119,13 @@ repetirLetras('hola', 2) // 'hhoollaa'
 Crear una función capitalizarPalabras tome como argumento un string string y devuelva un string donde cada palabra está capitalizada (con la primera letra mayuscula). Dejar las demás letras como están.
 capitalizarPalabras('Esto es un título') // 'Esto Es Un Título
 */
+function capitalizarPalabras(string) {
 
+}
+
+capitalizarPalabras('Esto es un título') // 'Esto Es Un Título'
+capitalizarPalabras('había una vez') // 'Había Una Vez'
+makeTitle('OMG') // 'OMG'
 
 /******************************************************
  Ejercicio 9 : sumarSeccion(array, comienzo, cantidad) 
@@ -97,6 +134,13 @@ capitalizarPalabras('Esto es un título') // 'Esto Es Un Título
 Crear una función sumarSeccion que tome como argumento un array de números enteros array, un número entero comienzo y un número entero cantidad, y que devuelva la suma de cantidad de números de array empezando a contar desde el ítem con índice comienzo.
 sumarSeccion([2, 2, 4, 3, 10, 20, 5], 0, 3) // 8 (2 + 2 + 4 = 8)
 */
+function sumarSeccion(array, comienzo, cantidad)  {
+
+}
+
+sumarSeccion([2, 2, 4, 3, 10, 20, 5], 0, 3) // 8 (2 + 2 + 4 = 8)
+sumarSeccion([2, 2, 4, 3, 10, 20, 5], 2, 4) // 37 (4 + 8 + 10 + 20 = 37)
+sumarSeccion([2, 2, 4, 3, 10, 20, 5], 4, 1) // 3
 
 /*****************************************************
  Ejercicio 10 : esSubconjunto(subconjunto, conjunto) 
@@ -105,7 +149,15 @@ sumarSeccion([2, 2, 4, 3, 10, 20, 5], 0, 3) // 8 (2 + 2 + 4 = 8)
 Crear una función esSubconjunto que tome como argumento dos arrays, subconjunto y conjunto, y devuelva true si subconjunto es realmente subconjunto de conjunto, es decir, si todos los valores de subconjunto están en conjunto.
 esSubconjunto([1], [1, 2, 3]) // true
 */
+function esSubconjunto(subconjunto, conjunto) {
 
+}
+
+esSubconjunto([1], [1, 2, 3]) // true
+esSubconjunto([1, 2, 3], [1, 2, 3, 4, 5]) // true
+esSubconjunto([27, 49, 54], [54, 27, 8, 27, 49]) // true
+esSubconjunto([1, 2, 3], [1, 2]) // false
+esSubconjunto([1], [2, 3, 4]) // false
 
 /******************************
  Ejercicio 11 : tieneBloque(array) 
@@ -115,7 +167,15 @@ Crear una función hayBloque que tome como argumento un array array y devuelva t
 tieneBloque([1, 2, 3]) // false
 tieneBloque([1, 1, 1, 2, 3]) // true
 */
+function tieneBloque(array)  {
 
+}
+
+tieneBloque([1, 2, 3]) // false
+tieneBloque([1, 1, 1, 2, 3]) // true
+tieneBloque([1, 2, 3, 3, 3]) // true
+tieneBloque([1, 2, 3, 3, 3, 8]) // true
+tieneBloque([1, 2, 2, 3, 3, 4]) // false
 
 /**************************************
  Ejercicio 12 : esPalindromo(palabra) 
@@ -148,3 +208,7 @@ function esPalindromo(str) {
   return false;
 }
 */
+esPalindromo('ada') // true
+esPalindromo('reconocer') // true
+esPalindromo('mama') // false
+esPalindromo('javascript') // false
