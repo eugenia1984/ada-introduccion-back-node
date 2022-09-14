@@ -46,7 +46,7 @@
 
 En este módulo vamos a hacer un **servidor** con **Express**.
 
-### ¿ Qué es un serviidor?
+### ¿ Qué es un servidor?
 
 
 Un conjunto de computadoras capaces de recibir la petición de un cliente y devolver una respuesta en concrdancia.
