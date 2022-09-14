@@ -116,6 +116,6 @@ const ganadoras = [
   },
 ];
 
-for(let obj in ganadoras) {
+for(let obj of ganadoras) {
   console.log(`${obj.nombre} gano la Temporada ${obj.temporada}`);
 }

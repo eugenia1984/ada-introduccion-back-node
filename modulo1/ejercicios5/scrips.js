@@ -115,10 +115,14 @@ Crear una función repetirLetras que tome como argumento un string palabra y un 
 repetirLetras('hola', 2) // 'hhoollaa'
 */
 function repetirLetras(palabra, cantidad) {
-
+  let letrasRepetidas = "";
+  for(let i = 0; i < palabra.length; i++) {
+    letrasRepetidas+=(palabra.slice(i, i+1).repeat(cantidad));
+  }
+  return letrasRepetidas;
 }
 
-repetirLetras('hola', 2) // 'hhoollaa'
+repetirLetras('hola', 2) // 'hhoollaa'  
 repetirLetras('ada', 3) // 'aaadddaaa'
 repetirLetras('ah!', 5) // 'aaaaahhhhh!!!!!'
 repetirLetras('basta', 1) // 'basta'

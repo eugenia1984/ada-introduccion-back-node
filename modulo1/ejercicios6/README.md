@@ -10,6 +10,8 @@ El objeto tiene que tener 3 propiedades: nombre, apellido, edad
 
 Mostrar en consola el objeto sobreMi
 
+---
+
 ## 02 - presentar
 
 Crear una variable llamada user, a la que le vamos a asignar un objeto.
@@ -19,6 +21,8 @@ El objeto tiene que tener 3 propiedades: fullname, email, age
 Mostrar en consola el objeto user
 
 Mostrar en la consola el nombre y la edad de la persona: "Hola, mi nombre es [ACA EL NOMBRE] y tengo [ACA LA EDAD] años"
+
+---
 
 ## 03 - cancion
 
@@ -41,6 +45,8 @@ var cancion = {
 
 console.log(cancion); // { titulo: 'Rock and Roll', banda: 'Led Zeppelin', duracion: 166 }
 ```
+
+---
 
 ## 04 - base de datos
 
@@ -91,6 +97,8 @@ console.log();
 console.log();
 ```
 
+---
+
 ## 05 - correción de datos
 
 Tenemos la variable datos que tiene un objeto con los datos de una persona
@@ -121,6 +129,8 @@ console.log(datos);
 //   edad: 29,
 //   programa: true }
 ```
+
+---
 
 ## 06 - lenguaje favorito
 
@@ -187,6 +197,8 @@ console.log(
 // por ejemplo "Hola, mi nombre es Ada y me programo en Javascript,C++"
 ```
 
+---
+
 ## 08 - disco
 
 Tenemos la variable disco con un objeto que guarda datos de un album musical
@@ -216,6 +228,8 @@ console.log("El disco " + nombreDisco + " de la banda " + nombreBanda + " se lan
 // El disco Wasting Light de la banda Foo Fighters se lanzó en el año 2011
 ```
 
+---
+
 ## 09 - skills
 
 Tenemos la variable user, que es un objeto con datos de una persona en linkedin
@@ -241,6 +255,8 @@ console.log(user);
 //   url: 'https://www.linkedin.com/in/ada-lovelace',
 //   skills: [ 'HTML', 'CSS', 'SASS', 'Javascript' ] }
 ```
+
+---
 
 ## 10 - playlist
 
