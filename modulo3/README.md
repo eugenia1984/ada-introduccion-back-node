@@ -1,4 +1,4 @@
-# Modulo 3 * Mongo DB y Mongoose
+# :star2: Modulo 3 * Mongo DB y Mongoose
 
 ---
 

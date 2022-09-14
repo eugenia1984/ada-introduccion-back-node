@@ -1,4 +1,4 @@
-# Modulo 2 * Node.js y Express
+# :star2: Modulo 2 * Node.js y Express
 
 ---
 

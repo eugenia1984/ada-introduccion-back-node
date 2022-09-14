@@ -69,6 +69,8 @@ db.mostrarPeliculas();
 // Flash - 5
 ```
 
+-> Estan en los archivos **db.js** y **netflix.js**
+
 ---
 
 ## 3 - NPM
@@ -78,6 +80,8 @@ Tomemos los dos ejercicios de la clase anterior (la calculadora y el netflix), y
 Para eso vamos a tener que crear una carpeta por cada proyecto llamadas calculadora y netflix. Dentro, vamos a iniciar el proyecto de NPM como lo vimos anteriormente, agregar el código de la solución y configurar el script start dentro del package.json para que podamos ejecutar los ejercicios utilizando npm run start.
 
 -> En la carpeta **calculadora** hice el primer ejericio pasado a un proyecto NPM.
+
+-> En la carpeta **netflix** hice el segundo ejericio pasado a un proyecto NPM.
 
 ---
 

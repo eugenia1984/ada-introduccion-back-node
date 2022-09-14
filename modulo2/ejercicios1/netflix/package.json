@@ -2,9 +2,9 @@
   "name": "netflix",
   "version": "1.0.0",
   "description": "Practica de introduccion a Node.js",
-  "main": "index.js",
+  "type": "module",
+  "main": "netflix.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node netflix.js"
   },
   "keywords": [

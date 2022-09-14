@@ -1,4 +1,4 @@
-# Modulo 1 * Variables - Datos - Operadores - Condicionales - Arrays - Objetos - Ciclos - Funciones
+# :star2: Modulo 1 
 
 ---
 
