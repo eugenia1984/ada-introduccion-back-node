@@ -251,7 +251,7 @@ Se puede ver en [https://devhints.io/npm](https://devhints.io/npm)
 
 - **npm** nos facilita manejar los paquetes, nos permite bajar librerías y poder iniciar proyectos (```npm init``` completando nosotros todo ó ```npm init -y```) y se nos crea el **package.json** (el cual puede modificarse, si comenzamoe el proyecto con npm init -y).
 
-- Con ```npm install nombre_librería``` ò ```npm i nombre_libreria``` para instalarlas. Y para poder usarlas debo requerirlas y guardarlas en constante para usarlas, por ejemplo: ```const isOdd = require('is-odd')````
+- Con ```npm install nombre_librería``` ò ```npm i nombre_libreria``` para instalarlas. Y para poder usarlas debo requerirlas y guardarlas en constante para usarlas, por ejemplo: ```const isOdd = require('is-odd')```
 
 
 ---
