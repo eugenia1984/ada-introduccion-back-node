@@ -44,9 +44,9 @@
 
 ## :star: Servidor
 
-En este módulo vamos a hacer un **servidor** con **Express**.
+En este módulo vamos a hacer un **servidor** con **Express** usando el proyecto npm [**intro-nodejs**](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo2/intro-nodejs) que ya tengo en este modulo creado.
 
-### ¿ Qué es un serviidor?
+### ¿ Qué es un servidor?
 
 
 Un conjunto de computadoras capaces de recibir la petición de un cliente y devolver una respuesta en concrdancia.
@@ -172,3 +172,5 @@ Por detrás es un servidor al cual haciendole la peticion nos devuelve el JSON c
 
 ---
 ---
+
+## :star: CLASE 11 * 12/09 *** INTRO NODE.JS *** :star:
