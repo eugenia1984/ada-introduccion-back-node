@@ -132,7 +132,7 @@ Para iniciar un proyecto propios.
 
 Con ```npm init``` me lo inicia y me pide que complete ciertos datos:
 
-- nombre dle paquete
+- nombre del paquete
 
 - version
 
