@@ -89,9 +89,20 @@ invertir([5, 7, 99, 34, 54, 2, 12]) // [12, 2, 54, 34, 99, 7, 5]
 /*
 Crear una función removerDuplicados que tome como argumento un array array y que devuelva un array con los mismos valores de array pero sin valores duplicados.
 */
+/*
+-Una de las formas más directas de remover elementos de un arreglo es utilizar Array.filter.
+-Array.filter es un método inmutable que retorna un nuevo arreglo con los elementos que cumplan la condición implementada por la función utilizada como argumento.
+-De forma interna, filter itera sobre los elementos del arreglo y aplica la función argumento en cada item retornando un valor boolean, si el elemento pasa la condición se retorna true indicando que este será agregado al nuevo arreglo.
+- Para este caso de remover elementos duplicados utilizamos como método auxiliar la función Array.indexOf. Este método retorna Array.indexOf retorna el primer indice del arreglo en donde se encuentre un elemento dado.
+- En este caso, podemos identificar un duplicado cuando el indice no es igual al resultado de indexOf. data.indexOf(item) === index ,retornará siempre la primera ocurrencia del item.
+*/
 function removerDuplicados(array)  {
-
+  let result = array.filter((item, index) => {
+    return array.indexOf(item) === index;
+  })
+  return result;
 }
+
 removerDuplicados([1, 1, 1]) // [1]
 removerDuplicados([1, 1, 2, 2, 3, 3]) // [1, 2 ,3]
 removerDuplicados([5, 23, 8, 5, 5, 44, 23]) // [5, 23 ,8, 44]
