@@ -5,7 +5,8 @@
   "type": "module",
   "main": "netflix.js",
   "scripts": {
-    "dev": "node netflix.js"
+    "dev": "node netflix.js",
+    "netflix": "nodemon netflix.js"
   },
   "keywords": [
     "nodejs",

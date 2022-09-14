@@ -8,6 +8,10 @@ app.get('/', (req,res) => {
   res.json({message: 'Esto es un JSON'});
 });
 
+app.post('/', (req, res) => {
+  res.send('Got a PoOST request');
+});
+
 app.listen(3000, () => {
   console.log('Server started');
 });

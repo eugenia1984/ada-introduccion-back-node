@@ -176,9 +176,90 @@ Por detrás es un servidor al cual haciendole la peticion nos devuelve el JSON c
 ## :star: CLASE 11 * 12/09 *** INTRO NODE.JS *** :star:
 
 ---
-### Hacemos el ejercicio de Netflix de la guia de ejercicios 1
+### Hacemos el ejercicio de Netflix de la guia de ejercicios 1 
+
+Y también lo pasamos a un proyecto NPM y personalizamos el script.
+
+### Reveemos la estructura de los JSON
+
+- van entre {}
+
+- tiene par key : value, que llevan entre medio **:**.
+
+- las key van entre "" (a diferencia de los objetos)
+
+- los value pueden ser: String, Number, boolean, arrays, objetos.
+
+- cada key - value va separado entre comas, salvo el ultimo que no lleva.
+
+
+### Cliente - Servidor
+
+El cliente puede mandar un JSOn al servidor, el cual va a su base de datos y guarda al información recibida dle JSON en su base de datos. Luego el servidor responde.
+
+El servidor puede enviar y recibir JSON.
+
+Cada computadora es un **servidor**, y tiene muchos **puertos** por lo que puede recibir peticiones distintas.
+
+Asi los servidores gratuitos nos dan gratis un puesto para poder hacer las peticiones y ver las web que creamos.
+
+### :star: Métodos de peticiones HTTP
+
+Sigue el modelo de cliente - servidor y establece las conexiones en las peticiones.
+
+Se estandarizan los **métodos de petición**.
+
+- **GET**: solicita una representación de un recurso específico. Las peticiones que usan el método GET sólo deben recuperar datos. -> Pide datos (READ)
+
+- **POST**: se utiliza para enviar una entidad a un recurso específico, causando a menudo un cambio en el estado o efectos secundarios en el servidor. -> Crea datos (CREATE)
+
+- **PUT**: reemplaza todas las representaciones actuales del recurso de destino con la carga útil de la petición. -> Modifica datos (UPDATE)
+
+- **DELETE**: borra un recurso en específico. -> Borra datos (DELETE)
+
+Con estos 4 hacemos el CRUD ( CREATE / READ / UPDATE / DELETE)
+
+- **HEAD** , **CONNECT**, etc.
+
+
+-> Tenemos el ejemplo del servidor en [**intro-nodejs**](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo2/intro-nodejs/index.js) con:
+
+GET:
+```JavaScript
+app.get('/', (req,res) => {...}
+```
+
+POST:
+```JavaScript
+app.post('/', (req, res) => {
+  res.send('Got a PoOST request');
+});
+```
+
+### Creamos el servidor:
+
+```JavaScript
+import express from 'express'; // importamos la libreria express
+const app = express(); // creamos una instancia de express
+
+app.get('/', (req,res) => {
+  // para responder con un string
+  //res.send('Hello world')
+  // para responder con un JSON
+  res.json({message: 'Esto es un JSON'});
+});
+
+app.post('/', (req, res) => {
+  res.send('Got a PoOST request');
+});
+
+app.listen(3000, () => {
+  console.log('Server started');
+});
+```
 
 ---
+
 
 ---
 ---
