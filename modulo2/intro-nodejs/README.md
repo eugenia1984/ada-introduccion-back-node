@@ -148,7 +148,7 @@ Con ```npm init``` me lo inicia y me pide que complete ciertos datos:
 
 Y le damos YES
 
--> Otro modo de crearlo es con ```npm init -y``` y se inciializa, pero sin los datos personalizados, crea un package.json vacío (y lo puedo modificar directo en el archivo package.json).
+-> Otro modo de crearlo es con ```npm init -y``` y se inicializa, pero sin los datos personalizados, crea un package.json vacío (y lo puedo modificar directo en el archivo package.json).
 
 -> Se crea el archivo **package.json** con los datos completados y ahi voy a poder ver que librerias bajo.
 
