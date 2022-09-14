@@ -77,11 +77,17 @@ Tomemos los dos ejercicios de la clase anterior (la calculadora y el netflix), y
 
 Para eso vamos a tener que crear una carpeta por cada proyecto llamadas calculadora y netflix. Dentro, vamos a iniciar el proyecto de NPM como lo vimos anteriormente, agregar el código de la solución y configurar el script start dentro del package.json para que podamos ejecutar los ejercicios utilizando npm run start.
 
+-> En la carpeta **calculadora** hice el primer ejericio pasado a un proyecto NPM.
+
 ---
 
 ## 4 - IDs únicos
 
-Primero, crear un nuevo proyecto con NPM, agregando el script start y un index.js. En el proyecto, instalar el paquete uniqid [https://www.npmjs.com/package/uniqid](https://www.npmjs.com/package/uniqid). Este paquete, cuando se importa, devuelve una función que genera una cadena al azar.
+Primero, crear un nuevo proyecto con NPM, agregando el script start y un index.js. En el proyecto, instalar el paquete uniqid [https://www.npmjs.com/package/uniqid](https://www.npmjs.com/package/uniqid). 
+
+-> Acorde la documentacion se instala con: ```npm install uniqid```
+
+Este paquete, cuando se importa, devuelve una función que genera una cadena al azar.
 
 ```JavaScript
 const uniqid = require('uniqid');
@@ -90,5 +96,7 @@ const uniqid = require('uniqid');
 Dentro del index, tenemos que crear dos objetos. Cada objeto tiene que tener las propiedades id, nombre, y apellido. El valor de la propiedad id tiene que ser el valor devuelto por la función del paquete instalado. Las propiedades nombre y apellido pueden ser sus nombres y/o el de sus compañeros de clase. 
 
 Finalmente, mostrar ambos objetos por la consola.
+
+-> Lo tengo en la carpeta **ids**
 
 ---

@@ -1,0 +1,20 @@
+{
+  "name": "ids",
+  "version": "1.0.0",
+  "description": "Practica de introduccion a Node.js",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript"
+  ],
+  "author": "Maria Eugenia Costa",
+  "license": "ISC",
+  "dependencies": {
+    "uniqid": "^5.4.0"
+  }
+}
