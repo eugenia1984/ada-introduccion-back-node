@@ -5,9 +5,8 @@
   "type": "module",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon main.js",
-    "dev": "node main.js"
+    "netflix": "nodemon netflix.js",
+    "start": "nodemon main.js"
   },
   "keywords": [
     "javascipt",
@@ -18,7 +17,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1",
-    "is-odd": "^3.0.1"
+    "is-odd": "^3.0.1",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.19"

@@ -379,20 +379,25 @@ app.use(express.static(path.join(__dirname, 'public')));
 ```
 intro-nodejs
   node_modules
+  peliculas
+    db.js
   public
     home
       index.html
+      index.js
+      styles.css
     images
       puppy.jpg
   .gitignore
   is-odd.js
   main.js
+  netflix.js
   package-lock.json
   package.json
 ```
 
 
-http://localhost:3000/home/ -> me muestr el login
+http://localhost:3000/home/ -> me muestre el login
 
 http://localhost:3000/images/puppy.jpg -> Me muestra el perrito
 
@@ -401,11 +406,74 @@ http://localhost:3000/images/puppy.jpg -> Me muestra el perrito
 
 
 -> Una página con **server side render** deja se der estática.
-```JavaScript
+
+Y en el **index.html** tengo:
+```
+<form action="http://localhost:3000/login" method="post">
 ```
 
+Entonces en el **main.js** puedo modificar, para HACER EL PEDIDO mandado el formulario por un POST:
+```JavaScript
+app.post('/login', (req, res) => {
+  console.log(req.body);
+  res.status(200).json({ message: 'Login' });
+});
+```
+
+Asi al completar con e-mail y password veo:
+```JSON
+{
+  "message": "Login"
+}
+```
+
+Por la respuesta que le puse: **res.status(200).json({ message: 'Login' });**
+
+En la practica entre medio esa información que el usuario ingreso en el input se guarda en la base de datos, y luego el servidor manda la respuesta.
+
+Con el **req.body** se pueden hacer cosas con esos datos, por ejemplo validar qeu la clave sea la correcta, ver si el usuario existe, etc.
+
+-> **Express** por si solo no puede leer **JSON**, entonces antes agregamos:
+```JavaScript
+app.use(express.json()); // para poder recibir datos en formato json
+```
+
+Y también, para que interprete el **formulario**: 
+```JavaScript
+app.use(express.urlencoded({ extended: false })); // para poder recibir datos de formularios
+```
+
+Ahora por consola veo el objeto con la key "usuario" y el e-mail, y la key "password" con el password.
+
+---
+
+### ¿ Como es una peticion ?
+
+
+```
+POST               /login
+
+ |---------------------|
+ | BODY                |          
+ |                     |
+ | {                   |
+ |   usuario: a@a.com  |
+ |   pass: "123"       |
+ | }                   |
+ |---------------------|
+
+```
+
+Tengo el verbo **POST** (para aclarar que petición hago) + **la ruta** (/login) y el **BODY** que puede estar vacío, si tiene información es la que va al servidor.
+
+La petición HTTP tiene mucha más información. Si la quiero ver:
 
 ```JavaScript
+app.post('/login', (peticionDelCliente, res) => {
+  console.log(peticionDelCliente);
+  console.log('Guarda la información en la base de datos')
+  res.status(200).json({ message: 'Login' });
+});
 ```
 
 ---

@@ -39,11 +39,10 @@ function modificarPelicula(id, nuevaPelicula) {
   }
 }
 
-module.exports = {
+export default {
   agregarPelicula,
   obtenerPelicula,
   eliminarPelicula,
   mostrarPeliculas,
   modificarPelicula,
-}
-
+};
