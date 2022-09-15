@@ -232,7 +232,7 @@ app.get('/', (req,res) => {...}
 POST:
 ```JavaScript
 app.post('/', (req, res) => {
-  res.send('Got a PoOST request');
+  res.send('Got a POST request');
 });
 ```
 
@@ -250,7 +250,7 @@ app.get('/', (req,res) => {
 });
 
 app.post('/', (req, res) => {
-  res.send('Got a PoOST request');
+  res.send('Got a POST request');
 });
 
 app.listen(3000, () => {
@@ -258,8 +258,155 @@ app.listen(3000, () => {
 });
 ```
 
+### Códigos de respuestas HTTP
+
+- Para las respuestas tenemos **status code**, los numeros indican cosas, por ejemplo tenemos el **200** que es ok, **404** cuando la URL no existe (not found), etc.
+
+Tenemos...
+
+... 200 : sucess
+
+... 300 : redirections
+
+... 400 : client errors
+
+... 500 : server error
+
+-> De este modo voy a estar devolviendo el codigo 200 de respuesta, avisando que esta todo bien:
+
+```JavaScript
+app.get('/', (req,res) => {
+  res.status(200).send('Hello World');
+});
+```
+
 ---
 
+-> Cuando buscamos una url en un navegador, por defecto es una petición GET la que se realiza.
+
+Para ver otra url en nuestro local host en **main.js** agregamos:
+
+```JavaSCript
+app.get('/peliculas', (req, res) => {
+  res.status(200).send({peliculas: ['Pulp Fiction', 'Kill Bill']});
+});
+```
+
+Y si ahora buscamos : **http://localhost:3000/peliculas**
+
+Como tengo la extension de Chrome de JSON:
+
+```JSON
+// 20220915103755
+// http://localhost:3000/peliculas
+{
+  "peliculas": [
+    "Pulp Fiction",
+    "Kill Bill"
+  ]
+}
+```
+
+Y si inspecciono el navegador y me voy a **Network** veo el status **200**
+
+---
+
+
+### Ejemplo de un login
+
+- Tengo un formulario en mi web para el login, donde ingreso el usuario y el password.
+
+- Hago una **petición POST** en **/login** hacia el servidor.
+
+- El servidor hace algo y si esta bien el usuario y el login me da de respuesta el codigo **200**.
+
+
+-> Para ver el HTMl node ya trae la librería **path** y **url** asi que la importo:
+
+```JavaScript
+import path from 'path';
+import {fileURLToPath } from 'url';
+```
+
+Creo constantes:
+```JavaScript
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+```
+
+Me imprimo las constantes para ver que traen:
+```JavaScript
+console.log(__dirname); // la ruta de la carpeta en la que esta el archivo
+console.log(__filename); // la ruta del archivo 
+```
+
+Para mostrar la web:
+```JavaScript
+app.use(express.static(path.join(__dirname, 'public')));
+```
+
+**app.use** -> hace que mi aplicación use lo que le paso por parametro
+
+**express.static** -> para mostrar archivos estaticos, para el cual le tengo que pasar la **dirección** por parametro + **/public**. Como depende del S.O. (Linux, Windows, MAC) que usemos la ruta es diferente, de este modo no hay inconvenientes
+
+
+Al ponerlo en este orden:
+```JavaScript
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.get('/', (req,res) => {
+  res.status(200).send('Hello World');
+});
+```
+
+Al poner en el navegador **localhost:3000/** me va redireccionar al login.
+
+Gracias a :
+```JavaScript
+import path from 'path';
+import {fileURLToPath } from 'url';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+console.log(__dirname); // ruta de la carpeta donde se encuentra el archivo
+console.log(__filename); // ruta del archivo
+
+app.use(express.static(path.join(__dirname, 'public')));
+```
+
+-> En la carpeta **public** voy a tener todas mis paginas estaticas (html, css y JS), si por ejemplo armo esta estructura:
+
+```
+intro-nodejs
+  node_modules
+  public
+    home
+      index.html
+    images
+      puppy.jpg
+  .gitignore
+  is-odd.js
+  main.js
+  package-lock.json
+  package.json
+```
+
+
+http://localhost:3000/home/ -> me muestr el login
+
+http://localhost:3000/images/puppy.jpg -> Me muestra el perrito
+
+
+-> De este modo desde el **servidor** se envian **archivos estaticos** al **cliente**, puede ser una pagina web, la imagen, etc.
+
+
+-> Una página con **server side render** deja se der estática.
+```JavaScript
+```
+
+
+```JavaScript
+```
 
 ---
 ---
