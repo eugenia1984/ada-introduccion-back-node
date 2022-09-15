@@ -48,10 +48,10 @@ const song = {
   duration: 166000,
   album: 'Led Zeppelin IV',
 };
-
-const cancion = {
-  // completar el codigo
-};
+// me copio el objeto songs ya que es muy parecido
+const cancion = song;
+// le modifico la duracion a segundos
+cancion.duration = song.duration / 1000;
 
 console.log(cancion); // { titulo: 'Rock and Roll', banda: 'Led Zeppelin', duracion: 166 }
 
@@ -202,10 +202,13 @@ const datos2 = {
   programa: true,
 };
 // codea aca la solucion
+if(datos2.programa === true) {
+  datos2.lenguajesFavoritos = ["Javascript", "Java"];
+}
 
 // aca mostrar la frase
 console.log(
-  'Hola, mi nombre es [ACA EL NOMBRE] y programo en [ACA EL LISTADO DE LENGUAJES FAVORITOS]'
+  `Hola, mi nombre es ${datos2.nombre} ${datos2.apellido} y programo en ${datos2.lenguajesFavoritos[0]}, ${datos2.lenguajesFavoritos[1]}`
 );
 // por ejemplo "Hola, mi nombre es Ada y me programo en Javascript,C++"
 
@@ -241,8 +244,7 @@ console.log("El disco " + nombreDisco + " de la banda " + nombreBanda + " se lan
 ***************************/
 /*
 Tenemos la variable user, que es un objeto con datos de una persona en linkedin
-En el objeto hay una propiedad skills, que es un array con las distintas habilidades de la persona
-Necesitamos actualizar el perfil y agregar "Javascript" al array de de skills
+En el objeto hay una propiedad skills, que es un array con las distintas habilidades de la persona .Necesitamos actualizar el perfil y agregar "Javascript" al array de de skills
 */
 const user1 = {
   id: 123456789,
@@ -252,7 +254,7 @@ const user1 = {
 };
 
 // codea aca la solucion
-
+user1.skills.push('Javascript');
 
 console.log(user1);
 // deberia mostrar
@@ -276,6 +278,19 @@ In Bloom
 Come As You Are
 Privada tiene que mostrar Si en el caso que la propiedad privada sea true, o No si la prop
 */
+const listaSpotify = {
+  nombre : "Lista de Nirvana",
+  privada : true,
+  canciones : [ 'Smells Like Teen Spirit', 'In Bloom','Come As You Are' ]
+}
+
+let esPrivada = (listaSpotify.privada === true)?"Si":"No";
+console.log(listaSpotify.nombre);
+console.log("Privada: ", esPrivada);
+console.log("Canciones: ");
+for (let i = 0; i < 3; i++) {
+  console.log(listaSpotify.canciones[i]);
+}  
 
 /*********************************
  11º ejercicio: ganadora

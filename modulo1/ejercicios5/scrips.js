@@ -131,8 +131,7 @@ repetirLetras('basta', 1) // 'basta'
  Ejercicio 8 : capitalizarPalabras(string)
 *******************************************/
 /*
-Crear una función capitalizarPalabras tome como argumento un string string y devuelva un string donde cada palabra está capitalizada (con la primera letra mayuscula). Dejar las demás letras como están.
-capitalizarPalabras('Esto es un título') // 'Esto Es Un Título
+Crear una función capitalizarPalabras tome como argumento un "string" y devuelva un string donde cada palabra está capitalizada (con la primera letra mayuscula). Dejar las demás letras como están.
 */
 function capitalizarPalabras(string) {
 
@@ -150,7 +149,12 @@ Crear una función sumarSeccion que tome como argumento un array de números ent
 sumarSeccion([2, 2, 4, 3, 10, 20, 5], 0, 3) // 8 (2 + 2 + 4 = 8)
 */
 function sumarSeccion(array, comienzo, cantidad)  {
-
+  let sumatoria = 0;
+  let arrayCortado = array.slice(comienzo, comienzo+cantidad);
+  arrayCortado.forEach(element => {
+    sumatoria+=element;
+  });
+  return sumatoria;
 }
 
 sumarSeccion([2, 2, 4, 3, 10, 20, 5], 0, 3) // 8 (2 + 2 + 4 = 8)
