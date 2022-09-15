@@ -505,4 +505,6 @@ app.put('/modificarPeliculas', (req, res) => {
 
 Nos permite  hacer peticiones a nuestro back end 
   
+https://www.postman.com/
+ 
 ---
