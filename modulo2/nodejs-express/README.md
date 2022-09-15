@@ -476,5 +476,33 @@ app.post('/login', (peticionDelCliente, res) => {
 });
 ```
 
+
 ---
+
+### Libreria : Morgan
+
+Me muestra por consola las peticiones que me hace
+
+```JavaScript
+import morgan from 'morgan';
+
+app.use(morgan('dev')); // para ver las peticiones que se hacen en la consola
+
+app.get('/peliculas', (req, res) => {
+  db.obtenerPelicula();
+  res.status(200).json({ message: 'Peliculas' });
+});
+
+app.put('/modificarPeliculas', (req, res) => {
+  res.status(200).json({ message: 'Modificar Peliculas' });
+});
+
+```
+
+---
+
+### :star: POSTMAN
+
+Nos permite  hacer peticiones a nuestro back end 
+  
 ---
