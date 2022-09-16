@@ -49,3 +49,10 @@
 [Nodejs Curso Desde Cero, para principiantes]https://www.youtube.com/watch?v=BhvLIzVL8_o()
 
 ---
+---
+
+# :star: Clase 12 - 15/09
+
+###  Cuando tenemos muchas rutas se pasan a archivos
+
+Nos creamos la carpeta routes y adentro el netflix.routes.js

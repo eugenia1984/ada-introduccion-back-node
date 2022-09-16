@@ -512,7 +512,7 @@ El servidor puede ser: Server, BackEnd con Express
 ---
 ---
 
-# :star: CLase 15/09
+# :star: Clase 12 - 15/09
 
 ---
 ### :star: POSTMAN
@@ -597,8 +597,5 @@ app.get('/*', (req, res) => {
 ```
 
 ---
-
-###  Cuando tenemos muchas rutas se pasan a archivos
-
-Nos creamos la carpeta routes y adentro el netflix.routes.js
+---
 
