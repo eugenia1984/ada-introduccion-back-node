@@ -496,15 +496,109 @@ app.get('/peliculas', (req, res) => {
 app.put('/modificarPeliculas', (req, res) => {
   res.status(200).json({ message: 'Modificar Peliculas' });
 });
-
 ```
 
 ---
 
+```
+Cliente --> req - request - peticion  -->  Servidor
+        <-- res - response - respuesta <-- 
+```
+
+El cliente puede ser: navegador, tablet, celular, computadora, Postman
+
+El servidor puede ser: Server, BackEnd con Express
+
+---
+---
+
+# :star: CLase 15/09
+
+---
 ### :star: POSTMAN
 
 Nos permite  hacer peticiones a nuestro back end 
   
-https://www.postman.com/
- 
+https://www.postman.com/ se puede usar desde el navegador haceindose una cuenta
+
+O se baja y se instala
+
+-> NEW COLLECTION - la nombramos
+
+-> NEW REQUEST - creamos la peticion (GET / POST / ...)
+
 ---
+
+###  Desestructurar (Destructuring)
+
+```JavaScript
+const pelicula = {
+  "titulo" : "Batman",
+  "rating" : 10
+}
+
+let { titulo, rating } = pelicula;
+```
+
+Creo nuevas variables en base a atributos de un objeto.
+
+Asi puedo desestructurar la req.body para usar en variables:
+
+```JavaScript
+// Recibo informacion por un JSON
+app.post('/netflix', (req, res) => {
+  let { titulo, rating } = req.body;
+  console.log('Esto es el titulo: ' + titulo);
+  console.log('Esto es el rating: ' + rating);
+  res.json({ message: 'Pelicula agregada' });
+});
+```
+
+-> Para cuando necesito que los datos no se vean en el navegador, por ejemplo al procesar un pago
+
+---
+
+### Recibir informacion por params (/:param)
+
+```JavaScript
+app.get('/netflix/:id', (req, res) => {
+  const { id } = req.params; // leo, guardo y desestructuro el param
+  console.log(id);
+  res.json({ message: 'Id obtenido' });
+});
+```
+
+-> Para cuando solo necesito mandar un solo dato
+
+---
+
+### Recibir informacion por query (? &)
+
+localhost:3000/watch?v=123
+
+```JavaScript
+app.get('/watch', (req, res) => {
+  const { v } = req.query; // guardo la variable del query
+  console.log(id);
+  res.json({ informacionVIdeo: 'video.pm4' });
+});
+```
+-> Para cuando necesito pasar mas de un parametro, ya que los separo con el &
+
+---
+
+### Para manejar el error 404 o te escriben mal la URL
+
+```JavaScript
+// cualquier peticion que todavia no detalle
+app.get('/*', (req, res) => {
+  res.status(404).json({ message: 'Not found' });
+});
+```
+
+---
+
+###  Cuando tenemos muchas rutas se pasan a archivos
+
+Nos creamos la carpeta routes y adentro el netflix.routes.js
+

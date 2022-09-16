@@ -1,6 +1,7 @@
 import express from 'express'; // importamos la libreria express
-import morgan from 'morgan';
 const app = express();  // creamos una instancia de express
+import morgan from 'morgan';
+import db from './peliculas/db.js';
 
 import path from 'path';
 import {fileURLToPath } from 'url';
@@ -17,12 +18,9 @@ app.use(express.json()); // para poder recibir datos en formato json
 app.use(express.urlencoded({ extended: false })); // para poder recibir datos de formularios
 app.use(morgan('dev')); // para ver las peticiones que se hacen en la consola
 
-app.post('/login', (req, res) => {
-  console.log(req.body);
-  console.log('Guarda la información en la base de datos')
-  res.status(200).json({ message: 'Login' });
-});
-/*
+import netflixRoutes from './routes/netflix.router.js';
+app.use('/netflix', (req, res) => { });
+
 app.get('/', (req,res) => {
   res.status(200).send('Hello World');
   // para responder con un string
@@ -31,6 +29,44 @@ app.get('/', (req,res) => {
   //res.json({message: 'Esto es un JSON'});
 });
 
+// recibir informacion ppor un JSON
+/*
+app.post('/netflix', (req, res) => {
+  let { titulo, rating } = req.body; // destructuring
+  console.log('Esto es el titulo: ' + titulo);
+  console.log('Esto es el rating: ' + rating);
+  res.json({ message: 'Pelicula agregada' });
+});
+*/
+
+// recibir informacion por un param
+/*
+app.get('/netflix/:id', (req, res) => {
+  const { id } = req.params; // leo, guardo y desestructuro el param
+  console.log(id);
+  res.json({ message: 'Id obtenido' });
+});
+*/
+
+// recibir por un query
+app.get('/watch', (req, res) => {
+  const { v } = req.query; // guardo la variable del query
+  console.log(id);
+  res.json({ informacionVIdeo: 'video.pm4' });
+});
+
+// cualquier peticion que todavia no detalle
+app.get('/*', (req, res) => {
+  res.status(404).json({ message: 'Not found' });
+});
+
+app.post('/login', (req, res) => {
+  console.log(req.body);
+  console.log('Guarda la información en la base de datos')
+  res.status(200).json({ message: 'Login' });
+});
+
+/*
 app.get('/peliculas', (req, res) => {
   res.status(200).send({peliculas: ['Pulp Fiction', 'Kill Bill']});
 });

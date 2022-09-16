@@ -134,7 +134,18 @@ repetirLetras('basta', 1) // 'basta'
 Crear una función capitalizarPalabras tome como argumento un "string" y devuelva un string donde cada palabra está capitalizada (con la primera letra mayuscula). Dejar las demás letras como están.
 */
 function capitalizarPalabras(string) {
+  // separo en palabras en un array de palabras
+  const arrayPalabras = string.split(' ');
+  const arrayPalabrasCapializadas = []; // aca metemos las palabras capitalizadas
+  for(let p of arrayPalabras) {
+    arrayPalabrasCapializadas.push(capitalizar(p));
+  }  
+  // paso el array a un string  
+  return arrayPalabrasCapializadas.join(' ');
+}
 
+function capitalizar(string) {
+  return string[o].toUpperCase() + string.slice(1).toLowerCase();
 }
 
 capitalizarPalabras('Esto es un título') // 'Esto Es Un Título'

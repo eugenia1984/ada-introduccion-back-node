@@ -12,8 +12,9 @@ function agregarPelicula(pelicula) {
 function obtenerPelicula(id) {
   // del array de peliculas encontrame el objeto que tenga un determinado id
   // si no lo encuentra me devuelve undefined
-  let peli = peliculas.find((pelicula) => pelicula.id === id);
-  return (peli !== undefined)? peli : "No se encontro la pelicula";
+  let peli = peliculas.find((pelicula) => pelicula.id === Number(id));
+  //return (peli !== undefined)? peli : "No se encontro la pelicula";
+  return peli;
 }
 
 function eliminarPelicula(id) {
@@ -33,7 +34,7 @@ function mostrarPeliculas() {
 function modificarPelicula(id, nuevaPelicula) {
   // encuentro el indice de la pelicula
   // si no lo encuentra devuelve -1 
-  const index = peliculas.findIndex((pelicula) => pelicula.id === id);
+  const index = peliculas.findIndex((pelicula) => pelicula.id === Number(id));
   if(index !== -1) {  // como la encuentra
     peliculas[index] = nuevaPelicula;  // la piso
   }
