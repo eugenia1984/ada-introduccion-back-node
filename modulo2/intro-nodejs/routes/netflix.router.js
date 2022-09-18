@@ -3,6 +3,8 @@ import db from "../peliculas/db.js";
 
 const router = express.Router();
 
+// CRUD  - Create Read Update Delete
+
 // localhost:3000/netflix/agregar-peliculas
 // Para agregar una pelicula -> Create
 router.post('/agregar-peliculas', (req, res) => {
@@ -31,8 +33,12 @@ router.delete('/eliminar-pelicula/:id', (req, res) => {
 router.g('/modificar-pelicula/:id', (req, res) => {
   const peliculaId = req.params.id;
   const {  titulo, rating } = req.body; 
-  db.modificarPelicula(pelicula, {  titulo, rating });
-  res.json({ message: 'Pelicula modificada' });
+  const seModifico = db.modificarPelicula(peliculaId, { titulo, rating });
+  if (seModifico === true) {
+    res.json({ message: 'Pelicula modificada' });
+  } else {
+    res.status(404).json({ message: 'Pelicula no encontrada' });
+  }
 });
 
 // localhost:3000/netflix/obtener-pelicula/1 
@@ -40,11 +46,9 @@ router.g('/modificar-pelicula/:id', (req, res) => {
 router.get('/obtener-pelicula/:id', (req, res) => {
   const peliculaId = req.params.id;
   const pelicula = db.obtenerPelicula(peliculaId);
-  if(pelicula !== undefined)  { 
-    // si el id existe devuelvo el status 200 y la peli
+  if(pelicula !== undefined)  {  // si el id existe devuelvo el status 200 y la peli
     res.status(200).json(pelicula)
-  }  else { 
-    // si no existe el id le devuelvo status 400 y el JSON
+  }  else { // si no existe el id le devuelvo status 400 y el JSON
     res.status(404).json({ message: 'Pelicula no encontrada' });
   }
 });
