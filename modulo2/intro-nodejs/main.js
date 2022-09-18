@@ -32,7 +32,7 @@ app.listen(3000, () => {
 });
 
 /*
-// Todo lo que usaba cuanod tenia a peliculas aca y no en routes
+// Todo lo que usaba cuando tenia a peliculas aca y no en routes
 
 import db from './peliculas/db.js';
 

@@ -36,9 +36,11 @@ const navidad = new Date(2020,11,25);
 
 ## 3 - Server de gatitos
 
-- Utilizando el módulo express, crear un server en el puerto 3030 que retorne en la ruta base / el string "Gatitos!".
+- 1. Utilizando el módulo express, crear un server en el puerto 3030 que retorne en la ruta base / el string "Gatitos!".
 
-- Si el usuario ingresa a la ruta /mostrarGatito, se debe devolver un HTML con un h1 que diga "Gatito!" y la imagen del gatito de tu preferencia.
+-> Esta en la carpeta **gatitos**
+
+- 2. Si el usuario ingresa a la ruta /mostrarGatito, se debe devolver un HTML con un h1 que diga "Gatito!" y la imagen del gatito de tu preferencia.
 ```
 <!DOCTYPE html>
 <html>
@@ -49,7 +51,9 @@ const navidad = new Date(2020,11,25);
 </html>
 ```
 
-- Si el usuario ingresa a la ruta /fotosGatitos, se debe devolver el siguiente JSON:
+->
+
+- 3 . Si el usuario ingresa a la ruta /fotosGatitos, se debe devolver el siguiente JSON:
 ```JSON
 {
     "big" : ["http://i.imgur.com/CRSzQ4r.png", "http://i.imgur.com/l94Rfsj.png", "http://i.imgur.com/304PJ9p.png", "http://i.imgur.com/mOnnvms.png", "http://i.imgur.com/k5Eif3W.png", "http://i.imgur.com/xSVGJu4.png"],
@@ -60,6 +64,10 @@ const navidad = new Date(2020,11,25);
 }
 ```
 
-- Si el usuario ingresa a cualquier otra ruta, devolver un 404 incluyendo los headers correspondientes.
+-> Esta realizado en la carpeta **gatitos**
+
+- 4. Si el usuario ingresa a cualquier otra ruta, devolver un 404 incluyendo los headers correspondientes.
+
+->
 
 ---

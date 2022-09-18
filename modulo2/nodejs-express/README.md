@@ -321,7 +321,7 @@ Y si inspecciono el navegador y me voy a **Network** veo el status **200**
 - El servidor hace algo y si esta bien el usuario y el login me da de respuesta el codigo **200**.
 
 
--> Para ver el HTMl node ya trae la librería **path** y **url** asi que la importo:
+-> Para ver el HTML node ya trae la librería **path** y **url** asi que la importo:
 
 ```JavaScript
 import path from 'path';
