@@ -100,10 +100,10 @@ w
     console.log(objetoImagenes.big); // array de imagenes
 
     // recorremos el array de imagenes y mostramos cada una
-    objetoImagenes.big.array.forEach((imagen)) => {
+    objetoImagenes.big.array.forEach(imagen => {
       const img = d.createElement("img"); // creo una etiqueta imagen 
       img.src = imagen;
-      d.bofy.appendChild(img);
+      d.body.appendChild(img);
     });
   });
 ```
@@ -387,4 +387,33 @@ Teléfono
 
 -> Lo pueden ver en: **modulo2** / **ejercicios3** / **users**
 
+
+1. Tenemos **router/ users.router.js**
+
+```JavaScript
+import express from 'express';
+
+const router = express.Router(); // creamos el router con express y que queden en esta ruta
+
+import {
+  agregarUsuario,
+  obtenerUsuarios,
+  eliminarUsuarios,
+  editarUsuarios,
+} from '../controller/users.controller.js';
+
+// todas las rutas
+router.get('/', obtenerUsuarios);
+router.post('/', agregarUsuario);
+router.delete('/:id', eliminarUsuarios);
+router.put('/:id', editarUsuarios);
+
+export default router;
+```
+
+
+2. La base de datos esta en: **dbUsuarios.js**:
+
+
+---
 ---

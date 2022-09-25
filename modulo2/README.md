@@ -10,7 +10,7 @@
 
 - [**Node.js - Express**](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo2/nodejs-express): servidor, Express, API
 
-- [**Express CRUD**](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo2/express-crud)
+- [**Express CRUD**](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo2/express-crud): HTTP GET, POST, PUT, DELETE, parámetros y cuerpo del mensaje, bodyParser y Middleware
 
 ### Guías con los ejercicios de practica
 

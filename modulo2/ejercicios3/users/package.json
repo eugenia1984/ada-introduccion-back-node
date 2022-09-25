@@ -1,0 +1,18 @@
+{
+  "name": "backendexpress",
+  "version": "1.0.0",
+  "description": "Ejercicio de practica con Nodejs y Express",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1"
+  }
+}
