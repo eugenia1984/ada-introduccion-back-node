@@ -8,13 +8,13 @@
 
 - Los endpoints que debe permitir son:
 
--**GET /users**: Retorna un array de personas guardadas en el servidor
+-**GET/users**: Retorna un array de personas guardadas en el servidor
 
--**POST /users**: Crea un nuevo registro en el servidor. Si la operación terminó satisfactoriamente, devuelve el nuevo registro creado.
+-**POST/users**: Crea un nuevo registro en el servidor. Si la operación terminó satisfactoriamente, devuelve el nuevo registro creado.
 
--**PUT /users/:id**: Modifica los datos del usuario. El parámetro :id es la propiedad id del registro que queremos modificar.
+-**PUT/users/:id**: Modifica los datos del usuario. El parámetro :id es la propiedad id del registro que queremos modificar.
 
--**DELETE /users/:id**: Elimina un registro de la base de datos. El parámetro :id es la propiedad id del registro que queremos eliminar.
+-**DELETE/users/:id**: Elimina un registro de la base de datos. El parámetro :id es la propiedad id del registro que queremos eliminar.
 
 - Los datos que nos pidieron almacenar de cada persona son:
 ```

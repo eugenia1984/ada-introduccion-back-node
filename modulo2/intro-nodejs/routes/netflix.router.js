@@ -30,7 +30,7 @@ router.delete('/eliminar-pelicula/:id', (req, res) => {
 
 // localhost:3000/netflix/modificar-pelicula/1 
 // Modificar una pelicula por id -> Update
-router.g('/modificar-pelicula/:id', (req, res) => {
+router.get('/modificar-pelicula/:id', (req, res) => {
   const peliculaId = req.params.id;
   const {  titulo, rating } = req.body; 
   const seModifico = db.modificarPelicula(peliculaId, { titulo, rating });
@@ -54,11 +54,13 @@ router.get('/obtener-pelicula/:id', (req, res) => {
 });
 
 // localhost:3000/netflix/pelicula
+/*
 netflix.post('/pelicula', (req, res) => {
   let { titulo, rating } = req.body; // destructuring
   console.log('Esto es el titulo: ' + titulo);
   console.log('Esto es el rating: ' + rating);
   res.json({ message: 'Pelicula agregada' });
 });
+*/
 
 export default router;

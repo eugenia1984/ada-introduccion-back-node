@@ -50,7 +50,7 @@ El curso de ADA IT de Introduccion a Back End con Nodejs
 | ------ |
 | [Clase 9 (06/09) - Clase 10 (08/09)](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo2/intro-nodejs) : Intro Node.js |
 | [Clase 10 (08/09) - Clase 11 (13/09)](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo2/nodejs-express) : Node.js Express |
-| [Clase 12 (15/09)](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo2/express-crud) : Express CRUD |
+| [Clase 12 (15/09) - Clase 13 (20/9)](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo2/express-crud) : Express CRUD |
 
 | EJERCICIOS |
 | ---------- |
@@ -66,5 +66,31 @@ El curso de ADA IT de Introduccion a Back End con Nodejs
 | ------ |
 | [Clase](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo3/intro-mongodb) : Intro MongoDB|
 | [Clase](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo3/mongoose) : Mongoose |
+
+---
+
+###Proyecto final
+
+- Hacer una API
+
+- Que tenga la siguiente estructura:
+
+```
+> config
+> controler
+> middleware
+> node_modules
+> public
+    index.html
+    style.css
+    index.js
+> router
+  .env
+  .gitignore
+  app.js
+  mongo.js
+  package-lock.json
+  package.json
+```
 
 ---

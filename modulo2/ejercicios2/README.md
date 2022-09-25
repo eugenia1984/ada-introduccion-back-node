@@ -51,7 +51,7 @@ const navidad = new Date(2020,11,25);
 </html>
 ```
 
-->
+-> Esta realizado en la carpeta **gatitos**
 
 - 3 . Si el usuario ingresa a la ruta /fotosGatitos, se debe devolver el siguiente JSON:
 ```JSON

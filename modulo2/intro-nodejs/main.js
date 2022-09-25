@@ -1,9 +1,23 @@
 import express from 'express'; // importamos la libreria express
-const app = express();  // creamos una instancia de express
+import cors from "cors";
 import morgan from 'morgan';
+//import morgan2 from "./middleware/morgan2.js";
 
+//import dotenv from "dotenv";
+//dotenv.config();
+import config from "./config/index.js";
+
+// creamos una instancia de express
+const app = express();  
+
+// MIDDLEWARES
+app.use(cors());
+// para restringir el acceso
+// app.use(cors({ origin: "http://localhost:3030" })); 
 app.use(express.json()); // para poder recibir datos en formato json
 app.use(express.urlencoded({ extended: false })); // para poder recibir datos de formularios
+//app.use(morgan2);
+
 app.use(morgan('dev')); // para ver las peticiones que se hacen en la consola
 
 // ROUTES
@@ -27,8 +41,8 @@ app.post('/login', (req, res) => {
   res.status(200).json({ message: 'Login' });
 });
 
-app.listen(3000, () => {
-  console.log('Server started');
+app.listen(config.port, () => {
+  console.log(`Server started at port: ${config.port}`);
 });
 
 /*
