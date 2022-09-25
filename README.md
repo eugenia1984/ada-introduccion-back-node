@@ -64,12 +64,12 @@ El curso de ADA IT de Introduccion a Back End con Nodejs
 
 | CLASES |
 | ------ |
-| [Clase](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo3/intro-mongodb) : Intro MongoDB|
+| [Clase 14 (22/9)](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo3/intro-mongodb) : Intro MongoDB |
 | [Clase](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo3/mongoose) : Mongoose |
 
 ---
 
-###Proyecto final
+### Proyecto final
 
 - Hacer una API
 
