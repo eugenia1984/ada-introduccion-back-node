@@ -237,7 +237,7 @@ basaDeDatosAda>
 -> Y si estando en al base de datos pongo **Db** le digo en esta carpeta.
 
 
-### ``` db.createCollection("colectionname")```
+### ``` db.createCollection("collectionname")```
 
 -> Para crear una coleccion, asi dentro guardaré los documentos.
 
