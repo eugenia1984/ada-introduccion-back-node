@@ -92,26 +92,29 @@ Coleccion usuarios:
 
 ---
 
-###MongoDB
+### <img src="https://img.icons8.com/color/40/000000/mongodb.png"/> MongoDB
 
-- Lo bajamos desde [https://www.mongodb.com/try/download/community2](https://www.mongodb.com/try/download/community2)
+#### Instalación
 
-- Elegimos **6.0.1** / **windows** / **msi**
+1.  Lo bajamos desde [https://www.mongodb.com/try/download/community2](https://www.mongodb.com/try/download/community2)
 
-- Vamos a donde se nos descargo y procedemos a instalar: 
+2. Elegimos **6.0.1** / **windows** / **msi**
+
+3. Vamos a donde se nos descargo y procedemos a instalar: 
 
 ``` next > aceptar los terminos > next ```
 
+4. Elegimos el tipo de setup```complete ``` y dejamos todo tal cual viene **>** ``` next``` **>** que tenga el tick en install mongoDB compass **>** ```next ``` **>** Install
 
-- Elegimos el tipo de setup```complete ``` y dejamos todo tal cual viene **>** ``` next``` **>** que tenga el tick en install mongoDB compass **>** ```next ``` **>** Install
-
-De este modo vamos a tener instalado:
+- De este modo vamos a tener instalado:
 
 - mongoDB Compass
 
 - mongo el servidor
 
 - mongo shell
+
+#### mongo shell
 
 -> Para tener [https://www.mongodb.com/try/download/shell](https://www.mongodb.com/try/download/shell)
 
@@ -122,7 +125,7 @@ Note: MongoDB Shell is an open source (Apache 2.0), standalone product developed
 - Para bajarlo elegimos: ``` version: 1.6.0``` **>** ``` platform: windows 64bit```
  **>** ```package:  zip```
 
- DEscomprimimos la carpeta, entramos en **bin** y vemos el **mongosh.exe**
+Descomprimimos la carpeta, entramos en **bin** y vemos el **mongosh.exe**
 
 Enotnces vamos a tener:
 
@@ -137,7 +140,12 @@ Entonces ahora voy a la carpeta bin pero de **mongosh**, me copio los dos archiv
 
 -> Volvemos a la power shell y ejecutamos ```nomgod``` lo que nos va a crear una carpeta y un servidor mongodb, crea nuestra base de datos para la computadora. **Este comando se ejecuta una sola vez**
 
--> Ahora ejecutamos ```mongosh```
+### <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/40/000000/external-terminal-computer-programming-flaticons-flat-flat-icons.png"/> Ejecución de mongosh en terminal
+
+
+### ```mongosh```
+
+-> Ahora ejecutamos ```mongosh```, poniendo este comando en la terminar power shell es que vamos a poder ejecutar mongodb (antes, solo por primera vez hay que poner **mongpdb** como para que lo instale).
 
 Y por terminal veo:
 
@@ -154,6 +162,8 @@ Using Mongosh:          1.6.0
 
 Con mongosh podemos usar mongoDB, lo vemos en **mongodb://127.0.0.1:27017** que nos dice que vamos a usar el puerto **27017**
 
+### ```show databases``` ó ```show bds```
+
 Y como lo ultimo que veo es ```>test``` ahi ya puedo ingresar condigo de mongodb, por ejemplo veo las bases de datos con **show databases** o tambien *show bds**:
 
 ```
@@ -166,6 +176,9 @@ test>
 ```
 
 Son las que vienen por defecto y actualmente estoy en la de test.
+
+
+### ```help```
 
 -> Con **help** veo que comandos tengo:
 
@@ -202,5 +215,21 @@ connect                         Create a new connection and return the Database 
   For more information on usage: https://docs.mongodb.com/manual/reference/method
 ```
 
+### ```use dataBeseName```
 
-https://drive.google.com/file/d/1b288X2Y0xYu_1JG2rX5LW2qck2PlhIKs/view 1hora 18min
+-> Para **crear una base de datos``` tenemos el comandp: ```use```:
+
+```
+use basaDeDatosAda
+switched to db basaDeDatosAda
+basaDeDatosAda>
+```
+-
+-> Asi cree la base de datos baseDeDatosAda y ya estoy en la misma
+
+### ```db```
+
+-> Con **db** veo la base de datos en la que estoy
+
+
+---
