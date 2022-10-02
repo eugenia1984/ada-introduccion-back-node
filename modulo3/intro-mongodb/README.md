@@ -343,5 +343,27 @@ db.createCollection("users", {
 
 -> por cada documento que quiera agregar a mi coleccion, me va primero a verificar que cunpla con este validator, puede llegar a ser un objeto con mas pares key-value, pero las que si o si debe tener son name, email y dni, y deben cumplir lo que se pide, es decir las dos primeras ser string y la tercera ser de tipo int, y las tres son required (obligatorias, deben estar).
 
+### ```db.getCollectionInfos() ```
+
+-> para ver el detalle de la collection, si en **options** tengo un objeto vacio es porque puede tener cualquier documento, pero si la hibiera creado con le validator como mostre en mi ejemplo con JS, etnocnes ahi en ve< de estar vacio, tendria todo el detalle.
+
+```
+basaDeDatosAda> db.getCollectionInfos()
+[
+  {
+    name: 'users',
+    type: 'collection',
+    options: {},
+    info: {
+      readOnly: false,
+      uuid: new UUID("5a134e01-7ba9-4db2-8d0c-ff3d154fde81")
+    },
+    idIndex: { v: 2, key: { _id: 1 }, name: '_id_' }
+  }
+]
+```
+
+
+https://drive.google.com/file/d/1b288X2Y0xYu_1JG2rX5LW2qck2PlhIKs/view 1.39.59
 
 ---
