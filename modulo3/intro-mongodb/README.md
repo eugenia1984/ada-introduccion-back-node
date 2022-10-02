@@ -215,7 +215,7 @@ connect                         Create a new connection and return the Database 
   For more information on usage: https://docs.mongodb.com/manual/reference/method
 ```
 
-### ```use dataBeseName```
+### ```use dataBaseName```
 
 -> Para **crear una base de datos``` tenemos el comandp: ```use```:
 
@@ -237,7 +237,7 @@ basaDeDatosAda>
 -> Y si estando en al base de datos pongo **Db** le digo en esta carpeta.
 
 
-### ``` db.createCollection("colecctionname")```
+### ``` db.createCollection("colectionname")```
 
 -> Para crear una coleccion, asi dentro guardaré los documentos.
 
@@ -317,7 +317,7 @@ db.createCollection("users", {
   validator: (
     $jsonSchema: {
       bsonType: "object",
-      required: ["name", "email", "password"],
+      required: ["name", "email", "dni"],
       properties: {
         name: {
           bsonType: "string",
@@ -327,14 +327,21 @@ db.createCollection("users", {
           bsonType: "string",
           description: "must be a string and is required"
         },
-        password: {
-          bsonType: "string",
-          description: "must be a string and is required"
+        dni: {
+          bsonType: "int",
+          minimum: 2000000,
+          maximum: 99999999,
+          description: "must be an int and is required"
         },
       },
     },
   ),
 });
 ```
+
+-> Si es de tipo **int** puedo setearle un valor minumo y maximo.
+
+-> por cada documento que quiera agregar a mi coleccion, me va primero a verificar que cunpla con este validator, puede llegar a ser un objeto con mas pares key-value, pero las que si o si debe tener son name, email y dni, y deben cumplir lo que se pide, es decir las dos primeras ser string y la tercera ser de tipo int, y las tres son required (obligatorias, deben estar).
+
 
 ---
