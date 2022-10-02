@@ -224,12 +224,117 @@ use basaDeDatosAda
 switched to db basaDeDatosAda
 basaDeDatosAda>
 ```
--
+
 -> Asi cree la base de datos baseDeDatosAda y ya estoy en la misma
+
+-> Pero hasta que a esta nueva base de datos no le agregue ningun documento, si pongo ```show dbs``` no la voy a ver, debo agregarle un documento o una coleccion. Pero si pongo ```db``` si veo la base de datos en la que estoy.
+
 
 ### ```db```
 
--> Con **db** veo la base de datos en la que estoy
+-> Con **db** veo la base de datos en la que estoy.
 
+-> Y si estando en al base de datos pongo **Db** le digo en esta carpeta.
+
+
+### ``` db.createCollection("colecctionname")```
+
+-> Para crear una coleccion, asi dentro guardaré los documentos.
+
+```db.createCollection("nombre")``` 
+
+-> Ejemplo:
+
+```
+basaDeDatosAda> db.createCollection("usuarios")
+{ ok: 1 }
+```
+
+Y asi tengo mi coleccion creada.
+
+-> Otro modo de crear una collection es con: ```db.name.insert({})```
+
+Por ejemplo: ```db.clientes.insert({})```
+
+Pero... la terminal me da warning de que esta deprecado:
+
+```
+DeprecationWarning: Collection.insert() is deprecated. Use insertOne, insertMany, or bulkWrite.
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId("6339cb4697cb1b7ca4478ab5") }
+}
+```
+### ```show collections```
+
+-> Para ver mis colecciones, como solo tengo la de *usuarios*:
+
+```
+basaDeDatosAda> show collections
+usuarios
+```
+
+-> Como ahora mi basa de datos, ya tiene una coleccion, si listo las bases de datos la voy a poder ver:
+```
+basaDeDatosAda> show dbs
+admin           40.00 KiB
+basaDeDatosAda   8.00 KiB
+config          96.00 KiB
+local           40.00 KiB
+```
+
+### ```db.name-collection.drop()```
+
+-> Para borrar una coleccion:
+
+```
+basaDeDatosAda> show collections
+clientes
+usuarios
+basaDeDatosAda> db.clientes.drop()
+true
+basaDeDatosAda> show collections
+usuarios
+```
+
+### ```db.cropDatabase()```
+
+-> Estando ya en al base de datos que quiero borrar, si pongo  ```db.cropDatabase()``` la borro.
+
+### ```exit``` o ```quit```
+
+-> Son los comandos para salir de mongo db en la power shell.
+
+---
+
+### Volvemos a JS
+
+Teniendo el archivo **mongo.js**:
+
+```JavaScript
+// para crear una coleccion de nombre users y como segundo parametro paso el validator
+db.createCollection("users", {
+  validator: (
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["name", "email", "password"],
+      properties: {
+        name: {
+          bsonType: "string",
+          description: "must be a string and is required"
+        },
+        email: {
+          bsonType: "string",
+          description: "must be a string and is required"
+        },
+        password: {
+          bsonType: "string",
+          description: "must be a string and is required"
+        },
+      },
+    },
+  ),
+});
+```
 
 ---
