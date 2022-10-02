@@ -217,7 +217,7 @@ connect                         Create a new connection and return the Database 
 
 ### ```use dataBaseName```
 
--> Para **crear una base de datos``` tenemos el comandp: ```use```:
+-> Para **crear una base de datos** tenemos el comando: ```use```:
 
 ```
 use basaDeDatosAda
