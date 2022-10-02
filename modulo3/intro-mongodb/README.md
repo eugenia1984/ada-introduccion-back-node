@@ -127,7 +127,7 @@ Note: MongoDB Shell is an open source (Apache 2.0), standalone product developed
 
 Descomprimimos la carpeta, entramos en **bin** y vemos el **mongosh.exe**
 
-Enotnces vamos a tener:
+Entonces vamos a tener:
 
 ```disco C > archivos de programa > mongoDB > server > 6.0 ``` y en ```bin``` estan los ejecutables, que se van a ejecutar con power shell desde la terminal.
 
