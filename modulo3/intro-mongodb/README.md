@@ -96,7 +96,7 @@ Coleccion usuarios:
 
 #### Instalación
 
-1.  Lo bajamos desde [https://www.mongodb.com/try/download/community2](https://www.mongodb.com/try/download/community2)
+1.  Lo bajamos desde [https://www.mongodb.com/try/download/community](https://www.mongodb.com/try/download/community)
 
 2. Elegimos **6.0.1** / **windows** / **msi**
 
