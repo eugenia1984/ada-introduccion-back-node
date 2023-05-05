@@ -88,7 +88,7 @@ Coleccion usuarios:
 }
 ```
 
--> es como un JSON. Hay una colección que es ocmo una carpeta con documentos, por eso se dice que **mongoDB es una coleccion de documentos**, pero en realidad por debajo utiliza **BSON** es como un JSON pero pasado a binario, para que sea más rápido.
+-> es como un JSON. Hay una colección que es como una carpeta con documentos, por eso se dice que **mongoDB es una coleccion de documentos**, pero en realidad por debajo utiliza **BSON** es como un JSON pero pasado a binario, para que sea más rápido.
 
 ---
 
@@ -100,19 +100,11 @@ Coleccion usuarios:
 
 2. Elegimos **6.0.1** / **windows** / **msi**
 
-3. Vamos a donde se nos descargo y procedemos a instalar: 
-
-``` next > aceptar los terminos > next ```
+3. Vamos a donde se nos descargo y procedemos a instalar: ``` next > aceptar los terminos > next ```
 
 4. Elegimos el tipo de setup```complete ``` y dejamos todo tal cual viene **>** ``` next``` **>** que tenga el tick en install mongoDB compass **>** ```next ``` **>** Install
 
-- De este modo vamos a tener instalado:
-
-- mongoDB Compass
-
-- mongo el servidor
-
-- mongo shell
+- De este modo vamos a tener instalado: mongoDB Compass / mongo el servidor /  mongo shell
 
 #### mongo shell
 
@@ -122,14 +114,12 @@ Coleccion usuarios:
 
 Note: MongoDB Shell is an open source (Apache 2.0), standalone product developed separately from the MongoDB Server.
 
-- Para bajarlo elegimos: ``` version: 1.6.0``` **>** ``` platform: windows 64bit```
- **>** ```package:  zip```
+- Para bajarlo elegimos: ``` version: 1.6.0``` **>** ``` platform: windows 64bit```  **>** ```package:  zip```
 
 Descomprimimos la carpeta, entramos en **bin** y vemos el **mongosh.exe**
 
-Entonces vamos a tener:
 
-```disco C > archivos de programa > mongoDB > server > 6.0 ``` y en ```bin``` estan los ejecutables, que se van a ejecutar con power shell desde la terminal.
+Entonces vamos a tener: ```disco C > archivos de programa > mongoDB > server > 6.0 ``` y en ```bin``` estan los ejecutables, que se van a ejecutar con power shell desde la terminal.
 
 
 Entonces ahora voy a la carpeta bin pero de **mongosh**, me copio los dos archivos y los pego en la de **mongodb**
@@ -256,7 +246,7 @@ Y asi tengo mi coleccion creada.
 
 Por ejemplo: ```db.clientes.insert({})```
 
-Pero... la terminal me da warning de que esta deprecado:
+Pero... la terminal me da warning de que esta **deprecado**:
 
 ```
 DeprecationWarning: Collection.insert() is deprecated. Use insertOne, insertMany, or bulkWrite.
@@ -265,6 +255,8 @@ DeprecationWarning: Collection.insert() is deprecated. Use insertOne, insertMany
   insertedIds: { '0': ObjectId("6339cb4697cb1b7ca4478ab5") }
 }
 ```
+
+
 ### ```show collections```
 
 -> Para ver mis colecciones, como solo tengo la de *usuarios*:
@@ -297,9 +289,9 @@ basaDeDatosAda> show collections
 usuarios
 ```
 
-### ```db.cropDatabase()```
+### ```db.dropDatabase()```
 
--> Estando ya en al base de datos que quiero borrar, si pongo  ```db.cropDatabase()``` la borro.
+-> Estando ya en al base de datos que quiero borrar, si pongo  ```db.dropDatabase()``` la borro.
 
 ### ```exit``` o ```quit```
 
