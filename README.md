@@ -1,4 +1,4 @@
-# :book: Ada IT: Introduccion Back End con Node.js
+# <img width="40" height="40" src="https://img.icons8.com/fluency/40/node-js.png" alt="node-js"/> Ada IT: Introduccion Back End con Node.js
 
 ---
 
@@ -6,13 +6,13 @@ El curso de ADA IT de Introduccion a Back End con Nodejs
 
 ---
 
-## :star: Practica
+##  <img width="30" height="30" src="https://img.icons8.com/fluency/30/node-js.png" alt="node-js"/>   Practica
 
 [**Aca pueden ver las practicas de JavaScript**](https://eugenia1984.github.io/ada-introduccion-back-node)
 
 ---
 
-## :star:  Temas
+##  <img width="30" height="30" src="https://img.icons8.com/fluency/30/node-js.png" alt="node-js"/> Temas
 
 - [**Modulo I: Introduccion a JavaScript**](https://github.com/eugenia1984/ada-introduccion-back-node/tree/main/modulo1) <img src="https://img.icons8.com/fluency/24/000000/javascript.png"/>
 
@@ -23,7 +23,7 @@ El curso de ADA IT de Introduccion a Back End con Nodejs
 
 ---
 
-## :star:  Clases y ejercicios:
+##  <img width="30" height="30" src="https://img.icons8.com/fluency/30/node-js.png" alt="node-js"/>  Clases y ejercicios:
 
 ### Modulo I: Introduccion a JavaScript
 
@@ -69,7 +69,7 @@ El curso de ADA IT de Introduccion a Back End con Nodejs
 
 ---
 
-### Proyecto final
+###  <img width="30" height="30" src="https://img.icons8.com/fluency/30/node-js.png" alt="node-js"/>   Proyecto final
 
 - Hacer una API
 
@@ -92,5 +92,9 @@ El curso de ADA IT de Introduccion a Back End con Nodejs
   package-lock.json
   package.json
 ```
+
+---
+
+I appreciate your interest in this Project ⌨️ with ❤️ by [María Eugenia Costa](https://github.com/eugenia1984) 😊 and follow me at [LinkedIn](http://www.linkedin.com/in/maríaeugeniacosta)
 
 ---
