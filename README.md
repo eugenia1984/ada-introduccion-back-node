@@ -95,6 +95,6 @@ El curso de ADA IT de Introduccion a Back End con Nodejs
 
 ---
 
-I appreciate your interest in this Project ⌨️ with ❤️ by [María Eugenia Costa](https://github.com/eugenia1984) 😊 and follow me at [LinkedIn](http://www.linkedin.com/in/maríaeugeniacosta)
+I appreciate your interest in this Project ⌨️ with ❤️ by [María Eugenia Costa](https://github.com/eugenia1984) 😊 and follow me at [LinkedIn - maria-eugenia-costa](https://www.linkedin.com/in/maria-eugenia-costa/)
 
 ---
